@@ -1,0 +1,91 @@
+---
+import { getCollection, render } from "astro:content";
+import ContentPage from "../components/ContentPage.astro";
+import NclcConverter from "../components/NclcConverter.astro";
+import CostCalculator from "../components/CostCalculator.astro";
+import CataloguePage from "../components/CataloguePage.astro";
+import CoursePage from "../components/CoursePage.astro";
+import NewsIndex from "../components/NewsIndex.astro";
+import NewsArticle from "../components/NewsArticle.astro";
+import TeamPage from "../components/TeamPage.astro";
+import StoriesPage from "../components/StoriesPage.astro";
+import HubPage from "../components/HubPage.astro";
+import DetailPage from "../components/DetailPage.astro";
+import { hubKeys } from "../components/hubs";
+import { isRouteKey, routePath } from "../i18n/routes";
+import { courses } from "../data/courses";
+import type { Lang } from "../i18n/langs";
+
+// One route for every content page in every language: /tarifs, /en/prices ...
+export async function getStaticPaths() {
+	const pages = await getCollection("pages");
+	const paths = [];
+	for (const page of pages) {
+		const [lang, ...rest] = page.id.split("/");
+		const key = rest.join("/");
+		// News articles register themselves: pages/<lang>/news/<file>.md -> /actualites/<file> (fr) or /en/news/<file>.
+		if (!["fr", "en"].includes(lang) || (!isRouteKey(key) && !key.startsWith("news/"))) {
+			console.warn(`[pages] skipped "${page.id}": unknown language or route key`);
+			continue;
+		}
+		paths.push({
+			params: { slug: routePath(lang as Lang, key).replace(/^\//, "") },
+			props: { page, lang: lang as Lang, pageKey: key },
+		});
+	}
+	// Interactive tools: the same page in each language.
+	const tools = {
+		"nclc-converter": { fr: ["Convertisseur NCLC", "Convertissez vos scores TEF Canada et TCF Canada en niveaux NCLC."], en: ["NCLC converter", "Convert your TEF Canada and TCF Canada scores into NCLC / CLB levels."] },
+		"cost-calculator": { fr: ["Calculateur de coût", "Estimez le coût d’un parcours combiné ou d’un nombre d’heures de cours."], en: ["Cost calculator", "Estimate the cost of a bundle or of a number of course hours."] },
+	} as const;
+	for (const [key, texts] of Object.entries(tools)) {
+		for (const lang of ["fr", "en"] as const) {
+			paths.push({
+				params: { slug: routePath(lang, key as "nclc-converter").replace(/^\//, "") },
+				props: { tool: key, lang, pageKey: key, toolTitle: texts[lang][0], toolDescription: texts[lang][1] },
+			});
+		}
+	}
+	// Course detail pages, from src/data/courses.json (no Markdown needed).
+	for (const c of courses) {
+		for (const lang of ["fr", "en"] as const) {
+			paths.push({
+				params: { slug: routePath(lang, `courses/${c.id}`).replace(/^\//, "") },
+				props: { courseId: c.id, lang, pageKey: `courses/${c.id}` },
+			});
+		}
+	}
+	return paths;
+}
+
+const { page, lang, pageKey, tool, toolTitle, toolDescription, courseId } = Astro.props as any;
+const rendered = page ? await render(page) : undefined;
+const Content = rendered?.Content;
+const headings = rendered?.headings ?? [];
+---
+
+{tool ? (
+	<ContentPage lang={lang} pageKey={pageKey} title={toolTitle} description={toolDescription}>
+		{tool === "nclc-converter" ? <NclcConverter lang={lang} /> : <CostCalculator lang={lang} />}
+	</ContentPage>
+) : courseId ? (
+	<CoursePage lang={lang} courseId={courseId} />
+) : pageKey === "catalogue" ? (
+	<CataloguePage lang={lang} title={page.data.title} description={page.data.description} />
+) : pageKey === "news" ? (
+	<NewsIndex lang={lang} title={page.data.title} description={page.data.description} />
+) : pageKey.startsWith("news/") && Content ? (
+	<NewsArticle lang={lang} page={page} Content={Content} />
+) : pageKey === "team" ? (
+	<TeamPage lang={lang} title={page.data.title} description={page.data.description} sample={page.data.sample} />
+) : pageKey === "stories" ? (
+	<StoriesPage lang={lang} title={page.data.title} description={page.data.description} sample={page.data.sample} />
+) : hubKeys.includes(pageKey) && Content ? (
+	<HubPage lang={lang} pageKey={pageKey} page={page} Content={Content} />
+) : (pageKey.startsWith("bundles/") || pageKey.startsWith("exams/")) && Content ? (
+	<DetailPage lang={lang} pageKey={pageKey} page={page} Content={Content} />
+) : (
+	<ContentPage lang={lang} pageKey={pageKey} title={page.data.title} description={page.data.description} sample={page.data.sample} form={page.data.form} headings={headings}>
+		{Content && <Content />}
+	</ContentPage>
+)}

@@ -1,0 +1,75 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import CourseCard from "./CourseCard.astro";
+import { categories, coursesByCat } from "../data/courses";
+import { hubs } from "./hubs";
+import { courseArtworkFor } from "../data/course-artwork";
+
+interface Props {
+	lang: Lang;
+	pageKey: string;
+	page: CollectionEntry<"pages">;
+	Content: AstroComponentFactory;
+}
+const { lang, pageKey, page, Content } = Astro.props;
+const t = useTranslations(lang);
+const hub = hubs[pageKey];
+// Keep a deliberate order (TEF, TCF, TEFAQ, TCFQ, DELF / full-path first), not alphabetical.
+const order = ["tef-canada", "tcf-canada", "tefaq", "tcfq", "delf-dalf", "full-path", "fast-track", "diploma", "beginner", "intensive", "teens", "corporate"];
+const rank = (id: string) => { const i = order.indexOf(id.split("/").pop() ?? ""); return i < 0 ? 99 : i; };
+const subPages = hub.pages ? (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/${hub.pages}/`))).sort((a, b) => rank(a.id) - rank(b.id)) : [];
+const subTag = hub.pages === "bundles" ? t("catalogue.bundleTag") : t("nav.exams");
+const subCta = hub.pages === "bundles" ? t("catalogue.bundleCta") : t("hub.examCta");
+---
+
+<PageShell lang={lang} title={page.data.title} description={page.data.description} pageKey={pageKey}>
+    <section class="rts-section-padding">
+        <div class="container">
+            {hub.cats?.map((cat) => {
+                const list = coursesByCat(cat);
+                const shown = hub.limit ? list.slice(0, hub.limit) : list;
+                return (
+                    <div class="gfe-cat-block">
+                        <h2 class="gfe-cat-title"><span>{categories[cat][lang]}</span></h2>
+                        <div class="gfe-card-grid">
+                            {shown.map((c) => <CourseCard course={c} lang={lang} />)}
+                        </div>
+                        {hub.limit && list.length > hub.limit && (
+                            <a href={`${routePath(lang, "catalogue")}#${cat}`} class="about-btn rts-nbg-btn btn-arrow gfe-hub-more">{t("hub.seeAll").replace("{n}", String(list.length))} <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
+                        )}
+                    </div>
+                );
+            })}
+
+            {subPages.length > 0 && (
+                <div class="gfe-cat-block gfe-cat-block--first">
+                    <div class="gfe-card-grid">
+                        {subPages.map((b) => (
+                            <a href={routePath(lang, b.id.slice(lang.length + 1))} class="gfe-course-card gfe-course-card--bundle">
+                                {courseArtworkFor(b.id.slice(lang.length + 1)) && <div class="gfe-course-card__media"><img src={courseArtworkFor(b.id.slice(lang.length + 1))!.src} alt="" width="1200" height="900" loading="lazy" decoding="async" /></div>}
+                                <div class="gfe-course-card__flags"><span class="gfe-course-card__cat">{subTag}</span>{b.data.goal && <span class="gfe-course-card__badge">{b.data.goal}</span>}</div>
+                                <h3 class="gfe-course-card__title">{b.data.title}</h3>
+                                {b.data.description && <p class="gfe-course-card__summary">{b.data.description}</p>}
+                                <span class="gfe-course-card__cta">{subCta} <i class="fa-light fa-arrow-right"></i></span>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            <div class="row justify-content-center gfe-hub-details">
+                <div class="col-lg-10 col-xl-9">
+                    <h2 class="gfe-cat-title"><span>{t("hub.details")}</span></h2>
+                    <article class="gfe-prose">
+                        <Content />
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</PageShell>

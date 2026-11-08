@@ -1,0 +1,56 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import Layout from "../layouts/Layout.astro";
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import { bannerFor } from "./banners";
+import CtaBand from "./CtaBand.astro";
+import { courseArtworkFor } from "../data/course-artwork";
+
+interface Props {
+	lang: Lang;
+	title: string;
+	description?: string;
+	metaDescription?: string;
+	pageKey?: string;
+	sample?: boolean;
+	ogImage?: string;
+	bare?: boolean;
+	noCta?: boolean;
+}
+const { lang, title, description, metaDescription, pageKey, sample, ogImage, bare, noCta } = Astro.props;
+const t = useTranslations(lang);
+const banner = bannerFor(pageKey);
+const courseArt = courseArtworkFor(pageKey);
+const bannerImage = courseArt?.src ?? `/images/photos/banner-${banner}.webp`;
+---
+
+<Layout lang={lang} title={`${title} | Global French Education`} description={metaDescription ?? description} noindex={sample} image={ogImage ?? courseArt?.src}>
+<Header lang={lang} />
+<main id="main">
+
+    {!bare && (
+    <section class:list={["gfe-banner", { "gfe-banner--course": Boolean(courseArt), "gfe-banner--course-split": courseArt?.split }]} style={courseArt?.split ? undefined : `background-image: url(${bannerImage});`}>
+        <div class="container">
+            <div class="gfe-banner__inner">
+                <nav class="gfe-banner__crumb" aria-label="Breadcrumb">
+                    <a href={routePath(lang, "home")}>{t("nav.home")}</a>
+                    <span aria-hidden="true">/</span>
+                    <span aria-current="page">{title}</span>
+                </nav>
+                <h1 class="gfe-banner__title">{title}</h1>
+                {description && <p class="gfe-banner__sub">{description}</p>}
+            </div>
+        </div>
+        {courseArt?.split && <img class="gfe-banner__course-art" src={courseArt.src} alt="" width="1200" height="900" loading="eager" decoding="async" />}
+    </section>
+    )}
+
+    <slot />
+
+    {!noCta && <CtaBand lang={lang} />}
+
+</main>
+<Footer lang={lang} />
+</Layout>

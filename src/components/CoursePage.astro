@@ -1,0 +1,69 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import CourseCard from "./CourseCard.astro";
+import { categories, courseById, priceLabel } from "../data/courses";
+
+interface Props {
+	lang: Lang;
+	courseId: string;
+}
+const { lang, courseId } = Astro.props;
+const t = useTranslations(lang);
+const c = courseById.get(courseId);
+if (!c) throw new Error(`Unknown course: ${courseId}`);
+
+const testHref = `${routePath(lang, "contact")}?topic=placement#form`;
+const related = [...courseById.values()].filter((x) => x.cat === c.cat && x.id !== c.id).slice(0, 3);
+---
+
+<PageShell lang={lang} title={c.title[lang]} description={c.summary[lang]} pageKey={`courses/${c.id}`}>
+    <section class="rts-section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="gfe-course-main">
+                        <h2 class="gfe-course-h gfe-course-h--first">{t("course.forWho")}</h2>
+                        <ul class="gfe-check-list">
+                            {c.forWho[lang].map((x) => <li>{x}</li>)}
+                        </ul>
+
+                        <h2 class="gfe-course-h">{t("course.learn")}</h2>
+                        <ul class="gfe-check-list">
+                            {c.learn[lang].map((x) => <li>{x}</li>)}
+                        </ul>
+
+                        <h2 class="gfe-course-h">{t("course.format")}</h2>
+                        <p>{c.format[lang]}</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <aside class="gfe-course-aside">
+                        <div class="gfe-course-card__flags">
+                            <span class="gfe-course-card__cat">{categories[c.cat][lang]}</span>
+                            {c.badge && <span class="gfe-course-card__badge">{c.badge[lang]}</span>}
+                        </div>
+                        <ul class="gfe-course-facts">
+                            {c.hours != null && <li><span>{t("course.hours")}</span><strong>{c.hours} h</strong></li>}
+                            <li><span>{t("course.price")}</span><strong>{priceLabel(c, lang, t("course.onRequest"))}</strong></li>
+                            {c.duration && <li><span>{t("course.duration")}</span><strong>{c.duration[lang]}</strong></li>}
+                            {c.goal && <li><span>{t("course.goal")}</span><strong>{c.goal[lang]}</strong></li>}
+                        </ul>
+                        <a href={testHref} class="rts-theme-btn btn-arrow gfe-course-aside__cta">{t("course.cta")} <span><i class="fa-light fa-arrow-right"></i></span></a>
+                        <a href={routePath(lang, "catalogue")} class="gfe-course-aside__all">{t("course.all")}</a>
+                    </aside>
+                </div>
+            </div>
+
+            {related.length > 0 && (
+                <div class="gfe-cat-block">
+                    <h2 class="gfe-cat-title"><span>{t("course.related")}</span></h2>
+                    <div class="gfe-card-grid">
+                        {related.map((x) => <CourseCard course={x} lang={lang} />)}
+                    </div>
+                </div>
+            )}
+        </div>
+    </section>
+</PageShell>

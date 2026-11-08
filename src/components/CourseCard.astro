@@ -1,0 +1,30 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import { categories, priceLabel, type Course } from "../data/courses";
+import { courseCover } from "../data/course-artwork";
+
+interface Props {
+	course: Course;
+	lang: Lang;
+}
+const { course: c, lang } = Astro.props;
+const t = useTranslations(lang);
+const cover = courseCover(c.id);
+---
+
+<a href={routePath(lang, `courses/${c.id}`)} class="gfe-course-card">
+    {cover && <div class="gfe-course-card__media"><img src={cover} alt="" width="1200" height="900" loading="lazy" decoding="async" /></div>}
+    <div class="gfe-course-card__flags">
+        <span class="gfe-course-card__cat">{categories[c.cat][lang]}</span>
+        {c.badge && <span class="gfe-course-card__badge">{c.badge[lang]}</span>}
+    </div>
+    <h3 class="gfe-course-card__title">{c.title[lang]}</h3>
+    <p class="gfe-course-card__summary">{c.summary[lang]}</p>
+    <ul class="gfe-course-card__meta">
+        {c.hours != null && <li><i class="fa-light fa-clock"></i>{c.hours} h</li>}
+        <li class="gfe-course-card__price"><i class="fa-light fa-tag"></i>{priceLabel(c, lang, t("course.onRequest"))}</li>
+        {c.duration && <li><i class="fa-light fa-calendar"></i>{c.duration[lang]}</li>}
+    </ul>
+    <span class="gfe-course-card__cta">{t("course.details")} <i class="fa-light fa-arrow-right"></i></span>
+</a>

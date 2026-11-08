@@ -1,0 +1,75 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import storiesData from "../data/stories.json";
+
+interface Props {
+	lang: Lang;
+	title: string;
+	description?: string;
+	sample?: boolean;
+}
+const { lang, title, description, sample } = Astro.props;
+const t = useTranslations(lang);
+const testHref = `${routePath(lang, "contact")}?topic=placement#form`;
+const metricKeys = [
+	["start", "stories.start"],
+	["goal", "stories.goal"],
+	["result", "stories.result"],
+	["duration", "stories.duration"],
+] as const;
+---
+
+<PageShell lang={lang} title={title} description={description} pageKey="stories" sample={sample}>
+    <section class="rts-section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    {sample && <span class="gfe-sample-badge">{t("sample.label")}</span>}
+                    <p class="gfe-lead">{t("stories.intro")}</p>
+                    <details class="gfe-story-index">
+                        <summary>{t("stories.browse").replace("{n}", String(storiesData.stories.length))}</summary>
+                        <ol>
+                            {storiesData.stories.map((s) => <li><a href={`#${s.id}`}>{s.person[lang].split(" · ")[0]} — {s.title[lang]}</a></li>)}
+                        </ol>
+                    </details>
+                </div>
+            </div>
+            <div class="gfe-stories">
+                {storiesData.stories.map((s) => (
+                    <article class="gfe-story" id={s.id}>
+                        <div class="gfe-story__head">
+                            <div>
+                                <h2 class="gfe-story__title">{s.title[lang]}</h2>
+                                <p class="gfe-story__person">{s.person[lang]} · {s.period[lang]}</p>
+                            </div>
+                        </div>
+                        <ul class="gfe-story__metrics">
+                            {metricKeys.map(([k, label]) => (
+                                <li>
+                                    <span>{t(label)}</span>
+                                    <strong>{s.metrics[k][lang]}</strong>
+                                </li>
+                            ))}
+                        </ul>
+                        <div class="gfe-story__body">
+                            {s.body[lang].map((p) => <p>{p}</p>)}
+                        </div>
+                        <blockquote class="gfe-story__quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <div>
+                                <p>{s.quote[lang]}</p>
+                                {"quoteBy" in s && s.quoteBy && <cite class="gfe-story__quote-by">{s.quoteBy[lang]}</cite>}
+                            </div>
+                        </blockquote>
+                    </article>
+                ))}
+            </div>
+            <div class="rt-center mt--60">
+                <p class="gfe-story__note">{t("stories.disclaimer")}</p>
+                <a href={testHref} class="rts-theme-btn btn-arrow mt--20">{t("course.cta")} <span><i class="fa-light fa-arrow-right"></i></span></a>
+            </div>
+        </div>
+    </section>
+</PageShell>

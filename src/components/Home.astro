@@ -1,0 +1,187 @@
+---
+import { existsSync } from "node:fs";
+import { getCollection } from "astro:content";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import { site } from "../i18n/site";
+import Layout from "../layouts/Layout.astro";
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import NewsCard from "./NewsCard.astro";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+// Drop the hero video at public/video/hero.mp4 (and optionally hero.webm); it appears automatically.
+const heroMp4 = existsSync("public/video/hero.mp4");
+const heroWebm = existsSync("public/video/hero.webm");
+
+const testHref = `${routePath(lang, "contact")}?topic=placement#form`;
+const visitHref = `${routePath(lang, "contact")}?topic=other#form`;
+
+const programs = [
+	{ n: 1, href: "bundles/full-path" },
+	{ n: 2, href: "exam-prep" },
+	{ n: 3, href: "levels" },
+	{ n: 4, href: "courses/oral-expression" },
+] as const;
+
+// Nine latest articles, straight from the content collection.
+const latest = (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/news/`)))
+	.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
+	.slice(0, 9);
+const fmt = (d?: string) =>
+	d ? new Date(`${d}T00:00:00`).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", { year: "numeric", month: "long", day: "numeric" }) : undefined;
+---
+
+<Layout lang={lang} title={t("meta.title")} description={t("meta.description")}>
+<Header lang={lang} />
+<main id="main">
+
+    <!-- hero -->
+    <section class="gfe-hero rt-relative">
+        <div class="gfe-hero__media" style="background-image: url(/images/photos/hero.webp);"></div>
+        {(heroMp4 || heroWebm) && (
+            <video class="gfe-hero__media gfe-hero__video" autoplay muted loop playsinline preload="metadata" poster="/images/photos/hero.webp" aria-hidden="true">
+                {heroWebm && <source src="/video/hero.webm" type="video/webm" />}
+                {heroMp4 && <source src="/video/hero.mp4" type="video/mp4" />}
+            </video>
+        )}
+        <div class="container gfe-hero__content">
+            <div class="gfe-hero__inner">
+                <p class="gfe-hero__eyebrow">{t("hero.eyebrow")}</p>
+                <h1 class="gfe-hero__title">{t("hero.title")}</h1>
+                <p class="gfe-hero__sub">{t("hero.sub")}</p>
+                <div class="gfe-hero__buttons">
+                    <a href={testHref} class="rts-theme-btn btn-arrow">{t("hero.btn1")} <span><i class="fa-light fa-arrow-right"></i></span></a>
+                    <a href="#programmes" class="rts-theme-btn btn-arrow gfe-btn-outline">{t("hero.btn2")} <span><i class="fa-light fa-arrow-right"></i></span></a>
+                </div>
+                <ul class="gfe-hero__trust">
+                    {([1, 2, 3, 4] as const).map((n) => (
+                        <li><i class="fa-solid fa-check"></i>{t(`hero.trust.${n}` as const)}</li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- stats -->
+    <section class="gfe-stats">
+        <div class="container">
+            <ul>
+                {([1, 2, 3] as const).map((n) => (
+                    <li>
+                        <strong>{t(`stats.${n}.n` as const)}</strong>
+                        <span>{t(`stats.${n}.label` as const)}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </section>
+
+    <!-- programs -->
+    <section id="programmes" class="gfe-section">
+        <div class="container">
+            <div class="gfe-section__head">
+                <h2 class="gfe-section__title">{t("programs.title")}</h2>
+                <a href={routePath(lang, "catalogue")} class="about-btn rts-nbg-btn btn-arrow">{t("programs.more")} <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
+            </div>
+            <div class="gfe-programs">
+                {programs.map((p) => (
+                    <a href={routePath(lang, p.href)} class="gfe-program">
+                        <div class="gfe-program__media">
+                            <img src={`/images/photos/program-${p.n}-editorial.webp`} alt="" width="1200" height="900" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gfe-program__body">
+                            <h3 class="gfe-program__title">{t(`programs.${p.n}.title` as const)}</h3>
+                            <p class="gfe-program__desc">{t(`programs.${p.n}.desc` as const)}</p>
+                            <p class="gfe-program__meta">{t(`programs.${p.n}.meta` as const)}</p>
+                            <span class="gfe-program__cta">{t("programs.btn")} <i class="fa-light fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                ))}
+            </div>
+            <p class="gfe-tax-note">{t("programs.taxNote")}</p>
+        </div>
+    </section>
+
+    <!-- why us -->
+    <section class="gfe-section gfe-section--cream">
+        <div class="container">
+            <div class="gfe-why">
+                <div class="gfe-why__media">
+                    <img src="/images/photos/why.webp" alt="" width="600" height="360" loading="lazy" decoding="async">
+                </div>
+                <div class="gfe-why__content rts-about-content">
+                    <h2 class="gfe-section__title">{t("why.title1")} {t("why.title2")}</h2>
+                    {([1, 2, 3] as const).map((n) => (
+                        <div class="gfe-claim">
+                            <h3 class="h5">{t(`why.${n}.title` as const)}</h3>
+                            <p class="rts-paragraph">{t(`why.${n}.text` as const)}</p>
+                        </div>
+                    ))}
+                    <a href={routePath(lang, "school")} class="about-btn rts-nbg-btn btn-arrow mt--20">{t("why.btn")} <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- placement test -->
+    <section class="gfe-test">
+        <div class="container">
+            <div class="gfe-test__inner">
+                <h2 class="gfe-test__title">{t("test.title")}</h2>
+                <p class="gfe-test__text">{t("test.text")}</p>
+                <a href={testHref} class="rts-theme-btn btn-arrow">{t("test.btn")} <span><i class="fa-light fa-arrow-right"></i></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- campus -->
+    <section class="gfe-section">
+        <div class="container">
+            <div class="gfe-campus">
+                <div class="gfe-campus__content">
+                    <h2 class="gfe-section__title">{t("campus.title")}</h2>
+                    <p class="gfe-campus__address"><i class="fa-sharp fa-light fa-location-dot"></i> {site.address[lang]}</p>
+                    <p class="gfe-campus__text">{t("campus.text")}</p>
+                    <a href={visitHref} class="about-btn rts-nbg-btn btn-arrow">{t("campus.btn")} <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
+                </div>
+                <div class="gfe-campus__media">
+                    <img src="/images/photos/campus.webp" alt="" width="740" height="443" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news -->
+    <section class="gfe-section gfe-section--cream">
+        <div class="container">
+            <div class="gfe-section__head">
+                <div>
+                    <h2 class="gfe-section__title">{t("news.title")}</h2>
+                    <p class="gfe-section__sub">{t("news.text")}</p>
+                </div>
+                <a href={routePath(lang, "news")} class="about-btn rts-nbg-btn btn-arrow">{t("news.viewAll")} <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
+            </div>
+            <div class="gfe-card-grid">
+                {latest.map((a) => (
+                    <NewsCard
+                        href={routePath(lang, a.id.slice(lang.length + 1))}
+                        cover={a.data.cover}
+                        tag={a.data.tag}
+                        title={a.data.title}
+                        excerpt={a.data.excerpt}
+                        date={fmt(a.data.date)}
+                    />
+                ))}
+            </div>
+        </div>
+    </section>
+
+</main>
+<Footer lang={lang} />
+</Layout>

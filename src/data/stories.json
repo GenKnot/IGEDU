@@ -1,0 +1,996 @@
+{
+  "stories": [
+    {
+      "id": "lc-listening",
+      "title": {
+        "en": "Learning to keep pace with spoken French",
+        "fr": "Trouver le rythme à l’écoute"
+      },
+      "person": {
+        "en": "L. C. · Software engineer",
+        "fr": "L. C. · Ingénieur logiciel"
+      },
+      "period": {
+        "en": "Started October 2024 · Results April 2025",
+        "fr": "Début en octobre 2024 · Résultats en avril 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B1",
+          "fr": "B1"
+        },
+        "goal": {
+          "en": "TCF Canada: NCLC 7, with a focus on listening",
+          "fr": "TCF Canada : NCLC 7, avec un travail ciblé en compréhension orale"
+        },
+        "result": {
+          "en": "TCF listening: 518 (NCLC 8)",
+          "fr": "Compréhension orale du TCF : 518 (NCLC 8)"
+        },
+        "duration": {
+          "en": "40-hour intensive course + 20-hour listening booster · About 6 months",
+          "fr": "Cours intensif de 40 h + renforcement de l’écoute de 20 h · Environ 6 mois"
+        }
+      },
+      "body": {
+        "en": [
+          "On his first TCF attempt, L. C. achieved full marks in reading but scored 380 in listening. As the recording progressed, he found it increasingly difficult to process the information quickly enough. By the later questions, trying to understand every word left him overwhelmed.",
+          "His teacher worked on liaisons, reduced sounds and short listening exercises at 1.2× speed, helping him identify the subject, verb and essential message. Twice-weekly listening reviews focused on the gap between understanding an expression and responding in time, rather than simply completing more full practice tests.",
+          "Three weeks before the exam, he picked out key changes of direction in the final long recordings of a mock test. His subsequent TCF listening result was 518. The more selective approach to listening had become something he could use under pressure."
+        ],
+        "fr": [
+          "Lors de sa première passation du TCF, L. C. avait obtenu le maximum en compréhension écrite, mais 380 à l’écoute. Plus l’enregistrement avançait, plus il avait du mal à traiter les informations assez vite. Dans les dernières questions, vouloir comprendre chaque mot finissait par le submerger.",
+          "Son enseignant a travaillé les liaisons, les sons réduits et de courts exercices à vitesse 1,2×, pour repérer le sujet, le verbe et le message essentiel. Deux séances hebdomadaires de reprise des erreurs visaient le décalage entre comprendre une expression et réagir à temps, plutôt que l’accumulation de tests complets.",
+          "Trois semaines avant l’examen, il a su repérer les changements de direction essentiels dans les derniers enregistrements longs d’un examen blanc. Il a ensuite obtenu 518 en compréhension orale au TCF. Cette écoute plus sélective était devenue utilisable sous pression."
+        ]
+      },
+      "quote": {
+        "en": "I used to try to catch every preposition. Once my teacher helped me let go of the less important words, I could finally keep up with the recording.",
+        "fr": "Avant, j’essayais de saisir chaque préposition. Quand mon enseignant m’a appris à laisser passer les mots moins importants, j’ai enfin réussi à suivre le rythme de l’enregistrement."
+      }
+    },
+    {
+      "id": "mj-tefaq",
+      "title": {
+        "en": "Feeling more at home with Quebec French",
+        "fr": "Se sentir plus à l’aise avec le français québécois"
+      },
+      "person": {
+        "en": "M. J. · Mechanical technician in Montreal",
+        "fr": "M. J. · Technicien en mécanique à Montréal"
+      },
+      "period": {
+        "en": "Started August 2024 · Completed March 2025",
+        "fr": "Début en août 2024 · Fin du parcours en mars 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "A2",
+          "fr": "A2"
+        },
+        "goal": {
+          "en": "TEFAQ: B2 in speaking and listening",
+          "fr": "TEFAQ : B2 en expression et en compréhension orales"
+        },
+        "result": {
+          "en": "B2 in both speaking and listening",
+          "fr": "B2 dans les deux compétences orales"
+        },
+        "duration": {
+          "en": "36-hour TEFAQ course + 10 private hours · 7 months",
+          "fr": "Préparation TEFAQ de 36 h + 10 h individuelles · 7 mois"
+        }
+      },
+      "body": {
+        "en": [
+          "After two years working on Montreal’s South Shore, M. J. could manage familiar everyday exchanges. More formal explanations were harder: he often switched to English when he could not find the words. Local pronunciation and expressions such as char, blonde and pantoute added another challenge.",
+          "The course devoted 60% of its time to spontaneous speaking. Role-plays used familiar situations from life in Quebec, with follow-up questions that required him to clarify and expand. His teacher helped him connect simple sentences into a more coherent response and practise the pronunciation patterns he heard at work.",
+          "Comparing recordings towards the end of the course, he could hear that the long pauses between sentences had become less frequent. He was more comfortable responding to unexpected questions and achieved B2 in both TEFAQ speaking and listening."
+        ],
+        "fr": [
+          "Après deux années de travail sur la Rive-Sud de Montréal, M. J. arrivait à gérer les échanges courants. Les explications plus formelles restaient difficiles : faute de mots, il passait souvent à l’anglais. La prononciation locale et des expressions comme char, blonde et pantoute ajoutaient une difficulté.",
+          "Le cours consacrait 60 % du temps à l’oral spontané. Les mises en situation reprenaient la vie quotidienne au Québec, avec des relances pour préciser et développer les réponses. Son enseignant l’aidait à relier des phrases simples et à travailler les particularités de prononciation entendues au travail.",
+          "En comparant ses enregistrements en fin de parcours, il constatait que les longues pauses entre les phrases devenaient moins fréquentes. Il répondait plus sereinement aux questions imprévues et a obtenu B2 dans les deux compétences orales du TEFAQ."
+        ]
+      },
+      "quote": {
+        "en": "People speak quickly on site. Working repeatedly on pronunciation and linking ideas in class helped me feel much calmer when I reached the exam.",
+        "fr": "Sur le chantier, tout le monde parle vite. Reprendre régulièrement la prononciation et les liens entre les idées en cours m’a aidé à aborder l’examen beaucoup plus calmement."
+      }
+    },
+    {
+      "id": "yz-intensive",
+      "title": {
+        "en": "Twelve weeks of focused, full-time study",
+        "fr": "Douze semaines entièrement consacrées au français"
+      },
+      "person": {
+        "en": "Y. Z. · Former financial analyst",
+        "fr": "Y. Z. · Ancienne analyste financière"
+      },
+      "period": {
+        "en": "Started January 2025 · Completed April 2025",
+        "fr": "Début en janvier 2025 · Fin du parcours en avril 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "A1 foundations",
+          "fr": "Bases de niveau A1"
+        },
+        "goal": {
+          "en": "Make rapid progress towards B2 before her work permit expired",
+          "fr": "Progresser rapidement vers B2 avant l’expiration de son permis de travail"
+        },
+        "result": {
+          "en": "B2.1 in the end-of-course assessment; follow-on TEF mock score: 410",
+          "fr": "B2.1 à l’évaluation de fin de cours ; résultat d’examen blanc TEF : 410"
+        },
+        "duration": {
+          "en": "Full-time intensive · 300 hours over 12 weeks",
+          "fr": "Intensif à temps plein · 300 h sur 12 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "With eight months remaining on her work permit, Y. Z. left her job and committed to 25 hours of French a week. The first three weeks were demanding: five hours a day in French left her tired and adjusting to a much more intensive routine.",
+          "In week six, while working through B1.2, the growing vocabulary load began to interfere with verb accuracy. The teaching team adjusted the work, setting aside half an hour each day for spoken sentence-building with the subjunctive and passé composé. The aim was to retrieve French more directly and use the forms in context.",
+          "By the end of week twelve, she could sustain a 15-minute discussion of topics such as Canadian health care and remote work. Her internal assessment placed her at B2.1, and a subsequent TEF mock recorded 410. These were course and practice assessments, rather than an official TEF result."
+        ],
+        "fr": [
+          "Alors qu’il lui restait huit mois de permis de travail, Y. Z. a quitté son emploi pour consacrer 25 heures par semaine au français. Les trois premières semaines ont été exigeantes : cinq heures quotidiennes en français la fatiguaient et demandaient une adaptation importante.",
+          "À la sixième semaine, pendant le travail de niveau B1.2, l’augmentation du vocabulaire perturbait ses conjugaisons. L’équipe a ajusté le programme en réservant chaque jour une demi-heure à la construction orale de phrases au subjonctif et au passé composé. L’objectif était de mobiliser plus directement le français et d’utiliser les formes en contexte.",
+          "À la fin des douze semaines, elle pouvait soutenir une discussion de quinze minutes sur des sujets comme la santé au Canada ou le télétravail. L’évaluation interne la situait en B2.1 ; un examen blanc TEF ultérieur a donné 410. Il s’agissait d’évaluations de cours et d’entraînement, et non d’un résultat officiel au TEF."
+        ]
+      },
+      "quote": {
+        "en": "Those three months were intense. Around week ten, I realised I could finish an editorial without checking the dictionary, and I could finally see what the work was giving me.",
+        "fr": "Ces trois mois ont été intenses. Vers la dixième semaine, j’ai réalisé que je pouvais lire un éditorial jusqu’au bout sans dictionnaire. Je voyais enfin ce que tout ce travail m’apportait."
+      }
+    },
+    {
+      "id": "kp-writing",
+      "title": {
+        "en": "Giving a written argument room to develop",
+        "fr": "Donner à son argumentation la place de se développer"
+      },
+      "person": {
+        "en": "K. P. · Health-care professional",
+        "fr": "K. P. · Professionnelle des soins de santé"
+      },
+      "period": {
+        "en": "Started May 2025 · Results July 2025",
+        "fr": "Début en mai 2025 · Résultats en juillet 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "TEF writing: NCLC 6",
+          "fr": "Expression écrite du TEF : NCLC 6"
+        },
+        "goal": {
+          "en": "Work towards NCLC 7 or above in TEF writing",
+          "fr": "Viser NCLC 7 ou plus à l’écrit du TEF"
+        },
+        "result": {
+          "en": "TEF writing: 392",
+          "fr": "Expression écrite du TEF : 392"
+        },
+        "duration": {
+          "en": "Writing workshop with corrections · 20 hours over 5 weeks",
+          "fr": "Atelier d’écriture avec corrections · 20 h sur 5 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "K. P.’s listening and reading were strong, but writing remained the weaker skill. In TEF Section B practice, she often stopped at around 180 words. Her arguments needed clearer development, and recurring preposition and pronoun errors made revision difficult.",
+          "The workshop combined sentence-by-sentence feedback with complete rewrites. Her teacher identified repeated errors and helped her use linking expressions where they supported the argument. Over five weeks she rewrote fourteen essays and developed a four-paragraph structure she could adapt to different questions.",
+          "On her next official attempt, her TEF writing result was 392. The work had centred on finishing a developed argument, keeping it relevant and checking the language systematically."
+        ],
+        "fr": [
+          "K. P. avait de bons résultats en compréhension orale et écrite, mais l’expression écrite restait plus fragile. À l’entraînement de la section B du TEF, elle s’arrêtait souvent autour de 180 mots. Ses arguments demandaient davantage de développement, et des erreurs récurrentes de prépositions et de pronoms compliquaient la révision.",
+          "L’atelier associait des retours phrase par phrase à des réécritures complètes. Son enseignant repérait les erreurs répétées et l’aidait à choisir des articulations adaptées au raisonnement. En cinq semaines, elle a réécrit quatorze textes et construit une organisation en quatre paragraphes qu’elle pouvait adapter aux sujets.",
+          "Lors de sa passation suivante, elle a obtenu 392 à l’écrit du TEF. Le travail visait une argumentation développée, pertinente et relue méthodiquement."
+        ]
+      },
+      "quote": {
+        "en": "Writing a hundred texts without feedback can mean repeating the same mistakes. Having my sentences taken apart helped me understand how to make the argument clear.",
+        "fr": "Écrire cent textes sans retour peut simplement faire répéter les mêmes erreurs. Reprendre mes phrases une à une m’a aidée à comprendre comment rendre mon raisonnement clair."
+      }
+    },
+    {
+      "id": "dr-business",
+      "title": {
+        "en": "Taking a more active role in bilingual meetings",
+        "fr": "Prendre sa place dans les réunions bilingues"
+      },
+      "person": {
+        "en": "D. R. · Consultant on federal contracts",
+        "fr": "D. R. · Consultant sur des contrats fédéraux"
+      },
+      "period": {
+        "en": "Started February 2025 · Completed August 2025",
+        "fr": "Début en février 2025 · Fin du parcours en août 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B1",
+          "fr": "B1"
+        },
+        "goal": {
+          "en": "Deliver weekly updates and write client emails in a bilingual team",
+          "fr": "Présenter les suivis hebdomadaires et rédiger des courriels clients en équipe bilingue"
+        },
+        "result": {
+          "en": "Independent communication with Quebec clients, without translation support",
+          "fr": "Communication autonome avec les clients québécois, sans aide à la traduction"
+        },
+        "duration": {
+          "en": "Business French: 24 hours + 10 private hours",
+          "fr": "Français des affaires : 24 h + 10 h individuelles"
+        }
+      },
+      "body": {
+        "en": [
+          "Working for a consulting firm in Ottawa, D. R. found meetings with the Montreal office uncomfortable. He rarely spoke, and client emails required repeated checks with translation software. He worried that a literal translation would sound abrupt or inappropriate.",
+          "Lessons used situations from professional communication: drafting a refusal, discussing contract terms and disagreeing politely. His teacher helped him replace awkward English-to-French translations with expressions suited to the context and practise the conditional for tactful requests and responses.",
+          "During his fourth month, he delivered a ten-minute presentation in French at a cross-department review and answered questions from two directors. By the end of the course, he was handling communication with Quebec clients independently."
+        ],
+        "fr": [
+          "Consultant à Ottawa, D. R. était peu à l’aise pendant les réunions avec le bureau de Montréal. Il intervenait rarement et vérifiait plusieurs fois ses courriels avec un outil de traduction. Il craignait qu’une formulation trop littérale paraisse brusque ou mal adaptée.",
+          "Les cours reprenaient des situations professionnelles : rédiger un refus, discuter de clauses contractuelles et exprimer un désaccord avec diplomatie. Son enseignant l’aidait à remplacer les traductions maladroites de l’anglais par des expressions adaptées, en travaillant notamment le conditionnel.",
+          "Au quatrième mois, il a présenté un bilan de dix minutes en français lors d’une réunion interservices et répondu aux questions de deux directeurs. À la fin du parcours, il gérait de manière autonome les échanges avec les clients québécois."
+        ]
+      },
+      "quote": {
+        "en": "The most useful part was learning how to say no politely and tactfully in French. That changed much more for me than simply memorising business vocabulary.",
+        "fr": "Le plus utile a été d’apprendre à dire non avec politesse et nuance en français. Cela m’a apporté bien plus que la simple mémorisation du vocabulaire des affaires."
+      }
+    },
+    {
+      "id": "sh-pronunciation",
+      "title": {
+        "en": "Speaking with less hesitation",
+        "fr": "Prendre la parole avec moins d’appréhension"
+      },
+      "person": {
+        "en": "S. H. · Pharmacist",
+        "fr": "S. H. · Pharmacienne"
+      },
+      "period": {
+        "en": "Started March 2025 · Completed May 2025",
+        "fr": "Début en mars 2025 · Fin du parcours en mai 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "A2 vocabulary; pronunciation needed focused work",
+          "fr": "Vocabulaire de niveau A2 ; besoin d’un travail ciblé sur la prononciation"
+        },
+        "goal": {
+          "en": "Work on the French r, nasal vowels and connected speech",
+          "fr": "Travailler le r français, les voyelles nasales et l’enchaînement"
+        },
+        "result": {
+          "en": "More confidence speaking; moved into everyday conversation classes",
+          "fr": "Plus d’assurance à l’oral ; poursuite en cours de conversation courante"
+        },
+        "duration": {
+          "en": "Pronunciation and phonetics · 20 hours over 5 weeks",
+          "fr": "Prononciation et phonétique · 20 h sur 5 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "S. H. knew more than 1,500 words, yet customers speaking French often asked her to repeat herself at the pharmacy counter. Those exchanges made her increasingly reluctant to speak, even when she knew what she wanted to say.",
+          "Her teacher worked through mouth position, voicing and the movement between sounds. Particular attention went to the contrast between /u/ and /y/, nasal vowels and the links between words. Recordings and audio software helped her compare attempts and hear changes in her pronunciation.",
+          "After four weeks, she felt more in control of the French r and was no longer breaking long phrases at awkward points. By the end of the course, she was ready to continue in an everyday conversation class with more confidence."
+        ],
+        "fr": [
+          "S. H. connaissait plus de 1 500 mots, mais les clients francophones lui demandaient souvent de répéter au comptoir de la pharmacie. Ces échanges la rendaient de plus en plus hésitante, même lorsqu’elle savait ce qu’elle voulait dire.",
+          "Son enseignant a repris la position de la bouche, le voisement et le passage entre les sons. Le contraste entre /u/ et /y/, les voyelles nasales et les liens entre les mots ont fait l’objet d’un travail particulier. Des enregistrements et un logiciel audio l’aidaient à comparer ses essais et à entendre les changements.",
+          "Après quatre semaines, elle se sentait plus à l’aise avec le r français et ne coupait plus les phrases longues aux mauvais endroits. En fin de cours, elle a poursuivi son apprentissage en conversation courante avec davantage de confiance."
+        ]
+      },
+      "quote": {
+        "en": "My tongue and my thoughts used to feel out of step. Understanding how to make the sounds helped me hear a real difference in my French for the first time.",
+        "fr": "J’avais l’impression que ma langue et mes pensées n’avançaient pas ensemble. Comprendre comment produire les sons m’a permis d’entendre, pour la première fois, une vraie différence dans mon français."
+      }
+    },
+    {
+      "id": "tw-settlement",
+      "title": {
+        "en": "Managing everyday appointments independently",
+        "fr": "Gérer ses rendez-vous du quotidien en autonomie"
+      },
+      "person": {
+        "en": "T. W. · Newly settled parent",
+        "fr": "T. W. · Parent nouvellement installé au Canada"
+      },
+      "period": {
+        "en": "Started November 2024 · Completed February 2025",
+        "fr": "Début en novembre 2024 · Fin du parcours en février 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "A0 · Complete beginner",
+          "fr": "A0 · Début complet"
+        },
+        "goal": {
+          "en": "Handle clinic visits, housing repairs and everyday administrative tasks",
+          "fr": "Gérer les démarches à la clinique, les réparations du logement et les formalités courantes"
+        },
+        "result": {
+          "en": "Registered independently with a family doctor’s clinic and an after-school program",
+          "fr": "Inscription autonome auprès d’une clinique de médecine familiale et au service de garde scolaire"
+        },
+        "duration": {
+          "en": "French for settling in · 20 hours over 5 weeks",
+          "fr": "Français pour l’installation · 20 h sur 5 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "After moving to a French-speaking part of Canada, T. W. depended on friends to explain bills and maintenance notices. Forms at the local clinic were especially intimidating. Her priority was practical independence rather than an examination.",
+          "The course focused on situations she needed immediately: giving a postal code and health-card details over the phone, explaining where a pipe was leaking and understanding common instructions at the pharmacy. The language was practised through concrete exchanges she could revisit in her notes.",
+          "During the third week, a tap in her apartment began to leak. Using the notes she had prepared in class, she called the property manager and arranged a visit herself. She later completed registration with a family doctor’s clinic and enrolled her child in after-school care independently."
+        ],
+        "fr": [
+          "Après son arrivée dans une région francophone du Canada, T. W. demandait à des amis de lui expliquer les factures et avis d’entretien. Les formulaires de la clinique l’intimidaient particulièrement. Elle cherchait de l’autonomie au quotidien plutôt qu’un résultat d’examen.",
+          "Le cours ciblait des besoins immédiats : donner son code postal et les renseignements de sa carte d’assurance maladie au téléphone, expliquer une fuite ou comprendre les consignes courantes en pharmacie. Ces échanges concrets étaient repris dans des notes qu’elle pouvait consulter ensuite.",
+          "Pendant la troisième semaine, un robinet de son appartement s’est mis à fuir. À l’aide des notes préparées en classe, elle a appelé le gestionnaire de l’immeuble et pris rendez-vous elle-même. Elle a ensuite effectué seule l’inscription à une clinique de médecine familiale et au service de garde de son enfant."
+        ]
+      },
+      "quote": {
+        "en": "I wasn’t looking for a diploma. I wanted to manage daily life without always asking someone else. Letters arriving in French finally stopped feeling frightening.",
+        "fr": "Je ne cherchais pas un diplôme. Je voulais me débrouiller sans toujours demander de l’aide. Les lettres en français dans la boîte aux lettres ont enfin cessé de me faire peur."
+      }
+    },
+    {
+      "id": "ev-delf-b2",
+      "title": {
+        "en": "A DELF B2 diploma for the next stage of study",
+        "fr": "Un DELF B2 pour préparer la suite de ses études"
+      },
+      "person": {
+        "en": "E. V. · Third-year undergraduate",
+        "fr": "E. V. · Étudiante en troisième année de baccalauréat"
+      },
+      "period": {
+        "en": "Started September 2024 · Results January 2025",
+        "fr": "Début en septembre 2024 · Résultats en janvier 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B1",
+          "fr": "B1"
+        },
+        "goal": {
+          "en": "DELF B2 for a planned master’s application in Montreal",
+          "fr": "Obtenir le DELF B2 pour un projet de candidature en maîtrise à Montréal"
+        },
+        "result": {
+          "en": "DELF B2: 74.5/100; speaking: 20/25",
+          "fr": "DELF B2 : 74,5/100 ; expression orale : 20/25"
+        },
+        "duration": {
+          "en": "DELF B2 preparation · 48 hours over 12 weeks",
+          "fr": "Préparation DELF B2 · 48 h sur 12 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "E. V. had studied some French at secondary school. Writing an argument of more than 250 words was still difficult: ideas repeated themselves, and speaking tasks lacked a clear progression. She wanted a DELF B2 diploma to support her plans for graduate study in Montreal.",
+          "Preparation followed the DELF assessment criteria. Her teacher helped her organize an introduction, develop arguments, acknowledge a counterpoint and reach a conclusion. Reading editorials from Le Monde and Canadian policy commentary gave her examples of how ideas could be developed and connected.",
+          "In the examination, she discussed whether a four-day working week should be introduced, using a concessive structure she had practised in class. She received 20/25 in speaking and an overall DELF B2 result of 74.5/100."
+        ],
+        "fr": [
+          "E. V. avait appris un peu de français au secondaire. Développer une argumentation de plus de 250 mots restait difficile : les idées se répétaient et ses interventions orales manquaient de progression. Elle souhaitait obtenir le DELF B2 pour accompagner son projet d’études supérieures à Montréal.",
+          "La préparation suivait les critères du DELF. Son enseignant l’aidait à construire une introduction, développer les arguments, reconnaître un point de vue différent et conclure. La lecture d’éditoriaux du Monde et d’analyses canadiennes lui donnait des exemples d’organisation des idées.",
+          "À l’examen, elle a discuté de l’instauration d’une semaine de quatre jours en utilisant une construction concessive travaillée en classe. Elle a obtenu 20/25 à l’oral et un résultat global de 74,5/100 au DELF B2."
+        ]
+      },
+      "quote": {
+        "en": "Preparing for DELF helped me organize my thinking in French. Once I understood the structure, starting a piece of writing felt much less stressful.",
+        "fr": "La préparation au DELF m’a aidée à organiser ma pensée en français. Une fois la structure comprise, commencer un texte était beaucoup moins stressant."
+      }
+    },
+    {
+      "id": "ab-interviews",
+      "title": {
+        "en": "Responding confidently beyond a prepared interview script",
+        "fr": "Répondre avec assurance au-delà d’un entretien préparé"
+      },
+      "person": {
+        "en": "A. B. · Human resources specialist",
+        "fr": "A. B. · Spécialiste des ressources humaines"
+      },
+      "period": {
+        "en": "Started April 2025 · Offers received May 2025",
+        "fr": "Début en avril 2025 · Offres reçues en mai 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B2; reading was stronger than spontaneous interview responses",
+          "fr": "B2 ; lecture plus solide que les réponses spontanées en entretien"
+        },
+        "goal": {
+          "en": "Prepare for bilingual job interviews",
+          "fr": "Préparer des entretiens d’embauche bilingues"
+        },
+        "result": {
+          "en": "Job offers from two mid-sized companies in Montreal",
+          "fr": "Offres d’emploi de deux entreprises de taille moyenne à Montréal"
+        },
+        "duration": {
+          "en": "French for interviews: 20 hours + 3 hours of video review",
+          "fr": "Français pour les entretiens : 20 h + 3 h d’analyse vidéo"
+        }
+      },
+      "body": {
+        "en": [
+          "A. B. felt comfortable interviewing in English, but behavioural questions in French were a different experience. When asked how she would handle a team conflict, retrieving the relevant verbs and professional vocabulary became difficult, despite her ability to read industry material.",
+          "The course used recorded mock interviews and detailed review. Her teacher helped her reorganize her professional introduction, describe situations through the STAR framework and choose precise HR vocabulary, including fédérer, arbitrer and optimiser. Follow-up questions tested whether she could continue when the exchange moved beyond her prepared answer.",
+          "In her second mock interview, an unexpected question no longer sent her back into English. She stayed with French and answered steadily. In May, she received offers from two mid-sized Montreal companies."
+        ],
+        "fr": [
+          "A. B. était à l’aise en entretien en anglais, mais les questions comportementales en français lui posaient problème. Lorsqu’on lui demandait comment gérer un conflit d’équipe, les verbes et termes professionnels devenaient difficiles à retrouver, malgré sa bonne compréhension des articles de son secteur.",
+          "Le cours associait des simulations filmées à une analyse détaillée. Son enseignant l’aidait à réorganiser sa présentation, à décrire les situations selon la méthode STAR et à employer un vocabulaire RH précis, comme fédérer, arbitrer et optimiser. Les relances vérifiaient sa capacité à poursuivre au-delà d’une réponse préparée.",
+          "À la deuxième simulation, une question inattendue ne l’a plus amenée à repasser à l’anglais. Elle a continué en français et répondu avec calme. En mai, elle a reçu des offres de deux entreprises montréalaises de taille moyenne."
+        ]
+      },
+      "quote": {
+        "en": "On my own, I kept memorising a script and lost my words when someone interrupted. The unexpected follow-up questions in class helped me feel much more relaxed in interviews.",
+        "fr": "Seule, je finissais par mémoriser un texte et je perdais mes mots dès qu’on m’interrompait. Les relances imprévues en cours m’ont permis d’aborder les entretiens beaucoup plus sereinement."
+      }
+    },
+    {
+      "id": "jl-immersion",
+      "title": {
+        "en": "Finding confidence in French Immersion",
+        "fr": "Retrouver confiance en immersion française"
+      },
+      "person": {
+        "en": "J. L. · Age 11, Grade 5",
+        "fr": "J. L. · 11 ans, cinquième année"
+      },
+      "period": {
+        "en": "Started September 2024 · School report January 2025",
+        "fr": "Début en septembre 2024 · Bulletin en janvier 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "French Immersion; reading and writing needed support",
+          "fr": "Immersion française ; besoin d’aide en lecture et en écriture"
+        },
+        "goal": {
+          "en": "Keep up with class reading and improve spelling and verb accuracy",
+          "fr": "Suivre les lectures de la classe et améliorer l’orthographe et les conjugaisons"
+        },
+        "result": {
+          "en": "Spelling and dictation grades improved from D to B+; more classroom participation",
+          "fr": "Notes d’orthographe et de dictée passées de D à B+ ; participation accrue"
+        },
+        "duration": {
+          "en": "French for youth · 32 hours over 16 weeks",
+          "fr": "Français pour les jeunes · 32 h sur 16 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "Growing up in an English-speaking household, J. L. could understand the teacher in French Immersion but found longer stories slow to read. Dictations were particularly difficult, with gender and number agreement causing repeated errors.",
+          "After-school lessons used grammar cards and graded picture books. The teacher turned conjugation patterns into games, combined reading aloud with spelling work and helped him recognize the relationships between words. The work gave him a more approachable way to revisit difficulties from school.",
+          "By January, his spelling and dictation grades had moved from D to B+. His school teacher also noted that he was beginning to volunteer during classroom reading and that his spelling accuracy had improved. His parent noticed a calmer relationship with French homework at home."
+        ],
+        "fr": [
+          "Élevé dans une famille anglophone, J. L. comprenait son enseignant en immersion française, mais lisait lentement les histoires longues. Les dictées étaient particulièrement difficiles : les accords en genre et en nombre entraînaient des erreurs récurrentes.",
+          "Les séances après l’école utilisaient des cartes de grammaire et des albums adaptés à son niveau. L’enseignant transformait les régularités de conjugaison en jeux, associait lecture à voix haute et orthographe, et l’aidait à repérer les liens entre les mots. Les difficultés scolaires devenaient plus faciles à retravailler.",
+          "En janvier, ses notes d’orthographe et de dictée étaient passées de D à B+. Son enseignant à l’école signalait aussi qu’il commençait à se proposer pendant les lectures en classe et que son orthographe progressait. Son parent constatait des devoirs de français plus sereins à la maison."
+        ]
+      },
+      "quote": {
+        "en": "French homework used to turn every evening into a battle. After a few months of support from a teacher, he stopped seeing French as a punishment.",
+        "fr": "Les devoirs de français transformaient chaque soirée en bataille. Après quelques mois d’accompagnement, il a cessé de voir le français comme une punition."
+      },
+      "quoteBy": {
+        "en": "Parent feedback",
+        "fr": "Témoignage du parent"
+      }
+    },
+    {
+      "id": "rs-ib",
+      "title": {
+        "en": "From a predicted 4 to a 7 in IB French B SL",
+        "fr": "D’une note prévue de 4 à un 7 en français B SL du BI"
+      },
+      "person": {
+        "en": "R. S. · Grade 12 student",
+        "fr": "R. S. · Élève de douzième année"
+      },
+      "period": {
+        "en": "Started October 2024 · Examinations May 2025",
+        "fr": "Début en octobre 2024 · Examens en mai 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "IB French B SL predicted grade: 4",
+          "fr": "Français B SL du BI : note prévue de 4"
+        },
+        "goal": {
+          "en": "Aim for 6 or above while preparing university applications",
+          "fr": "Viser au moins 6 dans le cadre de ses candidatures universitaires"
+        },
+        "result": {
+          "en": "Final IB grade: 7, the highest grade",
+          "fr": "Note finale du BI : 7, la note maximale"
+        },
+        "duration": {
+          "en": "IB / AP French preparation · 32 hours over 16 weeks",
+          "fr": "Préparation français BI / AP · 32 h sur 16 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "R. S. had a good vocabulary, but adapting his language to a specific text type was harder. Blogs, speeches and formal letters required different voices and audiences, and he sometimes lost marks because the presentation did not match the task. He was aiming for at least a 6 with an application to McGill in mind.",
+          "The course used the IB assessment rubric to work through these choices. Each week focused on a text type, supported by timed analysis and writing. His teacher also took him through three rounds of practice assessment using past papers.",
+          "By the final assessment period, he was better able to discuss social and cultural issues in the individual oral. His final IB French B SL grade was 7, compared with the predicted 4 at the start of his preparation."
+        ],
+        "fr": [
+          "R. S. disposait d’un bon vocabulaire, mais adaptait plus difficilement son expression au type de texte demandé. Blogue, discours et lettre formelle supposaient des voix et des destinataires différents ; la présentation ne correspondait pas toujours à la tâche. Il visait au moins 6, avec un projet de candidature à McGill.",
+          "Le cours s’appuyait sur les critères du BI pour travailler ces choix. Chaque semaine était consacrée à un type de texte, avec analyse et rédaction chronométrées. Son enseignant l’a également accompagné dans trois séries d’évaluations d’entraînement à partir d’anciens sujets.",
+          "À la période des évaluations finales, il développait plus aisément les questions sociales et culturelles à l’oral individuel. Sa note finale en français B SL a été de 7, contre une prévision initiale de 4."
+        ]
+      },
+      "quote": {
+        "en": "IB is very particular about text types. My teacher could immediately see whether the opening of a letter fitted the task. That saved me a lot of trial and error.",
+        "fr": "Le BI est très précis sur les types de textes. Mon enseignant voyait immédiatement si le début d’une lettre correspondait à la tâche. Cela m’a évité beaucoup de tâtonnements."
+      }
+    },
+    {
+      "id": "pg-beginner",
+      "title": {
+        "en": "Eight months of steady progress from complete beginner",
+        "fr": "Huit mois de progression régulière depuis le début"
+      },
+      "person": {
+        "en": "P. G. · Architectural drafter",
+        "fr": "P. G. · Dessinateur en architecture"
+      },
+      "period": {
+        "en": "Started October 2024 · Completed June 2025",
+        "fr": "Début en octobre 2024 · Fin du parcours en juin 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "A0",
+          "fr": "A0"
+        },
+        "goal": {
+          "en": "Build a reliable foundation through A2",
+          "fr": "Construire des bases solides jusqu’au niveau A2"
+        },
+        "result": {
+          "en": "Completed A2.2; simple communication for travel and everyday work",
+          "fr": "A2.2 terminé ; échanges simples en voyage et dans la vie professionnelle courante"
+        },
+        "duration": {
+          "en": "Beginner foundation bundle · 120 hours over about 8 months",
+          "fr": "Forfait débutants · 120 h sur environ 8 mois"
+        }
+      },
+      "body": {
+        "en": [
+          "Before joining the course, P. G. had tried several language apps. Three months of vocabulary practice had not helped him put a complete sentence together, and verb conjugations still felt confusing. His confidence had faded along with his sense of direction.",
+          "The beginner bundle took him through A1.1, A1.2, A2.1 and A2.2. From the first lesson, teaching in French was supported by gestures, objects and picture cards. The structured sequence gave him regular opportunities to use what he had learned and correct his pronunciation and verb forms.",
+          "In the later stages, he could write a 100-word account of a weekend camping trip using past tenses and discuss the advantages and drawbacks of rental advertisements with classmates. He completed A2.2 with a foundation for simple travel and workplace exchanges."
+        ],
+        "fr": [
+          "Avant de s’inscrire, P. G. avait essayé plusieurs applications. Trois mois de vocabulaire ne lui avaient pas permis de construire une phrase complète ; les conjugaisons restaient confuses. Il perdait confiance et ne savait plus comment avancer.",
+          "Le forfait débutants réunissait A1.1, A1.2, A2.1 et A2.2. Dès le premier cours, les explications en français s’accompagnaient de gestes, d’objets et de cartes illustrées. La progression structurée lui permettait de réutiliser régulièrement ses acquis et de corriger sa prononciation et ses verbes.",
+          "Dans les dernières étapes, il pouvait rédiger un récit de camping de cent mots au passé et discuter avec ses camarades des avantages et limites d’annonces de location. Il a terminé A2.2 avec des bases pour les échanges simples en voyage et au travail."
+        ]
+      },
+      "quote": {
+        "en": "The trap with studying alone was thinking I understood. Having a teacher guide me through pronunciation and conjugations each week made the progress steady and much more solid.",
+        "fr": "Le piège du travail en autonomie, c’était de croire que j’avais compris. Être accompagné chaque semaine sur la prononciation et les conjugaisons a rendu mes progrès réguliers et beaucoup plus solides."
+      }
+    },
+    {
+      "id": "ct-fast-track",
+      "title": {
+        "en": "A structured French pathway alongside a demanding job",
+        "fr": "Un parcours structuré malgré un emploi exigeant"
+      },
+      "person": {
+        "en": "C. T. · Data engineer",
+        "fr": "C. T. · Ingénieur de données"
+      },
+      "period": {
+        "en": "Started August 2024 · Results May 2025",
+        "fr": "Début en août 2024 · Résultats en mai 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B1",
+          "fr": "B1"
+        },
+        "goal": {
+          "en": "TEF Canada: work towards NCLC 7 in all four skills for Express Entry",
+          "fr": "TEF Canada : viser NCLC 7 dans les quatre compétences pour un projet Entrée express"
+        },
+        "result": {
+          "en": "TEF: listening 508 · reading 502 · speaking 395 · writing 388",
+          "fr": "TEF : compréhension orale 508 · compréhension écrite 502 · expression orale 395 · expression écrite 388"
+        },
+        "duration": {
+          "en": "Immigration fast-track bundle · 204 hours over about 9 months",
+          "fr": "Forfait de préparation accélérée à l’immigration · 204 h sur environ 9 mois"
+        }
+      },
+      "body": {
+        "en": [
+          "C. T. already had B1 foundations, but a demanding job made sustained exam preparation feel difficult to manage. His aim was to build the French results needed for his Express Entry plans while continuing to work.",
+          "The pathway provided a fixed rhythm of six hours a week. Early work strengthened B1.2 and B2.1 grammar and complex sentences; later preparation concentrated on examination tasks and mock assessments. His teacher used the practice results to identify gaps and adjust the focus.",
+          "In the seventh month, his listening and reading mock results passed 500. The final two months placed greater emphasis on spoken interaction. Two weeks after the course ended, he sat the examination and reported listening 508, reading 502, speaking 395 and writing 388."
+        ],
+        "fr": [
+          "C. T. possédait déjà des bases B1, mais son travail exigeant rendait difficile une préparation suivie. Il souhaitait développer les résultats de français nécessaires à son projet Entrée express tout en restant en emploi.",
+          "Le parcours lui donnait un rythme fixe de six heures par semaine. La première partie renforçait la grammaire et les phrases complexes de B1.2 et B2.1 ; la suite portait davantage sur les tâches d’examen et les évaluations blanches. Son enseignant utilisait les résultats d’entraînement pour repérer les lacunes et adapter les priorités.",
+          "Au septième mois, ses résultats blancs en compréhension orale et écrite dépassaient 500. Les deux derniers mois ont davantage ciblé l’interaction orale. Deux semaines après la fin du cours, il a passé le test et communiqué les résultats suivants : 508 à l’écoute, 502 en lecture, 395 à l’oral et 388 à l’écrit."
+        ]
+      },
+      "quote": {
+        "en": "The most valuable part was the planned rhythm. Work left me tired, but having a clear sequence to follow helped me keep going and move towards B2.",
+        "fr": "Le plus précieux était le rythme prévu. Le travail me fatiguait, mais disposer d’étapes claires m’a aidé à continuer et à avancer vers B2."
+      }
+    },
+    {
+      "id": "hn-leisure",
+      "title": {
+        "en": "Using French beyond merci on holiday",
+        "fr": "Utiliser le français au-delà de merci en voyage"
+      },
+      "person": {
+        "en": "H. N. · Photographer",
+        "fr": "H. N. · Photographe"
+      },
+      "period": {
+        "en": "Started February 2025 · Completed May 2025",
+        "fr": "Début en février 2025 · Fin du parcours en mai 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "Beginner, entering A1.1",
+          "fr": "Débutant, entrée en A1.1"
+        },
+        "goal": {
+          "en": "Learn for European travel and French films",
+          "fr": "Apprendre pour voyager en Europe et regarder des films français"
+        },
+        "result": {
+          "en": "Read everyday menus, ask about routes and trains, and shop at local markets",
+          "fr": "Lire les menus courants, demander un itinéraire ou un train et faire des achats au marché"
+        },
+        "duration": {
+          "en": "French for adults, for pleasure · 24 hours over 12 weeks",
+          "fr": "Français pour adultes, par plaisir · 24 h sur 12 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "H. N. was learning for travel and an interest in French cinema, with no examination in mind. He wanted a class that made the language enjoyable and usable, rather than a routine built around memorising conjugation tables.",
+          "The weekly two-hour course combined cultural topics, wine regions, film dialogue and everyday shopping. In a small group, conversation connected the language to situations he could picture encountering on a trip.",
+          "After the course, he spent two weeks driving through southern France. In a village cheese shop, he asked the owner about local handmade goat cheese without using a translation app. Menus, directions, train times and market purchases had become opportunities to use his French."
+        ],
+        "fr": [
+          "H. N. apprenait pour voyager et nourrir son intérêt pour le cinéma français, sans objectif d’examen. Il cherchait un cours agréable et pratique, plutôt qu’un apprentissage organisé autour de tableaux de conjugaison à mémoriser.",
+          "Les deux heures hebdomadaires associaient culture, régions viticoles, dialogues de films et achats du quotidien. En petit groupe, les échanges reliaient le français à des situations qu’il pouvait imaginer rencontrer en voyage.",
+          "Après le cours, il a parcouru le sud de la France en voiture pendant deux semaines. Dans une fromagerie de village, il a demandé au commerçant des renseignements sur un fromage de chèvre artisanal sans application de traduction. Menus, itinéraires, horaires et marchés devenaient des occasions d’utiliser son français."
+        ]
+      },
+      "quote": {
+        "en": "Without exam pressure, I enjoyed learning much more. Practising the way people speak in daily life gave me real confidence when ordering in a French bistro.",
+        "fr": "Sans pression d’examen, j’ai pris beaucoup plus de plaisir à apprendre. Travailler les échanges du quotidien m’a donné une vraie confiance pour commander dans un bistrot français."
+      }
+    },
+    {
+      "id": "mk-preschool",
+      "title": {
+        "en": "Enjoying the first sounds of French at four",
+        "fr": "Prendre plaisir aux premiers sons du français à quatre ans"
+      },
+      "person": {
+        "en": "M. K. · Age 4",
+        "fr": "M. K. · 4 ans"
+      },
+      "period": {
+        "en": "Started September 2024 · Term ended January 2025",
+        "fr": "Début en septembre 2024 · Fin de session en janvier 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "Complete beginner",
+          "fr": "Début complet"
+        },
+        "goal": {
+          "en": "Feel comfortable in French before starting French-language kindergarten",
+          "fr": "Se sentir à l’aise en français avant l’entrée en maternelle francophone"
+        },
+        "result": {
+          "en": "Followed basic instructions, sang six French nursery rhymes and counted in French",
+          "fr": "Consignes simples comprises, six comptines chantées et premiers nombres en français"
+        },
+        "duration": {
+          "en": "Preschool French · 32 hours over 16 weeks",
+          "fr": "Français préscolaire · 32 h sur 16 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "M. K.’s family did not speak French at home. Her parents were preparing for a French-language kindergarten, but an earlier trial elsewhere had been upsetting: unable to understand the class, she had cried and resisted staying.",
+          "Lessons used puppets, songs, drawing and movement-based games. There were no written exercises. Expressions such as bonjour, assieds-toi and regarde became part of activities she could understand through gesture, repetition and play.",
+          "Halfway through the term, her parents heard her humming the alphabet song at home and naming an apple in French. By the end, she was familiar with basic instructions, could sing six nursery rhymes and count in French. Her family also noticed that she was eager to come to class."
+        ],
+        "fr": [
+          "La famille de M. K. ne parlait pas français à la maison. Ses parents préparaient une entrée en maternelle francophone, mais un essai précédent dans un autre établissement avait été difficile : ne comprenant pas le cours, elle avait pleuré et refusé de rester.",
+          "Les séances reposaient sur les marionnettes, les chansons, le dessin et les jeux en mouvement, sans exercice écrit. Bonjour, assieds-toi et regarde prenaient leur sens dans des activités accompagnées de gestes, de répétitions et de jeu.",
+          "À mi-session, ses parents l’ont entendue fredonner la chanson de l’alphabet à la maison et nommer une pomme en français. À la fin, elle reconnaissait les consignes simples, chantait six comptines et comptait en français. Sa famille constatait aussi qu’elle avait envie de venir au cours."
+        ]
+      },
+      "quote": {
+        "en": "We worried that she would resist. Now she picks up her little schoolbag herself on Saturday mornings. Feeling comfortable with the language mattered more to us than the number of words she learned.",
+        "fr": "Nous avions peur qu’elle refuse. Maintenant, le samedi matin, elle prend elle-même son petit sac. Se sentir à l’aise avec la langue comptait davantage pour nous que le nombre de mots appris."
+      },
+      "quoteBy": {
+        "en": "Parent feedback",
+        "fr": "Témoignage du parent"
+      }
+    },
+    {
+      "id": "gb-listening",
+      "title": {
+        "en": "Hearing the boundaries between words",
+        "fr": "Retrouver les frontières entre les mots"
+      },
+      "person": {
+        "en": "G. B. · Web designer",
+        "fr": "G. B. · Concepteur Web"
+      },
+      "period": {
+        "en": "Started January 2025 · Completed March 2025",
+        "fr": "Début en janvier 2025 · Fin du parcours en mars 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "A2 reading and writing; listening was much weaker",
+          "fr": "Lecture et écriture de niveau A2 ; compréhension orale nettement plus fragile"
+        },
+        "goal": {
+          "en": "Understand connected speech in everyday conversations and podcasts",
+          "fr": "Comprendre la parole enchaînée dans les conversations et les balados"
+        },
+        "result": {
+          "en": "Able to follow RFI’s simplified French news at a B1 learning level",
+          "fr": "Suivi des nouvelles en français simplifié de RFI dans un travail de niveau B1"
+        },
+        "duration": {
+          "en": "Listening booster · 20 hours over 5 weeks",
+          "fr": "Renforcement de l’écoute · 20 h sur 5 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "G. B. could understand around 80% of an article on the page, but radio and television sounded like a continuous stream with no clear word boundaries. He had difficulty recognizing words he already knew in writing.",
+          "His teacher started with short sound groups, demonstrating enchaînement, liaison and reductions found in informal speech. Examples included the omission of ne and contracted pronunciations of je suis. He then practised recognizing the same patterns without a transcript.",
+          "After twenty hours of focused listening work, the sound stream felt easier to separate into meaningful words and phrases. He could follow RFI’s simplified French news and use listening materials around B1 level with much greater ease."
+        ],
+        "fr": [
+          "G. B. comprenait environ 80 % d’un article à l’écrit, mais la radio et la télévision lui semblaient former un flux sans frontières entre les mots. Il reconnaissait difficilement à l’oral des expressions pourtant connues sur la page.",
+          "Son enseignant est parti de petits groupes sonores pour montrer l’enchaînement, la liaison et les réductions de la langue familière. Les exemples comprenaient l’omission de ne et certaines prononciations contractées de je suis. Il s’entraînait ensuite à reconnaître ces phénomènes sans transcription.",
+          "Après vingt heures de travail ciblé, il séparait plus facilement le flux sonore en mots et expressions porteurs de sens. Il pouvait suivre les nouvelles en français simplifié de RFI et aborder avec bien plus d’aisance des supports de niveau B1."
+        ]
+      },
+      "quote": {
+        "en": "I thought I just needed more vocabulary. In fact, I didn’t know which sounds disappear or join together in speech. Learning that made listening feel much clearer.",
+        "fr": "Je pensais devoir apprendre davantage de vocabulaire. En réalité, je ne savais pas quels sons disparaissaient ou se reliaient à l’oral. Comprendre cela a rendu l’écoute beaucoup plus claire."
+      }
+    },
+    {
+      "id": "fd-grammar",
+      "title": {
+        "en": "Making sense of past tenses and pronouns",
+        "fr": "Clarifier les temps du passé et les pronoms"
+      },
+      "person": {
+        "en": "F. D. · Accountant",
+        "fr": "F. D. · Comptable"
+      },
+      "period": {
+        "en": "Started November 2024 · Completed January 2025",
+        "fr": "Début en novembre 2024 · Fin du parcours en janvier 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B1, with recurring grammar difficulties",
+          "fr": "B1, avec des difficultés grammaticales récurrentes"
+        },
+        "goal": {
+          "en": "Clarify past tenses and direct and indirect object pronouns",
+          "fr": "Clarifier les temps du passé et les pronoms compléments directs et indirects"
+        },
+        "result": {
+          "en": "70% fewer writing errors reported; grammar-check accuracy rose from 45% to over 90%",
+          "fr": "70 % d’erreurs écrites en moins signalées ; précision au contrôle passée de 45 % à plus de 90 %"
+        },
+        "duration": {
+          "en": "Vocabulary and grammar refinement · 24 hours",
+          "fr": "Perfectionnement du vocabulaire et de la grammaire · 24 h"
+        }
+      },
+      "body": {
+        "en": [
+          "After three years of intermittent study, F. D. could communicate but kept returning to the same difficulties. Choosing between passé composé and imparfait interrupted emails and spoken explanations, while the positions of y and en still felt uncertain.",
+          "Lessons used contrasting situations to make the relationships clearer. Instead of memorising a rule in isolation, he identified the background of a story, the events that moved it forward and the information a pronoun replaced. Timeline diagrams helped connect those choices to meaning.",
+          "On a grammar check two weeks later, his accuracy in pronoun exercises and compound-tense corrections had risen from 45% to over 90%. The account also records a 70% reduction in writing errors. He felt less hesitant when building sentences using these patterns."
+        ],
+        "fr": [
+          "Après trois années d’apprentissage discontinu, F. D. pouvait communiquer mais retrouvait toujours les mêmes difficultés. Le choix entre passé composé et imparfait interrompait ses courriels et ses explications orales ; la place de y et en restait incertaine.",
+          "Les cours utilisaient des situations contrastées pour rendre les relations plus claires. Au lieu d’apprendre une règle isolée, il repérait l’arrière-plan d’un récit, les événements qui le faisaient avancer et l’information remplacée par un pronom. Des lignes du temps reliaient ces choix au sens.",
+          "Deux semaines plus tard, au contrôle de pronoms et de correction des temps composés, sa précision était passée de 45 % à plus de 90 %. Le témoignage fait également état de 70 % d’erreurs écrites en moins. Il hésitait moins pour construire des phrases utilisant ces structures."
+        ]
+      },
+      "quote": {
+        "en": "I had been going round the same grammar questions for two years. Two timeline diagrams made the tense distinction clear, and it was a real turning point.",
+        "fr": "Je tournais autour des mêmes questions de grammaire depuis deux ans. Deux lignes du temps ont rendu la différence entre les temps claire. Cela a vraiment changé ma compréhension."
+      }
+    },
+    {
+      "id": "montreal-tech",
+      "title": {
+        "en": "French for a technical team’s client handover",
+        "fr": "Le français au service des échanges d’une équipe technique"
+      },
+      "person": {
+        "en": "Montreal Tech · Solutions team, six participants",
+        "fr": "Montreal Tech · Équipe solutions, six participants"
+      },
+      "period": {
+        "en": "Training began September 2024",
+        "fr": "Début de la formation en septembre 2024"
+      },
+      "metrics": {
+        "start": {
+          "en": "Mostly English-speaking team, with French levels from A1 to A2",
+          "fr": "Équipe majoritairement anglophone, niveaux de français A1 à A2"
+        },
+        "goal": {
+          "en": "Understand public-sector technical requirements and communicate with clients",
+          "fr": "Comprendre les exigences techniques de clients publics et communiquer avec eux"
+        },
+        "result": {
+          "en": "All participants passed the internal assessment; team reported handling 80% of French support tickets independently",
+          "fr": "Évaluation interne réussie par tous ; 80 % des billets en français traités en autonomie selon l’équipe"
+        },
+        "duration": {
+          "en": "Corporate French · Initial program of 120 hours",
+          "fr": "Français en entreprise · Programme initial de 120 h"
+        }
+      },
+      "body": {
+        "en": [
+          "After taking on a long-term support contract with Quebec public-sector clients, the team was relying heavily on online translation for technical tickets. Misunderstandings created additional checks and put pressure on the bilingual project manager.",
+          "The school designed a program around the team’s work: IT terminology, technical specifications and the language of support requests and email exchanges. Lessons took place twice a week in the company’s meeting room, using the communication tasks the engineers encountered.",
+          "After three months, the support group no longer needed to send every client email to the bilingual project manager for review. All participants passed the internal assessment, and the team reported being able to handle 80% of French-language tickets independently, helping shorten response times."
+        ],
+        "fr": [
+          "Après l’obtention d’un contrat de maintenance à long terme avec des clients du secteur public québécois, l’équipe utilisait beaucoup la traduction en ligne pour les billets techniques. Les malentendus multipliaient les vérifications et sollicitaient fortement le gestionnaire de projet bilingue.",
+          "L’école a conçu un programme lié à leur activité : terminologie informatique, spécifications techniques et formulations utiles pour les demandes d’assistance et les courriels. Les cours avaient lieu deux fois par semaine dans la salle de réunion de l’entreprise, autour des tâches rencontrées par les ingénieurs.",
+          "Après trois mois, le groupe de soutien n’avait plus besoin de faire vérifier chaque courriel par le gestionnaire bilingue. Tous les participants ont réussi l’évaluation interne ; l’équipe indiquait pouvoir traiter seule 80 % des billets en français, ce qui contribuait à réduire les délais de réponse."
+        ]
+      },
+      "quote": {
+        "en": "Content built around our industry was much more useful than a general textbook. The quarterly assessment reports also gave HR a clear, professional view of progress.",
+        "fr": "Un contenu construit pour notre secteur était beaucoup plus utile qu’un manuel général. Les rapports d’évaluation trimestriels donnaient aussi aux RH une lecture claire et professionnelle des progrès."
+      },
+      "quoteBy": {
+        "en": "Technical director",
+        "fr": "Directeur technique"
+      }
+    },
+    {
+      "id": "om-speaking",
+      "title": {
+        "en": "Focusing preparation on the one skill that needed work",
+        "fr": "Concentrer la préparation sur la compétence à renforcer"
+      },
+      "person": {
+        "en": "O. M. · Logistics coordinator",
+        "fr": "O. M. · Coordonnateur logistique"
+      },
+      "period": {
+        "en": "Started March 2025 · Results April 2025",
+        "fr": "Début en mars 2025 · Résultats en avril 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "Other TEF skills at target; speaking eight points below his goal",
+          "fr": "Objectifs atteints dans les autres compétences du TEF ; huit points manquants à l’oral"
+        },
+        "goal": {
+          "en": "Focused preparation for TEF speaking Sections A and B",
+          "fr": "Préparation ciblée des sections A et B de l’expression orale du TEF"
+        },
+        "result": {
+          "en": "Speaking result increased by 36 points on the next attempt",
+          "fr": "Résultat oral en hausse de 36 points à la passation suivante"
+        },
+        "duration": {
+          "en": "Single-skill exam booster · 20 hours over 5 weeks",
+          "fr": "Renforcement d’une compétence d’examen · 20 h sur 5 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "O. M.’s first TEF attempt left speaking eight points below his target, delaying his immigration plans. Listening, reading and writing were already where he needed them to be, so his preparation focused on the remaining difficulty.",
+          "The twenty-hour course concentrated on asking useful questions in Section A and organizing persuasive responses in Section B. His teacher played an unconvinced friend, introducing objections and interruptions that required him to listen and respond instead of reciting a fixed answer.",
+          "He practised developing reasons from several angles and keeping the conversation moving when the other person disagreed. On his next TEF attempt, his speaking result increased by 36 points. The focused work had addressed the part of the exchange he found hardest."
+        ],
+        "fr": [
+          "À sa première passation du TEF, O. M. avait terminé huit points sous son objectif à l’oral, ce qui retardait son projet d’immigration. La compréhension orale, la lecture et l’écriture étaient déjà au niveau qu’il recherchait. La préparation s’est donc concentrée sur la difficulté restante.",
+          "Les vingt heures ciblaient les questions utiles de la section A et l’organisation de la persuasion en section B. Son enseignant jouait un ami peu convaincu, avec des objections et interruptions qui l’obligeaient à écouter et réagir plutôt qu’à réciter.",
+          "Il a travaillé des raisons sous plusieurs angles et la continuité de l’échange en cas de désaccord. À la passation suivante, son résultat oral a augmenté de 36 points. Le travail ciblé avait porté sur la partie de l’interaction qui lui posait le plus de difficultés."
+        ]
+      },
+      "quote": {
+        "en": "The preparation was very focused. My teacher kept challenging me in the role-plays, and those twenty hours helped me work directly on the points I had been missing.",
+        "fr": "La préparation était très ciblée. Mon enseignant me relançait constamment dans les jeux de rôle, et ces vingt heures m’ont permis de travailler précisément les points qui me manquaient."
+      }
+    },
+    {
+      "id": "sa-dalf-c1",
+      "title": {
+        "en": "From comfortable communication to precise academic French",
+        "fr": "De l’aisance quotidienne à la précision universitaire"
+      },
+      "person": {
+        "en": "S. A. · Doctoral student in international law",
+        "fr": "S. A. · Doctorant en droit international"
+      },
+      "period": {
+        "en": "Started September 2024 · Results February 2025",
+        "fr": "Début en septembre 2024 · Résultats en février 2025"
+      },
+      "metrics": {
+        "start": {
+          "en": "B2+",
+          "fr": "B2+"
+        },
+        "goal": {
+          "en": "DALF C1 for a planned joint research group at a Quebec university law faculty",
+          "fr": "Obtenir le DALF C1 pour un projet de groupe de recherche conjoint dans une faculté de droit au Québec"
+        },
+        "result": {
+          "en": "DALF C1: 68.5/100",
+          "fr": "DALF C1 : 68,5/100"
+        },
+        "duration": {
+          "en": "DALF C1 preparation · 48 hours over 12 weeks",
+          "fr": "Préparation DALF C1 · 48 h sur 12 semaines"
+        }
+      },
+      "body": {
+        "en": [
+          "At B2+, S. A. could communicate comfortably, but academic reading presented another challenge. Subtle shifts of position, political and philosophical vocabulary, and the need to synthesize long source texts required a more precise command of French.",
+          "The course worked through two or three substantial articles with contrasting viewpoints. His teacher helped him identify the central ideas, connect the sources and write a neutral synthesis within a strict word limit. The work also demanded careful choices of register and structure.",
+          "Speaking preparation focused on expressing nuanced positions and managing complex sentences accurately. He went on to achieve 68.5/100 in DALF C1, a milestone in his plan to join a research group at a Quebec university law faculty."
+        ],
+        "fr": [
+          "Au niveau B2+, S. A. communiquait aisément, mais les lectures universitaires demandaient autre chose. Les nuances de position, le vocabulaire politique et philosophique et la synthèse de documents longs exigeaient une maîtrise plus précise du français.",
+          "Le cours analysait deux ou trois articles de fond présentant des points de vue différents. Son enseignant l’aidait à repérer les idées centrales, croiser les sources et rédiger une synthèse neutre dans une limite de mots stricte. Le travail portait aussi sur le registre et l’organisation.",
+          "À l’oral, la préparation ciblait l’expression des nuances et la maîtrise des phrases complexes. Il a obtenu 68,5/100 au DALF C1, une étape de son projet de participation à un groupe de recherche dans une faculté de droit québécoise."
+        ]
+      },
+      "quote": {
+        "en": "B2 helped me live in French; C1 asked me to work with ideas. Having a strong teacher guide me towards a much more rigorous structure made that next step possible for me.",
+        "fr": "B2 m’aidait à vivre en français ; C1 me demandait de travailler les idées. Être accompagné vers une structure beaucoup plus rigoureuse a rendu cette étape possible pour moi."
+      }
+    }
+  ]
+}

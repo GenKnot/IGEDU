@@ -1,0 +1,70 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import { courseArtworkFor } from "../data/course-artwork";
+
+// Bundle and exam detail pages: prose on the left, sticky facts card on the right.
+interface Props {
+	lang: Lang;
+	pageKey: string;
+	page: CollectionEntry<"pages">;
+	Content: AstroComponentFactory;
+}
+const { lang, pageKey, page, Content } = Astro.props;
+const t = useTranslations(lang);
+const d = page.data;
+const kind = pageKey.startsWith("bundles/") ? "bundles" : "exams";
+const testHref = `${routePath(lang, "contact")}?topic=placement#form`;
+const siblings = (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/${kind}/`) && id !== page.id)).slice(0, 3);
+const tag = kind === "bundles" ? t("catalogue.bundleTag") : t("nav.exams");
+---
+
+<PageShell lang={lang} title={d.title} description={kind === "bundles" ? undefined : d.description} metaDescription={kind === "bundles" ? `${d.title} : ${d.description}` : undefined} pageKey={pageKey}>
+    <section class="rts-section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <article class="gfe-prose gfe-detail-prose">
+                        <Content />
+                    </article>
+                </div>
+                <div class="col-lg-5">
+                    <aside class="gfe-course-aside">
+                        <div class="gfe-course-card__flags">
+                            <span class="gfe-course-card__cat">{tag}</span>
+                            {d.goal && <span class="gfe-course-card__badge">{d.goal}</span>}
+                        </div>
+                        {d.facts && (
+                            <ul class="gfe-course-facts">
+                                {d.facts.map((f) => <li><span>{f.label}</span><strong>{f.value}</strong></li>)}
+                            </ul>
+                        )}
+                        <a href={testHref} class="rts-theme-btn btn-arrow gfe-course-aside__cta">{t("course.cta")} <span><i class="fa-light fa-arrow-right"></i></span></a>
+                        <a href={routePath(lang, kind)} class="gfe-course-aside__all">{kind === "bundles" ? t("nav.c.bundles") : t("nav.e.exams")}</a>
+                    </aside>
+                </div>
+            </div>
+
+            {siblings.length > 0 && (
+                <div class="gfe-cat-block">
+                    <h2 class="gfe-cat-title"><span>{t("course.related")}</span></h2>
+                    <div class="gfe-card-grid">
+                        {siblings.map((b) => (
+                            <a href={routePath(lang, b.id.slice(lang.length + 1))} class="gfe-course-card gfe-course-card--bundle">
+                                {courseArtworkFor(b.id.slice(lang.length + 1)) && <div class="gfe-course-card__media"><img src={courseArtworkFor(b.id.slice(lang.length + 1))!.src} alt="" width="1200" height="900" loading="lazy" decoding="async" /></div>}
+                                <div class="gfe-course-card__flags"><span class="gfe-course-card__cat">{tag}</span>{b.data.goal && <span class="gfe-course-card__badge">{b.data.goal}</span>}</div>
+                                <h3 class="gfe-course-card__title">{b.data.title}</h3>
+                                {b.data.description && <p class="gfe-course-card__summary">{b.data.description}</p>}
+                                <span class="gfe-course-card__cta">{t("course.details")} <i class="fa-light fa-arrow-right"></i></span>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    </section>
+</PageShell>

@@ -1,0 +1,62 @@
+---
+import { getCollection } from "astro:content";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import CourseCard from "./CourseCard.astro";
+import { categories, categoryOrder, coursesByCat } from "../data/courses";
+import { courseArtworkFor } from "../data/course-artwork";
+
+interface Props {
+	lang: Lang;
+	title: string;
+	description?: string;
+}
+const { lang, title, description } = Astro.props;
+const t = useTranslations(lang);
+
+const bundles = await getCollection("pages", ({ id }) => id.startsWith(`${lang}/bundles/`));
+---
+
+<PageShell lang={lang} title={title} description={description} pageKey="catalogue">
+    <section class="rts-section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="gfe-lead">{t("catalogue.intro")}</p>
+                </div>
+            </div>
+
+            {categoryOrder.map((cat) => {
+                const list = coursesByCat(cat);
+                if (!list.length) return null;
+                return (
+                    <div class="gfe-cat-block" id={cat}>
+                        <h2 class="gfe-cat-title"><span>{categories[cat][lang]}</span></h2>
+                        <div class="gfe-card-grid">
+                            {list.map((c) => <CourseCard course={c} lang={lang} />)}
+                        </div>
+                    </div>
+                );
+            })}
+
+            <div class="gfe-cat-block">
+                <h2 class="gfe-cat-title"><span>{t("catalogue.bundlesTitle")}</span></h2>
+                <p class="gfe-cat-intro">{t("catalogue.bundlesText")}</p>
+                <div class="gfe-card-grid">
+                    {bundles.map((b) => (
+                        <a href={routePath(lang, b.id.slice(lang.length + 1))} class="gfe-course-card gfe-course-card--bundle">
+                            {courseArtworkFor(b.id.slice(lang.length + 1)) && <div class="gfe-course-card__media"><img src={courseArtworkFor(b.id.slice(lang.length + 1))!.src} alt="" width="1200" height="900" loading="lazy" decoding="async" /></div>}
+                            <div class="gfe-course-card__flags">
+                                <span class="gfe-course-card__cat">{t("catalogue.bundleTag")}</span>
+                            </div>
+                            <h3 class="gfe-course-card__title">{b.data.title}</h3>
+                            {b.data.description && <p class="gfe-course-card__summary">{b.data.description}</p>}
+                            <span class="gfe-course-card__cta">{t("catalogue.bundleCta")} <i class="fa-light fa-arrow-right"></i></span>
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </section>
+</PageShell>

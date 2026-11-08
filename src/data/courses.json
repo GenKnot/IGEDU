@@ -1,0 +1,613 @@
+{
+  "categories": {
+    "exam": { "fr": "Préparation aux examens", "en": "Exam preparation" },
+    "levels": { "fr": "Cours par niveau", "en": "Courses by level" },
+    "skills": { "fr": "Renforcement ciblé", "en": "Targeted skills" },
+    "audience": { "fr": "Cours selon le public", "en": "Courses by audience" },
+    "custom": { "fr": "Sur mesure et cours privés", "en": "Custom & private lessons" }
+  },
+  "courses": [
+    {
+      "id": "tef-canada-intensive",
+      "cat": "exam",
+      "hours": 40,
+      "priceCad": 1400,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "10 semaines", "en": "10 weeks" },
+      "goal": { "fr": "B2 / NCLC 7", "en": "B2 / CLB 7 (NCLC 7)" },
+      "badge": { "fr": "Immigration", "en": "Immigration" },
+      "title": { "fr": "Préparation intensive TEF Canada", "en": "Intensive TEF Canada preparation" },
+      "summary": { "fr": "De B1 à B2 / NCLC 7 : le cours complet pour réussir le TEF Canada et obtenir vos points d’immigration.", "en": "From B1 to B2 / CLB 7: the complete course to pass TEF Canada and earn your immigration points." },
+      "forWho": {
+        "fr": ["Candidats à l’immigration canadienne (Entrée express)", "Personnes de niveau B1 qui visent B2 / NCLC 7", "Personnes qui ont besoin d’un résultat dans un délai précis"],
+        "en": ["Canadian immigration applicants (Express Entry)", "B1-level speakers aiming for B2 / CLB 7", "People who need a score by a firm deadline"]
+      },
+      "learn": {
+        "fr": ["Les quatre épreuves du TEF Canada (CO, CE, EE, EO) et la conversion en NCLC", "Stratégies de compréhension orale et écrite sur tous les types de documents", "Rédiger les deux parties de l’expression écrite selon les critères de notation", "Convaincre et argumenter à l’oral, avec prononciation de secours", "Gestion du temps et stratégie du jour d’examen grâce à 4 examens blancs"],
+        "en": ["All four TEF Canada sections (CO, CE, EE, EO) and how scores convert to CLB/NCLC", "Listening and reading strategies for every document type", "How to write both writing tasks to the official scoring criteria", "How to persuade and argue in the speaking test, with first-aid pronunciation", "Time management and exam-day strategy through 4 full mock exams"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place, avec un examen blanc complet chaque semaine; matériel de cours 84 $.", "en": "Small group of 4–8, online or in person, with one full mock exam every week; course materials $84." },
+      "slug": { "fr": "preparation-intensive-tef-canada", "en": "intensive-tef-canada-prep" }
+    },
+    {
+      "id": "tcf-canada-intensive",
+      "cat": "exam",
+      "hours": 40,
+      "priceCad": 1400,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "10 semaines", "en": "10 weeks" },
+      "goal": { "fr": "NCLC 7", "en": "CLB 7 (NCLC 7)" },
+      "badge": { "fr": "Immigration", "en": "Immigration" },
+      "title": { "fr": "Préparation intensive TCF Canada", "en": "Intensive TCF Canada preparation" },
+      "summary": { "fr": "De B1 à NCLC 7 au TCF Canada : un rythme plus rapide, plus de questions — ce cours entraîne la vitesse.", "en": "From B1 to CLB 7 on TCF Canada: a faster exam with more questions — this course trains speed." },
+      "forWho": {
+        "fr": ["Candidats à l’immigration qui ont choisi le TCF Canada", "Personnes de niveau B1 qui visent NCLC 7", "Personnes à l’aise avec un rythme d’examen rapide"],
+        "en": ["Immigration applicants who have chosen TCF Canada", "B1-level speakers aiming for CLB 7", "People comfortable with a fast-paced exam format"]
+      },
+      "learn": {
+        "fr": ["Structure du TCF Canada, notation et conversion en NCLC", "Répondre vite et juste aux questions de compréhension orale et écrite", "Les trois tâches d’expression écrite : message, récit, argumentation", "Parler sans préparation et mener une tâche d’interaction", "Endurance et stratégie grâce aux examens blancs chronométrés"],
+        "en": ["TCF Canada structure, scoring and CLB/NCLC conversion", "Answering listening and reading questions quickly and accurately", "All three writing tasks: message, story, argument", "Speaking without preparation and leading an interaction task", "Stamina and strategy through timed mock exams"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place, avec un examen blanc complet chaque semaine; matériel de cours 84 $.", "en": "Small group of 4–8, online or in person, with one full mock exam every week; course materials $84." },
+      "slug": { "fr": "preparation-intensive-tcf-canada", "en": "intensive-tcf-canada-prep" }
+    },
+    {
+      "id": "tefaq",
+      "cat": "exam",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "9 semaines", "en": "9 weeks" },
+      "goal": { "fr": "B1–B2 (Québec)", "en": "B1–B2 (Quebec)" },
+      "badge": { "fr": "Immigration", "en": "Immigration" },
+      "title": { "fr": "Préparation TEFAQ", "en": "TEFAQ preparation" },
+      "summary": { "fr": "Le cours pour l’immigration au Québec : 60 % des heures à l’oral, avec le vocabulaire et l’accent québécois.", "en": "The course for Quebec immigration: 60% of class time on speaking, with Quebec vocabulary and accents." },
+      "forWho": {
+        "fr": ["Candidats à l’immigration au Québec (CSQ)", "Personnes de niveau B1 qui visent B1–B2", "Personnes qui doivent réussir les épreuves orales du TEFAQ"],
+        "en": ["Quebec immigration applicants (CSQ)", "B1-level speakers aiming for B1–B2", "People who must pass the TEFAQ oral sections"]
+      },
+      "learn": {
+        "fr": ["Comprendre l’accent québécois et les expressions locales", "Obtenir de l’information à l’oral : questions, réactions, démarches", "Convaincre et exprimer une opinion avec structure et connecteurs", "Modules de lecture et d’écriture selon vos besoins", "Deux simulations complètes d’oral avec correction"],
+        "en": ["Understanding Quebec accents and local expressions", "Getting information orally: asking questions, reacting, handling procedures", "Persuading and giving opinions with structure and connectors", "Optional reading and writing modules as needed", "Two full speaking simulations with feedback"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; 60 % du temps consacré à l’oral.", "en": "Small group of 4–8, online or in person; 60% of the time spent on speaking." },
+      "slug": { "fr": "preparation-tefaq", "en": "tefaq-prep" }
+    },
+    {
+      "id": "tcfq",
+      "cat": "exam",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "9 semaines", "en": "9 weeks" },
+      "goal": { "fr": "B1–B2 (Québec)", "en": "B1–B2 (Quebec)" },
+      "badge": { "fr": "Immigration", "en": "Immigration" },
+      "title": { "fr": "Préparation TCFQ", "en": "TCFQ preparation" },
+      "summary": { "fr": "L’autre voie pour le Québec : préparation complète au TCFQ, centrée sur les épreuves orales obligatoires.", "en": "The other route to Quebec: complete TCFQ preparation, focused on the mandatory oral sections." },
+      "forWho": {
+        "fr": ["Candidats à l’immigration au Québec qui ont choisi le TCFQ", "Personnes de niveau B1 qui visent B1–B2", "Personnes qui veulent un entraînement intensif à l’oral"],
+        "en": ["Quebec immigration applicants who have chosen TCFQ", "B1-level speakers aiming for B1–B2", "People who want intensive speaking practice"]
+      },
+      "learn": {
+        "fr": ["Différences entre TEFAQ et TCFQ et usage des résultats", "Compréhension orale : situations, annonces et entrevues québécoises", "Expression orale : obtenir de l’information, convaincre, donner son avis", "Corpus québécois : vocabulaire, accent et contexte culturel", "Simulations d’oral corrigées et liste de contrôle avant l’examen"],
+        "en": ["Differences between TEFAQ and TCFQ and how results are used", "Listening: Quebec situations, announcements and interviews", "Speaking: getting information, persuading, giving your opinion", "Quebec content: vocabulary, accent and cultural context", "Corrected speaking simulations and a pre-exam checklist"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; 60 % du temps consacré à l’oral.", "en": "Small group of 4–8, online or in person; 60% of the time spent on speaking." },
+      "slug": { "fr": "preparation-tcfq", "en": "tcfq-prep" }
+    },
+    {
+      "id": "delf-b1",
+      "cat": "exam",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "9 semaines", "en": "9 weeks" },
+      "goal": { "fr": "DELF B1", "en": "DELF B1" },
+      "title": { "fr": "Préparation DELF B1", "en": "DELF B1 preparation" },
+      "summary": { "fr": "Obtenez le diplôme DELF B1, valable à vie : les quatre épreuves, les critères de notation et deux examens blancs.", "en": "Earn the DELF B1 diploma, valid for life: all four sections, the scoring criteria and two mock exams." },
+      "forWho": {
+        "fr": ["Personnes qui ont besoin d’un diplôme de français valable à vie", "Candidats à des études ou à une qualification professionnelle", "Personnes de niveau A2+ qui visent B1"],
+        "en": ["People who need a lifetime French diploma", "Applicants for studies or professional qualification", "A2+ speakers aiming for B1"]
+      },
+      "learn": {
+        "fr": ["Les quatre parties de l’examen et leurs critères de notation (50/100 pour réussir)", "Saisir l’idée principale à l’écoute plutôt que chaque mot", "Repérer et éliminer l’information en lecture", "Écrire lettre formelle, récit et opinion en textes courts", "Se présenter, jouer un rôle et donner son avis à l’oral"],
+        "en": ["All four exam sections and their scoring criteria (50/100 to pass)", "Catching the main idea when listening rather than every word", "Finding and eliminating information when reading", "Writing short texts: formal letter, story, opinion", "Introducing yourself, role-playing and giving opinions orally"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; deux simulations complètes (avec oral) corrigées point par point.", "en": "Small group of 4–8, online or in person; two full simulations (including speaking) corrected point by point." },
+      "slug": { "fr": "preparation-delf-b1", "en": "delf-b1-prep" }
+    },
+    {
+      "id": "delf-b2",
+      "cat": "exam",
+      "hours": 48,
+      "priceCad": 1680,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "12 semaines", "en": "12 weeks" },
+      "goal": { "fr": "DELF B2", "en": "DELF B2" },
+      "title": { "fr": "Préparation DELF B2", "en": "DELF B2 preparation" },
+      "summary": { "fr": "Le diplôme B2 pour les études et la vie professionnelle : argumentation à l’écrit comme à l’oral, sans limite de validité.", "en": "The B2 diploma for study and work: argumentation in writing and speaking, with lifetime validity." },
+      "forWho": {
+        "fr": ["Candidats à l’admission universitaire ou à une qualification professionnelle", "Personnes de niveau B1+ qui visent le diplôme B2", "Personnes qui veulent prouver leur niveau sans lien avec l’immigration"],
+        "en": ["University admission or professional qualification candidates", "B1+ speakers aiming for the B2 diploma", "People who want proof of level unrelated to immigration"]
+      },
+      "learn": {
+        "fr": ["Prendre des notes sur de longs documents oraux (entrevues, conférences)", "Analyser la position de l’auteur dans des textes argumentatifs", "Rédiger lettre formelle et texte argumentatif avec concession et réfutation", "Présenter un exposé à partir d’un document et défendre sa position", "Débattre avec l’examinateur et répondre aux objections"],
+        "en": ["Taking notes on long listening documents (interviews, lectures)", "Analysing the author’s position in argumentative texts", "Writing formal letters and argumentative essays with concession and rebuttal", "Presenting from a document and defending your position", "Debating with the examiner and handling objections"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; deux simulations complètes (avec oral) et prévision de résultats.", "en": "Small group of 4–8, online or in person; two full simulations (including speaking) with score forecasts." },
+      "slug": { "fr": "preparation-delf-b2", "en": "delf-b2-prep" }
+    },
+    {
+      "id": "dalf-c1",
+      "cat": "exam",
+      "hours": 48,
+      "priceCad": 1680,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "12 semaines", "en": "12 weeks" },
+      "goal": { "fr": "DALF C1", "en": "DALF C1" },
+      "title": { "fr": "Préparation DALF C1", "en": "DALF C1 preparation" },
+      "summary": { "fr": "Passez de « je peux parler » à « je parle avec justesse » : le diplôme C1 pour l’université et le milieu professionnel.", "en": "Move from “I can speak” to “I speak precisely”: the C1 diploma for university and the workplace." },
+      "forWho": {
+        "fr": ["Candidats aux admissions universitaires et qualifications professionnelles", "Personnes de niveau B2 qui visent C1", "Professionnels qui travaillent en français"],
+        "en": ["University admission and professional qualification candidates", "B2 speakers aiming for C1", "Professionals who work in French"]
+      },
+      "learn": {
+        "fr": ["Analyser la structure de textes de plus de 1 500 mots", "Prendre des notes structurées sur conférences et débats", "Rédiger une synthèse de plusieurs documents, sans opinion personnelle", "Construire un texte argumentatif : hiérarchie, concession, contre-argument", "Faire un exposé de 10 minutes et débattre avec l’examinateur"],
+        "en": ["Analysing the structure of texts over 1,500 words", "Taking structured notes on lectures and debates", "Writing a synthesis of several documents without personal opinion", "Building argumentative essays: hierarchy, concession, counter-argument", "Delivering a 10-minute presentation and debating with the examiner"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; deux simulations complètes corrigées point par point.", "en": "Small group of 4–8, online or in person; two full simulations corrected point by point." },
+      "slug": { "fr": "preparation-dalf-c1", "en": "dalf-c1-prep" }
+    },
+    {
+      "id": "exam-section-boost",
+      "cat": "exam",
+      "hours": 20,
+      "priceCad": 700,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "5 semaines", "en": "5 weeks" },
+      "goal": { "fr": "Une seule épreuve : CO, CE, EE ou EO", "en": "One skill only: listening, reading, writing or speaking" },
+      "title": { "fr": "Renforcement d’une épreuve", "en": "Single-skill exam booster" },
+      "summary": { "fr": "Total suffisant, mais une épreuve insuffisante? Travaillez une seule compétence — CO, CE, EE ou EO — et comblez l’écart.", "en": "Total score fine but one section short? Work on a single skill — listening, reading, writing or speaking — and close the gap." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé un cours intensif et à qui il manque une seule épreuve", "Candidats dont le total est suffisant mais pas une section", "Personnes qui veulent un entraînement ciblé avant de se réinscrire"],
+        "en": ["People who finished an intensive course and are short on one section", "Candidates whose total score is enough but one section is not", "People who want targeted training before re-registering"]
+      },
+      "learn": {
+        "fr": ["Les types d’épreuves et critères de notation de votre compétence", "Classer vos erreurs par catégorie et les corriger une par une", "Trois séances chronométrées pour installer le rythme de réponse", "Une simulation complète avec prévision de résultat", "La liste de contrôle avant l’examen"],
+        "en": ["The question types and scoring criteria for your skill", "Sorting your mistakes by category and fixing them one by one", "Three timed sessions to lock in your answering pace", "One full simulation with a score forecast", "A pre-exam checklist"]
+      },
+      "format": { "fr": "Petit groupe ou sous-groupe selon la compétence, en ligne ou sur place; vous choisissez une seule épreuve parmi CO, CE, EE et EO.", "en": "Small group or sub-group by skill, online or in person; you pick one section among listening, reading, writing and speaking." },
+      "slug": { "fr": "renforcement-epreuve-examen", "en": "single-skill-exam-booster" }
+    },
+    {
+      "id": "a1-1",
+      "cat": "levels",
+      "hours": 30,
+      "priceCad": 1050,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Salutations, se présenter, nombres, heure", "en": "Greetings, introducing yourself, numbers, time" },
+      "title": { "fr": "A1.1 — Débutant complet", "en": "A1.1 — Complete beginner" },
+      "summary": { "fr": "Partez de zéro : dès le premier cours, tout se passe en français. Salutations, présentation, nombres et heure.", "en": "Start from zero: from the very first class, everything is in French. Greetings, introductions, numbers and time." },
+      "forWho": {
+        "fr": ["Débutants complets, aucune base requise", "Personnes prêtes à parler en classe dès le départ", "Personnes qui veulent un parcours clair, étape par étape"],
+        "en": ["Complete beginners, no background needed", "People willing to speak in class from day one", "People who want a clear, step-by-step path"]
+      },
+      "learn": {
+        "fr": ["Saluer, se présenter et prendre congé", "Nombres, dates et expression de l’heure", "Donner un numéro de téléphone et fixer un rendez-vous", "Présenter sa famille et son métier", "Parler de sa routine et de ses loisirs au présent"],
+        "en": ["Greeting people, introducing yourself and saying goodbye", "Numbers, dates and telling time", "Giving a phone number and booking an appointment", "Introducing your family and your job", "Talking about your routine and hobbies in the present tense"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; cours entièrement en français, nouveau groupe chaque mois.", "en": "Small group of 4–8, online or in person; classes entirely in French, new group starting every month." },
+      "slug": { "fr": "a1-1-debutant-complet", "en": "a1-1-complete-beginner" }
+    },
+    {
+      "id": "a1-2",
+      "cat": "levels",
+      "hours": 30,
+      "priceCad": 1050,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Commander, faire des achats, demander son chemin, raconter le passé", "en": "Ordering food, shopping, asking directions, talking about the past" },
+      "title": { "fr": "A1.2 — Débutant (suite)", "en": "A1.2 — Beginner (continued)" },
+      "summary": { "fr": "La suite de A1.1 : commander au restaurant, faire ses achats, demander son chemin et raconter sa journée au passé.", "en": "The follow-up to A1.1: ordering at a restaurant, shopping, asking directions and telling about your day in the past." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé A1.1 ou l’équivalent", "Débutants qui veulent gérer les situations du quotidien", "Personnes qui préparent un premier séjour en milieu francophone"],
+        "en": ["People who have finished A1.1 or the equivalent", "Beginners who want to handle everyday situations", "People preparing a first stay in a French-speaking place"]
+      },
+      "learn": {
+        "fr": ["Commander, faire des achats et demander un prix", "Demander son chemin et décrire où l’on habite", "Parler de ses projets et répondre à une invitation", "Raconter ce qu’on a fait hier au passé composé", "Écrire une carte postale, un message et remplir un formulaire"],
+        "en": ["Ordering, shopping and asking a price", "Asking directions and describing where you live", "Talking about plans and answering an invitation", "Telling what you did yesterday in the passé composé", "Writing a postcard, a message and filling out a form"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; évaluation de fin de niveau A1 avec exemples d’épreuves DELF A1.", "en": "Small group of 4–8, online or in person; end-of-level A1 assessment with DELF A1 sample tasks." },
+      "slug": { "fr": "a1-2-debutant-suite", "en": "a1-2-beginner-continued" }
+    },
+    {
+      "id": "a2-1",
+      "cat": "levels",
+      "hours": 30,
+      "priceCad": 1050,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Raconter une expérience, parler de ses projets, situations du quotidien", "en": "Talking about experiences and plans, everyday situations" },
+      "title": { "fr": "A2.1 — Élémentaire", "en": "A2.1 — Elementary" },
+      "summary": { "fr": "Consolidez vos bases : racontez un voyage, parlez de vos projets et gérez les situations courantes du quotidien.", "en": "Build on your foundations: tell about a trip, talk about your plans and handle everyday situations." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé A1 ou l’équivalent", "Personnes qui veulent raconter des expériences au passé", "Personnes qui doivent gérer voyage, santé et démarches en français"],
+        "en": ["People who have finished A1 or the equivalent", "People who want to talk about past experiences", "People who need to handle travel, health care and errands in French"]
+      },
+      "learn": {
+        "fr": ["Raconter un voyage ou un déménagement au passé composé", "Décrire des habitudes et des souvenirs à l’imparfait", "Raconter une histoire complète avec son contexte", "Parler de ses projets au futur simple", "Donner un conseil et lire un mode d’emploi"],
+        "en": ["Telling about a trip or a move in the passé composé", "Describing habits and memories in the imperfect", "Telling a full story with its context", "Talking about plans in the simple future", "Giving advice and reading instructions"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; cours entièrement en français, nouveau groupe chaque mois.", "en": "Small group of 4–8, online or in person; classes entirely in French, new group starting every month." },
+      "slug": { "fr": "a2-1-elementaire", "en": "a2-1-elementary" }
+    },
+    {
+      "id": "a2-2",
+      "cat": "levels",
+      "hours": 30,
+      "priceCad": 1050,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Comparer, conseiller, écrire un courriel simple", "en": "Comparing, giving advice, writing a simple email" },
+      "title": { "fr": "A2.2 — Élémentaire (suite)", "en": "A2.2 — Elementary (continued)" },
+      "summary": { "fr": "Terminez le niveau A2 : comparez, donnez des conseils avec tact et écrivez vos premiers courriels en français.", "en": "Finish the A2 level: compare, give advice tactfully and write your first emails in French." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé A2.1 ou l’équivalent", "Personnes qui veulent écrire des courriels simples", "Personnes qui préparent l’entrée au niveau B1"],
+        "en": ["People who have finished A2.1 or the equivalent", "People who want to write simple emails", "People getting ready to enter B1"]
+      },
+      "learn": {
+        "fr": ["Comparer des villes, des logements et des produits", "Faire une demande poliment au conditionnel", "Expliquer une cause et préciser les conséquences", "Éviter les répétitions avec les pronoms en, y et compléments", "Écrire un courriel de rendez-vous, une plainte, un remerciement"],
+        "en": ["Comparing cities, housing and products", "Making polite requests with the conditional", "Explaining causes and spelling out consequences", "Avoiding repetition with pronouns like en, y and object pronouns", "Writing an appointment email, a complaint, a thank-you note"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; évaluation de fin de niveau A2 avec exemples d’épreuves DELF A2.", "en": "Small group of 4–8, online or in person; end-of-level A2 assessment with DELF A2 sample tasks." },
+      "slug": { "fr": "a2-2-elementaire-suite", "en": "a2-2-elementary-continued" }
+    },
+    {
+      "id": "b1-1",
+      "cat": "levels",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Exprimer son opinion de façon suivie, raconter une histoire complète", "en": "Giving your opinion in a connected way, telling a full story" },
+      "title": { "fr": "B1.1 — Intermédiaire", "en": "B1.1 — Intermediate" },
+      "summary": { "fr": "Le cap de l’autonomie : exprimez votre opinion de façon suivie et racontez une histoire complète, du début à la fin.", "en": "The step into independence: give your opinion in a connected way and tell a full story, start to finish." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé A2 ou l’équivalent", "Personnes qui se débrouillent au quotidien mais veulent argumenter", "Personnes qui visent à terme une préparation d’examen"],
+        "en": ["People who have finished A2 or the equivalent", "People who manage daily life but want to argue a point", "People aiming at exam preparation down the road"]
+      },
+      "learn": {
+        "fr": ["Raconter une expérience en entier et en expliquer les effets", "Parler d’hypothèses et d’intentions", "Exprimer la nécessité, le souhait et le doute (subjonctif)", "Décrire des réalités complexes sans phrases hachées", "Organiser un exposé autour d’une thèse"],
+        "en": ["Telling an experience in full and explaining its effects", "Talking about hypotheses and intentions", "Expressing necessity, wishes and doubt (subjunctive)", "Describing complex realities without choppy sentences", "Organizing a talk around a thesis"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; une évaluation d’étape toutes les 12 heures.", "en": "Small group of 4–8, online or in person; a stage assessment every 12 hours of class." },
+      "slug": { "fr": "b1-1-intermediaire", "en": "b1-1-intermediate" }
+    },
+    {
+      "id": "b1-2",
+      "cat": "levels",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Hypothèse, concession, écriture structurée", "en": "Hypotheses, concessions, structured writing" },
+      "title": { "fr": "B1.2 — Intermédiaire (suite)", "en": "B1.2 — Intermediate (continued)" },
+      "summary": { "fr": "Terminez B1 : hypothèses, concessions et écriture structurée — la base nécessaire pour préparer un examen.", "en": "Finish B1: hypotheses, concessions and structured writing — the foundation you need before exam preparation." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé B1.1 ou l’équivalent", "Personnes qui veulent écrire des textes d’opinion structurés", "Personnes qui préparent l’entrée en B2 ou en préparation d’examen"],
+        "en": ["People who have finished B1.1 or the equivalent", "People who want to write structured opinion pieces", "People getting ready for B2 or exam preparation"]
+      },
+      "learn": {
+        "fr": ["Décrire un processus et rapporter une nouvelle", "Maîtriser les registres : courriel formel ou message à un ami", "Rendre vos phrases plus compactes (participe, gérondif)", "Décrire précisément un degré ou une quantité", "Écrire un texte d’opinion, une lettre de plainte ou de candidature"],
+        "en": ["Describing a process and reporting the news", "Handling registers: formal email or message to a friend", "Making your sentences more compact (participle, gerund)", "Describing a degree or quantity precisely", "Writing an opinion piece, a complaint letter or a cover letter"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; évaluation de fin de niveau B1 avec exemples d’épreuves DELF B1.", "en": "Small group of 4–8, online or in person; end-of-level B1 assessment with DELF B1 sample tasks." },
+      "slug": { "fr": "b1-2-intermediaire-suite", "en": "b1-2-intermediate-continued" }
+    },
+    {
+      "id": "b2-1",
+      "cat": "levels",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Argumenter sur des sujets abstraits, lire des textes longs", "en": "Arguing about abstract topics, reading long texts" },
+      "title": { "fr": "B2.1 — Avancé", "en": "B2.1 — Advanced" },
+      "summary": { "fr": "Le niveau avancé : argumentez sur des sujets abstraits et lisez des textes longs avec leurs sous-entendus.", "en": "The advanced level: argue about abstract topics and read long texts, including what they imply." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé B1 ou l’équivalent", "Personnes qui communiquent aisément et veulent gagner en justesse", "Futurs candidats au TEF, au TCF ou au DELF B2"],
+        "en": ["People who have finished B1 or the equivalent", "People who communicate fluently and want more precision", "Future TEF, TCF or DELF B2 candidates"]
+      },
+      "learn": {
+        "fr": ["Exprimer la concession, l’hypothèse et l’évaluation", "Formuler des hypothèses à plusieurs niveaux", "Rédiger des textes universitaires et formels", "Raccourcir une phrase longue, étoffer une phrase courte", "Rédiger une argumentation contradictoire"],
+        "en": ["Expressing concession, hypothesis and judgement", "Formulating multi-level hypotheses", "Writing academic and formal texts", "Shortening a long sentence, expanding a short one", "Writing a balanced, two-sided argument"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; une évaluation d’étape toutes les 12 heures.", "en": "Small group of 4–8, online or in person; a stage assessment every 12 hours of class." },
+      "slug": { "fr": "b2-1-avance", "en": "b2-1-advanced" }
+    },
+    {
+      "id": "b2-2",
+      "cat": "levels",
+      "hours": 36,
+      "priceCad": 1260,
+      "priceNote": { "fr": "", "en": "" },
+      "goal": { "fr": "Expression universitaire et professionnelle; peut mener à la préparation intensive aux examens", "en": "Academic and workplace language; can lead into an exam sprint" },
+      "title": { "fr": "B2.2 — Avancé (suite)", "en": "B2.2 — Advanced (continued)" },
+      "summary": { "fr": "Le dernier demi-niveau avant l’examen : langue universitaire et professionnelle, prêt pour la préparation intensive.", "en": "The final half-level before the exam: academic and workplace language, ready for intensive exam prep." },
+      "forWho": {
+        "fr": ["Personnes qui ont terminé B2.1 ou l’équivalent", "Personnes qui visent le TEF, le TCF ou le DELF B2", "Professionnels et étudiants qui ont besoin d’un français soutenu"],
+        "en": ["People who have finished B2.1 or the equivalent", "People aiming at TEF, TCF or DELF B2", "Professionals and students who need polished French"]
+      },
+      "learn": {
+        "fr": ["Convaincre sans froisser : registre et ton", "Lire un article de 1 500 mots et en dégager la structure", "Suivre une conférence et prendre des notes structurées", "Faire un exposé logique de 10 minutes", "Écrire en temps limité un texte argumentatif de 250 mots"],
+        "en": ["Persuading without offending: register and tone", "Reading a 1,500-word article and mapping its structure", "Following a lecture and taking structured notes", "Giving a logical 10-minute presentation", "Writing a 250-word argumentative text under time limits"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; évaluation de fin de niveau B2 avec exemples d’épreuves DELF B2.", "en": "Small group of 4–8, online or in person; end-of-level B2 assessment with DELF B2 sample tasks." },
+      "slug": { "fr": "b2-2-avance-suite", "en": "b2-2-advanced-continued" }
+    },
+    {
+      "id": "oral-expression",
+      "cat": "skills",
+      "hours": 24,
+      "priceCad": 840,
+      "priceNote": { "fr": "", "en": "" },
+      "title": { "fr": "Expression orale et compréhension orale", "en": "Speaking and listening booster" },
+      "summary": { "fr": "Vous comprenez, mais vous n’arrivez pas à parler? Débloquez l’oral : débit réel, structure, mises en situation.", "en": "You understand but can’t speak? Unblock your speaking: real-speed listening, structure, real-life practice." },
+      "forWho": {
+        "fr": ["Vous comprenez, mais vous n’arrivez pas à parler", "Vous avez un accent marqué ou un blocage à l’oral de l’examen", "Vous travaillez au Canada et n’arrivez pas à intervenir en réunion"],
+        "en": ["You understand French but can’t get words out", "You have a strong accent or freeze in the speaking exam", "You work in Canada and can’t jump into meetings"]
+      },
+      "learn": {
+        "fr": ["Comprendre le débit réel : liaisons, élisions, mots clés", "Tenir 30 secondes et contourner un mot inconnu", "Relier des phrases courtes avec des connecteurs", "Gérer entrevue, réunion, consultation médicale et école", "Améliorer voyelles nasales, consonnes et intonation"],
+        "en": ["Understanding real-speed speech: liaisons, elisions, key words", "Holding the floor for 30 seconds and working around unknown words", "Linking short sentences with connectors", "Handling interviews, meetings, doctor’s visits and school talks", "Improving nasal vowels, consonants and intonation"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; enregistrements et rétroaction point par point.", "en": "Small group of 4–8, online or in person; recordings with point-by-point feedback." },
+      "slug": { "fr": "expression-orale-comprehension", "en": "speaking-listening-booster" }
+    },
+    {
+      "id": "listening",
+      "cat": "skills",
+      "hours": 20,
+      "priceCad": 700,
+      "priceNote": { "fr": "", "en": "" },
+      "title": { "fr": "Compréhension orale", "en": "Listening" },
+      "summary": { "fr": "Le débit est trop rapide, les liaisons vous échappent? Entraînez votre oreille, du son au texte complet.", "en": "Speech too fast, liaisons hard to catch? Train your ear, from single sounds to full texts." },
+      "forWho": {
+        "fr": ["Vous n’arrivez pas à suivre le débit des francophones", "Vous n’entendez pas les liaisons", "Vous comprenez sur le moment mais ne retenez rien"],
+        "en": ["You can’t keep up with native speech speed", "You can’t hear liaisons", "You understand in the moment but retain nothing"]
+      },
+      "learn": {
+        "fr": ["Entendre où les mots commencent et finissent (liaisons, élisions)", "Deviner la fin d’une phrase grâce aux expressions fixes", "Saisir la structure d’un texte au lieu de traduire mot à mot", "Écoute fine de nouvelles, entrevues, messages et annonces"],
+        "en": ["Hearing where words start and end (liaisons, elisions)", "Guessing the end of a sentence from set expressions", "Grasping a text’s structure instead of translating word by word", "Close listening to news, interviews, phone messages and announcements"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; quatre types de documents réels travaillés en classe.", "en": "Small group of 4–8, online or in person; four types of real-world documents worked through in class." },
+      "slug": { "fr": "comprehension-orale", "en": "listening" }
+    },
+    {
+      "id": "writing-workshop",
+      "cat": "skills",
+      "hours": 20,
+      "priceCad": 700,
+      "priceNote": { "fr": "", "en": "" },
+      "title": { "fr": "Atelier de correction d’écrits", "en": "Writing workshop with corrections" },
+      "summary": { "fr": "Structure confuse, nombre de mots jamais atteint? Chaque texte est corrigé phrase par phrase, puis réécrit.", "en": "Loose structure, word count never reached? Every text is corrected sentence by sentence, then rewritten." },
+      "forWho": {
+        "fr": ["Vos textes manquent de structure", "Vous refaites les mêmes erreurs de grammaire", "Vous perdez toujours quelques points à l’écrit de l’examen"],
+        "en": ["Your texts lack structure", "You keep making the same grammar mistakes", "You always lose a few points on the writing exam"]
+      },
+      "learn": {
+        "fr": ["Comment sont notés tâche, cohérence, vocabulaire et grammaire", "Concordance des temps, accords, calques à éviter", "Construire un paragraphe : thème, arguments, concession", "Connecteurs par niveau, registre et longueur maîtrisée", "4 rédactions chronométrées corrigées et réécrites"],
+        "en": ["How task completion, coherence, vocabulary and grammar are scored", "Tense agreement, gender and number, avoiding literal translations", "Building a paragraph: topic, arguments, concession", "Connectors by level, register and controlled length", "4 timed essays corrected and rewritten"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; chaque texte est annoté phrase par phrase et réécrit après correction.", "en": "Small group of 4–8, online or in person; every text is annotated sentence by sentence and rewritten after correction." },
+      "slug": { "fr": "atelier-correction-ecrits", "en": "writing-workshop" }
+    },
+    {
+      "id": "pronunciation",
+      "cat": "skills",
+      "hours": 20,
+      "priceCad": 700,
+      "priceNote": { "fr": "", "en": "" },
+      "title": { "fr": "Prononciation et phonétique", "en": "Pronunciation and phonetics" },
+      "summary": { "fr": "On vous demande de répéter? Travaillez voyelles, liaisons et intonation pour être compris du premier coup.", "en": "Often asked to repeat yourself? Work on vowels, liaisons and intonation to be understood the first time." },
+      "forWho": {
+        "fr": ["Tous les niveaux", "On vous demande souvent de répéter", "Vous ne comprenez pas votre propre voix en français"],
+        "en": ["All levels", "People often ask you to repeat yourself", "You don’t recognize your own voice in French"]
+      },
+      "learn": {
+        "fr": ["Les 16 voyelles du français, en insistant sur les plus difficiles", "Les voyelles nasales an / on / in / un", "Consonnes et voisement : p/b, t/d, k/g, le r français", "Liaisons, élisions et rythme de la phrase", "L’intonation : question, surprise, politesse"],
+        "en": ["The 16 French vowels, focusing on the hardest ones", "Nasal vowels an / on / in / un", "Consonants and voicing: p/b, t/d, k/g, the French r", "Liaisons, elisions and sentence rhythm", "Intonation: questions, surprise, politeness"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; exercices d’écoute et de production à chaque séance.", "en": "Small group of 4–8, online or in person; listening and production drills in every session." },
+      "slug": { "fr": "prononciation-phonetique", "en": "pronunciation-phonetics" }
+    },
+    {
+      "id": "vocab-grammar",
+      "cat": "skills",
+      "hours": 24,
+      "priceCad": 840,
+      "priceNote": { "fr": "", "en": "" },
+      "title": { "fr": "Vocabulaire et grammaire, mise à niveau", "en": "Vocabulary and grammar refinement" },
+      "summary": { "fr": "Les mêmes erreurs reviennent depuis des années? Remettez à plat articles, temps, pronoms et prépositions.", "en": "The same mistakes for years? Reset the fundamentals: articles, tenses, pronouns and prepositions." },
+      "forWho": {
+        "fr": ["Vous étudiez depuis des années et refaites les mêmes erreurs", "Vos bases sont fragiles", "Vous comprenez la grammaire dans le livre mais ne l’appliquez pas"],
+        "en": ["You’ve studied for years and keep making the same mistakes", "Your foundations are shaky", "You understand grammar in the book but can’t apply it"]
+      },
+      "learn": {
+        "fr": ["Articles, genre et nombre : la difficulté qui dure le plus longtemps", "Le système des temps verbaux, mis au clair en une fois", "Pronoms : en, y, compléments et relatifs", "Verbe + préposition, retenu par blocs de mots", "200 collocations fréquentes, utilisables à l’écrit comme à l’oral"],
+        "en": ["Articles, gender and number: the longest-lasting difficulty", "The verb tense system, sorted out once and for all", "Pronouns: en, y, object and relative pronouns", "Verb + preposition combos, learned as chunks", "200 frequent collocations, ready for writing and speaking"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 personnes, en ligne ou sur place; grammaire appliquée à l’oral et à l’écrit, pas de théorie seule.", "en": "Small group of 4–8, online or in person; grammar applied in speech and writing, no theory-only lessons." },
+      "slug": { "fr": "vocabulaire-grammaire-mise-a-niveau", "en": "vocabulary-grammar-refresher" }
+    },
+    {
+      "id": "interview-french",
+      "cat": "skills",
+      "hours": 20,
+      "priceCad": 980,
+      "priceNote": { "fr": "49 $/h (en groupe)", "en": "$49/hour (in a group)" },
+      "title": { "fr": "Français pour les entrevues", "en": "French for interviews" },
+      "summary": { "fr": "Entrevue d’embauche ou entrevue du CSQ : préparez vos réponses, gérez les relances, passez en simulation filmée.", "en": "Job interview or CSQ selection interview: prepare your answers, handle follow-ups, rehearse on video." },
+      "forWho": {
+        "fr": ["Personnes qui préparent une entrevue d’embauche en français", "Candidats à l’entrevue de sélection du Québec (CSQ)", "Professionnels qui veulent structurer leur présentation"],
+        "en": ["People preparing a job interview in French", "Candidates for the Quebec selection interview (CSQ)", "Professionals who want a well-structured self-presentation"]
+      },
+      "learn": {
+        "fr": ["Se présenter en 90 secondes et en 3 minutes", "Répondre aux questions fréquentes : motivations, carrière, qualités et défauts", "Réagir aux relances et aux questions difficiles", "Demander une clarification quand on n’a pas compris", "Simulation complète filmée, avec rétroaction et deuxième essai"],
+        "en": ["Introducing yourself in 90 seconds and in 3 minutes", "Answering common questions: motivation, career, strengths and weaknesses", "Handling follow-ups and tough questions", "Asking for clarification when you didn’t catch something", "A full filmed mock interview with feedback and a second take"]
+      },
+      "format": { "fr": "Petit groupe, en ligne ou sur place; simulations enregistrées en vidéo avec rétroaction point par point.", "en": "Small group, online or in person; video-recorded simulations with point-by-point feedback." },
+      "slug": { "fr": "francais-pour-les-entrevues", "en": "french-for-interviews" }
+    },
+    {
+      "id": "preschool",
+      "cat": "audience",
+      "hours": 32,
+      "priceCad": 1092,
+      "priceNote": { "fr": "Par session", "en": "Per term" },
+      "duration": { "fr": "16 semaines (2 h/sem.)", "en": "16 weeks (2 h/week)" },
+      "title": { "fr": "Français préscolaire", "en": "Preschool French" },
+      "summary": { "fr": "Pour les 3 à 5 ans : comptines, jeux et histoires — l’objectif est de ne jamais avoir peur du français.", "en": "For ages 3–5: songs, games and stories — the goal is to never be afraid of French." },
+      "forWho": {
+        "fr": ["Enfants de 3 à 5 ans", "Enfants qui entreront en immersion française", "Parents qui veulent une première exposition joyeuse au français"],
+        "en": ["Children ages 3 to 5", "Children about to enter French Immersion", "Parents who want a joyful first exposure to French"]
+      },
+      "learn": {
+        "fr": ["Salutations, couleurs, nombres de 1 à 10, parties du corps", "Animaux, aliments et famille", "Comprendre des consignes simples", "Expressions du quotidien et politesse", "Courtes histoires et jeux de rôle, avec présentation aux parents"],
+        "en": ["Greetings, colours, numbers 1–10, body parts", "Animals, food and family", "Understanding simple instructions", "Everyday expressions and politeness", "Short stories and role-play, with an end-of-term show for parents"]
+      },
+      "format": { "fr": "Petit groupe d’enfants, sur place; 2 h par semaine pendant 16 semaines, sans grammaire ni correction de prononciation.", "en": "Small group of children, in person; 2 hours per week for 16 weeks, no grammar and no pronunciation correction." },
+      "slug": { "fr": "francais-prescolaire", "en": "preschool-french" }
+    },
+    {
+      "id": "teens",
+      "cat": "audience",
+      "hours": 32,
+      "priceCad": 1120,
+      "priceNote": { "fr": "Par session", "en": "Per term" },
+      "duration": { "fr": "16 semaines (2 h/sem.)", "en": "16 weeks (2 h/week)" },
+      "title": { "fr": "Français pour adolescents", "en": "French for youth" },
+      "summary": { "fr": "Soutien après l’école pour les 6 à 12 ans en immersion : lecture, orthographe et courage de parler en classe.", "en": "After-school support for ages 6–12 in French Immersion: reading, spelling and the courage to speak up in class." },
+      "forWho": {
+        "fr": ["Enfants de 6 à 12 ans", "Élèves inscrits ou sur le point d’entrer en immersion française", "Enfants qui accusent un retard en lecture et en orthographe"],
+        "en": ["Children ages 6 to 12", "Students in or about to enter French Immersion", "Children falling behind in reading and spelling"]
+      },
+      "learn": {
+        "fr": ["Comprendre les consignes de l’enseignant et demander de l’aide", "Lecture et orthographe : ce qui accuse le plus de retard en immersion", "Oser parler français devant la classe", "Initiation à la grammaire et phrases écrites courtes", "Présentation de fin de session"],
+        "en": ["Understanding teacher instructions and asking for help", "Reading and spelling: where immersion students fall behind most", "Daring to speak French in front of the class", "Intro to grammar and short written sentences", "An end-of-term presentation"]
+      },
+      "format": { "fr": "Petit groupe d’enfants, en ligne ou sur place; 2 h par semaine pendant 16 semaines, avec un mot écrit aux parents toutes les 4 semaines.", "en": "Small group of children, online or in person; 2 hours per week for 16 weeks, with a written note to parents every 4 weeks." },
+      "slug": { "fr": "francais-pour-adolescents", "en": "french-for-youth" }
+    },
+    {
+      "id": "ib-ap",
+      "cat": "audience",
+      "hours": 32,
+      "priceCad": 1190,
+      "priceNote": { "fr": "Par session", "en": "Per term" },
+      "duration": { "fr": "16 semaines (2 h/sem.)", "en": "16 weeks (2 h/week)" },
+      "title": { "fr": "IB / AP French", "en": "IB / AP French" },
+      "summary": { "fr": "Pour les élèves du secondaire qui préparent IB French B ou AP French : critères, formats de textes et évaluation simulée.", "en": "For high school students preparing IB French B or AP French: criteria, text formats and a mock assessment." },
+      "forWho": {
+        "fr": ["Élèves du secondaire en préparation d’examen", "Candidats à l’IB French B", "Candidats à l’AP French"],
+        "en": ["High school students preparing for exams", "IB French B candidates", "AP French candidates"]
+      },
+      "learn": {
+        "fr": ["Structure et notation de l’examen, dont l’oral individuel (IB) ou la conversation (AP)", "Écrire selon le type de texte : lettre, article, commentaire", "Vocabulaire thématique : identités, expériences, ingéniosité, organisation sociale", "Évaluation simulée corrigée point par point"],
+        "en": ["Exam structure and scoring, including the IB individual oral or AP conversation", "Writing by text type: letter, article, commentary", "Theme vocabulary: identities, experiences, human ingenuity, social organization", "A mock assessment corrected point by point"]
+      },
+      "format": { "fr": "Petit groupe d’élèves du secondaire, en ligne ou sur place; 2 h par semaine pendant 16 semaines.", "en": "Small group of high school students, online or in person; 2 hours per week for 16 weeks." },
+      "slug": { "fr": "ib-ap-french", "en": "ib-ap-french" }
+    },
+    {
+      "id": "settlement",
+      "cat": "audience",
+      "hours": 20,
+      "priceCad": 700,
+      "priceNote": { "fr": "", "en": "" },
+      "title": { "fr": "Français pour l’installation", "en": "French for settling in" },
+      "summary": { "fr": "Pour les nouveaux arrivants : papiers, logement, santé, école — le français dont vous avez besoin dès cette semaine.", "en": "For newcomers: paperwork, housing, health care, school — the French you need starting this week." },
+      "forWho": {
+        "fr": ["Nouveaux immigrants arrivés ou sur le point d’arriver", "Personnes qui doivent régler leurs démarches en français", "Parents qui doivent rencontrer les enseignants de l’école"],
+        "en": ["Newcomers who have arrived or are about to", "People who need to handle their paperwork in French", "Parents who must meet their children’s teachers"]
+      },
+      "learn": {
+        "fr": ["Démarches : documents, compte bancaire, Service Canada", "Logement : visites, bail, échanges avec le propriétaire", "Santé : rendez-vous, symptômes, médicaments, urgence", "Enfants et école : rencontrer l’enseignant, lire les avis", "Vie quotidienne : supermarché, autobus, voisinage"],
+        "en": ["Paperwork: documents, bank account, Service Canada", "Housing: viewings, lease, talking to the landlord", "Health: appointments, symptoms, medication labels, the ER", "Kids and school: meeting the teacher, reading school notices", "Daily life: grocery store, bus, neighbourhood"]
+      },
+      "format": { "fr": "Petit groupe, en ligne ou sur place; pas de grammaire d’examen — uniquement les situations des prochains jours.", "en": "Small group, online or in person; no exam grammar — only the situations of the coming days." },
+      "slug": { "fr": "francais-pour-l-installation", "en": "french-for-settling-in" }
+    },
+    {
+      "id": "leisure-adults",
+      "cat": "audience",
+      "hours": 24,
+      "priceCad": 840,
+      "priceNote": { "fr": "", "en": "" },
+      "duration": { "fr": "12 semaines", "en": "12 weeks" },
+      "title": { "fr": "Français loisir pour adultes", "en": "French for adults, for pleasure" },
+      "summary": { "fr": "Pas d’examen en vue : apprenez le français pour voyager, regarder des séries et vous faire des amis.", "en": "No exam in mind: learn French to travel, watch series and make friends." },
+      "forWho": {
+        "fr": ["Adultes qui apprennent pour le plaisir", "Voyageurs et amateurs de culture francophone", "Personnes qui veulent un cours sans pression d’examen"],
+        "en": ["Adults learning for pleasure", "Travellers and fans of French-speaking culture", "People who want a course with no exam pressure"]
+      },
+      "learn": {
+        "fr": ["Le français de survie : salutations, commander, se déplacer", "Les situations de la vie : logement, médecin, rendez-vous", "Culture et habitudes : la France, le Québec et leurs différences", "Apprendre des expressions à partir de films et de chansons", "Tenir une conversation par semaine, en français seulement"],
+        "en": ["Survival French: greetings, ordering, getting around", "Life situations: housing, doctor, appointments", "Culture and habits: France, Quebec and their differences", "Learning expressions from films and songs", "Holding one conversation per week, in French only"]
+      },
+      "format": { "fr": "Petit groupe de 4 à 8 adultes, en ligne ou sur place; un sujet de conversation par semaine et une présentation finale de 5 minutes.", "en": "Small group of 4–8 adults, online or in person; one conversation topic per week and a final 5-minute talk." },
+      "slug": { "fr": "francais-loisir-adultes", "en": "french-for-adults-leisure" }
+    },
+    {
+      "id": "business-french",
+      "cat": "custom",
+      "hours": 24,
+      "priceCad": 1176,
+      "priceNote": { "fr": "49 $/h (en groupe)", "en": "$49/hour (in a group)" },
+      "title": { "fr": "Français des affaires", "en": "Business French" },
+      "summary": { "fr": "Le français du travail : courriels, réunions, téléphone, présentations et négociation, en 24 heures ciblées.", "en": "French for work: emails, meetings, phone calls, presentations and negotiation, in 24 focused hours." },
+      "forWho": {
+        "fr": ["Professionnels qui ont besoin du français au travail", "Personnes qui doivent écrire des courriels professionnels", "Personnes qui interviennent en réunion ou en négociation"],
+        "en": ["Professionals who need French at work", "People who must write professional emails", "People who speak up in meetings or negotiations"]
+      },
+      "learn": {
+        "fr": ["Choisir le bon registre : formel, semi-formel, familier", "Courriels : demander, relancer, refuser, s’excuser", "Réunions : interrompre, confirmer, résumer, s’opposer poliment", "Téléphone et vidéo : gérer quand on entend mal", "Présentations, rapports et négociation avec repères interculturels"],
+        "en": ["Choosing the right register: formal, semi-formal, casual", "Emails: requesting, following up, declining, apologizing", "Meetings: interrupting, confirming, summarizing, disagreeing politely", "Phone and video: coping when you can’t hear well", "Presentations, reports and negotiation with cross-cultural cues"]
+      },
+      "format": { "fr": "Petit groupe de professionnels, en ligne ou sur place; situations tirées du travail réel des participants.", "en": "Small group of professionals, online or in person; scenarios drawn from participants’ real work." },
+      "slug": { "fr": "francais-des-affaires", "en": "business-french" }
+    },
+    {
+      "id": "corporate",
+      "cat": "custom",
+      "hours": null,
+      "priceCad": null,
+      "priceNote": { "fr": "Sur demande", "en": "On request" },
+      "title": { "fr": "Français en entreprise", "en": "Corporate French" },
+      "summary": { "fr": "Un programme sur mesure pour votre équipe : évaluation des besoins, groupes par niveau et rapport trimestriel aux RH.", "en": "A tailored program for your team: needs assessment, level-based groups and a quarterly report to HR." },
+      "forWho": {
+        "fr": ["Organisations dont le personnel doit communiquer en français", "Équipes RH qui veulent un suivi mesurable", "Entreprises qui préfèrent une prestation dans leurs locaux"],
+        "en": ["Organizations whose staff must communicate in French", "HR teams who want measurable tracking", "Companies that prefer training delivered on site"]
+      },
+      "learn": {
+        "fr": ["Test de classement gratuit pour tous les participants", "Programme rédigé selon les situations de chaque poste, sans manuel générique", "Classes formées par niveau, sans mélange de postes", "Heures fixes chaque semaine, en ligne ou dans vos locaux", "Rapport d’évaluation des compétences remis aux RH chaque trimestre"],
+        "en": ["Free placement test for all participants", "A program written around each role’s situations, no generic textbook", "Classes formed by level, not mixed across job roles", "Fixed hours every week, online or at your offices", "A quarterly skills assessment report sent to HR"]
+      },
+      "format": { "fr": "Sur mesure : heures fixes chaque semaine, en ligne ou dans vos locaux, avec contrat annuel et rabais de volume.", "en": "Tailored: fixed hours every week, online or at your offices, with an annual agreement and volume discounts." },
+      "slug": { "fr": "francais-en-entreprise", "en": "corporate-french" }
+    },
+    {
+      "id": "one-on-one",
+      "cat": "custom",
+      "hours": null,
+      "priceCad": null,
+      "priceNote": { "fr": "98 $/h, forfait de 10 h à 910 $", "en": "$98/hour, 10-hour pack $910" },
+      "title": { "fr": "Cours individuel", "en": "One-on-one lessons" },
+      "summary": { "fr": "Vous arrivez avec un problème précis, l’enseignant ne s’occupe que de celui-là. Plan écrit, horaire flexible.", "en": "You arrive with one precise problem, and the teacher works only on that. Written plan, flexible schedule." },
+      "forWho": {
+        "fr": ["Personnes qui veulent combler un point faible précis", "Personnes à l’horaire irrégulier ou variable", "Personnes qui ont un objectif unique, comme un examen dans deux mois"],
+        "en": ["People who want to fix one specific weakness", "People with irregular or shifting schedules", "People with a single goal, like an exam in two months"]
+      },
+      "learn": {
+        "fr": ["Un plan d’études écrit, remis dans les 3 jours suivant le test", "Chaque séance a un résultat précis", "Un bilan toutes les 8 heures pour valider l’étape", "Le matériel de n’importe quel niveau ou cours d’examen", "Combinable avec un petit groupe pour un parcours plus efficace"],
+        "en": ["A written study plan, delivered within 3 days of the placement test", "Every session has a precise outcome", "A review every 8 hours to confirm each stage", "Materials from any level or exam course", "Combinable with a small group for a more effective path"]
+      },
+      "format": { "fr": "Un enseignant fixe, en ligne ou sur place; réservation 48 h à l’avance, forfait de 10 h valable 6 mois.", "en": "A fixed teacher, online or in person; book 48 hours ahead, 10-hour pack valid for 6 months." },
+      "slug": { "fr": "cours-individuels", "en": "one-on-one-lessons" }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+---
+import { getCollection } from "astro:content";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import NewsCard from "./NewsCard.astro";
+import type { CollectionEntry } from "astro:content";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+
+interface Props {
+	lang: Lang;
+	page: CollectionEntry<"pages">;
+	Content: AstroComponentFactory;
+}
+const { lang, page, Content } = Astro.props;
+const t = useTranslations(lang);
+const d = page.data;
+
+const fmt = (date?: string) =>
+	date ? new Date(`${date}T00:00:00`).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", { year: "numeric", month: "long", day: "numeric" }) : undefined;
+
+// Related articles: same tag first, then newest; never the current one.
+const others = (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/news/`) && id !== page.id))
+	.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""));
+const related = [
+	...others.filter((a) => a.data.tag && a.data.tag === d.tag),
+	...others.filter((a) => a.data.tag !== d.tag),
+].slice(0, 3);
+---
+
+<PageShell lang={lang} title={d.title} description={d.description} pageKey="news" ogImage={d.cover} bare>
+    <article class="gfe-article">
+        <header class="gfe-article__header">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8">
+                        <a href={routePath(lang, "news")} class="gfe-article__back"><i class="fa-light fa-arrow-left"></i> {t("news.allArticles")}</a>
+                        <div class="gfe-article__meta">
+                            {d.tag && <span class="gfe-news-card__tag">{d.tag}</span>}
+                            {fmt(d.date) && <time datetime={d.date}>{fmt(d.date)}</time>}
+                            {d.updated && d.updated !== d.date && <span>{lang === "fr" ? "Mis à jour le" : "Updated"} <time datetime={d.updated}>{fmt(d.updated)}</time></span>}
+                        </div>
+                        <h1 class="gfe-article__title">{d.title}</h1>
+                        {d.excerpt && <p class="gfe-lead">{d.excerpt}</p>}
+                    </div>
+                </div>
+            </div>
+            {d.cover && (
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 col-xl-8">
+                            <img class="gfe-article__cover" src={d.cover} alt="" width="1200" height="675" loading="eager" decoding="async" />
+                        </div>
+                    </div>
+                </div>
+            )}
+        </header>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-8">
+                    <div class="gfe-prose">
+                        <Content />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {related.length > 0 && (
+            <div class="container gfe-article__related">
+                <h2 class="gfe-cat-title"><span>{t("news.related")}</span></h2>
+                <div class="gfe-card-grid">
+                    {related.map((a) => (
+                        <NewsCard
+                            href={routePath(lang, a.id.slice(lang.length + 1))}
+                            cover={a.data.cover}
+                            tag={a.data.tag}
+                            title={a.data.title}
+                            excerpt={a.data.excerpt}
+                            date={fmt(a.data.date)}
+                        />
+                    ))}
+                </div>
+            </div>
+        )}
+    </article>
+</PageShell>

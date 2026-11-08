@@ -1,0 +1,98 @@
+---
+import type { Lang } from "../i18n/ui";
+import nclc from "../data/nclc.json";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+
+const text = {
+	fr: {
+		test: "Examen",
+		skills: { listening: "Compréhension orale", reading: "Compréhension écrite", writing: "Expression écrite", speaking: "Expression orale" },
+		hint: { TEF: "Score TEF Canada (colonne « équivalence ancien score »)", TCF: "Score TCF Canada (oral et écrit sur 20, compréhensions sur 699)" },
+		calc: "Convertir",
+		result: "Niveau NCLC",
+		below: "Sous le NCLC 4",
+		note: "Outil d’information fondé sur le tableau d’équivalence officiel d’IRCC (Entrée express), à jour au",
+		source: "Source",
+		disclaimer: "Cet outil est indicatif. Seuls les résultats officiels et IRCC font foi ; pour votre dossier, consultez un consultant réglementé (CRIC).",
+		seven: "NCLC 7 minimum",
+	},
+	en: {
+		test: "Exam",
+		skills: { listening: "Listening", reading: "Reading", writing: "Writing", speaking: "Speaking" },
+		hint: { TEF: "TEF Canada score (“former score equivalence” column)", TCF: "TCF Canada score (speaking and writing out of 20, listening and reading out of 699)" },
+		calc: "Convert",
+		result: "NCLC / CLB level",
+		below: "Below NCLC 4",
+		note: "Information tool based on the official IRCC equivalency chart (Express Entry), current as of",
+		source: "Source",
+		disclaimer: "This tool is indicative. Only your official results and IRCC are authoritative; for your application, consult a licensed consultant (RCIC).",
+		seven: "NCLC 7 minimum",
+	},
+}[lang];
+const source = nclc.sources[0];
+---
+
+<section class="gfe-tool" data-tool="nclc">
+	<form>
+		<label>{text.test}
+			<select name="test">
+				<option value="TEF">TEF Canada</option>
+				<option value="TCF">TCF Canada</option>
+			</select>
+		</label>
+		<div class="gfe-tool__grid">
+			{(["listening", "reading", "writing", "speaking"] as const).map((skill) => (
+				<label>{text.skills[skill]}
+					<input type="number" name={skill} min="0" max="699" step="1" inputmode="numeric" required />
+				</label>
+			))}
+		</div>
+		<p class="gfe-tool__hint" data-hint-tef={text.hint.TEF} data-hint-tcf={text.hint.TCF}>{text.hint.TEF}</p>
+		<button type="submit" class="rts-theme-btn">{text.calc}</button>
+	</form>
+	<table class="gfe-tool__result" hidden>
+		<thead><tr><th></th><th>{text.result}</th></tr></thead>
+		<tbody></tbody>
+	</table>
+	<p class="gfe-tool__note">{text.note} {nclc.asOf}. {text.source}: <a href={source.url} rel="noopener" target="_blank">{source.name}</a>.</p>
+	<p class="gfe-tool__note">{text.disclaimer}</p>
+	<script type="application/json" id="nclc-data" set:html={JSON.stringify({ data: nclc.tests, below: text.below, skills: text.skills, seven: text.seven })} />
+</section>
+
+<script>
+	const root = document.querySelector<HTMLElement>('[data-tool="nclc"]');
+	if (root) {
+		const payload = JSON.parse(document.getElementById("nclc-data")!.textContent!);
+		const form = root.querySelector("form")!;
+		const hint = root.querySelector<HTMLElement>(".gfe-tool__hint")!;
+		const table = root.querySelector<HTMLTableElement>(".gfe-tool__result")!;
+		const body = table.querySelector("tbody")!;
+		const select = form.elements.namedItem("test") as HTMLSelectElement;
+		select.addEventListener("change", () => {
+			hint.textContent = select.value === "TEF" ? hint.dataset.hintTef! : hint.dataset.hintTcf!;
+		});
+		form.addEventListener("submit", (event) => {
+			event.preventDefault();
+			const rows = payload.data[select.value] as Record<string, { clb: number; min: number; max: number }[]>;
+			body.innerHTML = "";
+			for (const skill of ["listening", "reading", "writing", "speaking"]) {
+				const score = Number((form.elements.namedItem(skill) as HTMLInputElement).value);
+				// rows are listed from NCLC 10 down; the first range that contains the score wins, above the top counts as the top row
+				const top = rows[skill][0];
+				const hit = score >= top.min ? top : rows[skill].find((r) => score >= r.min && score <= r.max);
+				const tr = document.createElement("tr");
+				const th = document.createElement("th");
+				th.textContent = payload.skills[skill];
+				const td = document.createElement("td");
+				td.textContent = hit ? `NCLC ${hit.clb}${hit.clb >= 7 ? " ✓" : ""}` : payload.below;
+				tr.append(th, td);
+				body.append(tr);
+			}
+			table.hidden = false;
+		});
+	}
+</script>

@@ -1,0 +1,27 @@
+---
+interface Props {
+	href: string;
+	cover?: string;
+	tag?: string;
+	title: string;
+	excerpt?: string;
+	date?: string;
+}
+const { href, cover, tag, title, excerpt, date } = Astro.props;
+---
+
+<article class="gfe-news-card">
+    <a href={href} class="gfe-news-card__media" tabindex="-1" aria-hidden="true">
+        {cover
+            ? <img class={cover.endsWith("-brand.webp") ? "gfe-news-card__image--campaign" : undefined} src={cover} alt="" width="640" height="400" loading="lazy" decoding="async" />
+            : <span class="gfe-news-card__placeholder"><i class="fa-light fa-newspaper"></i></span>}
+    </a>
+    <div class="gfe-news-card__body">
+        <div class="gfe-news-card__meta">
+            {tag && <span class="gfe-news-card__tag">{tag}</span>}
+            {date && <time>{date}</time>}
+        </div>
+        <h3 class="gfe-news-card__title"><a href={href}>{title}</a></h3>
+        {excerpt && <p class="gfe-news-card__excerpt">{excerpt}</p>}
+    </div>
+</article>

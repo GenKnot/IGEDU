@@ -1,0 +1,111 @@
+---
+import type { Lang } from "../i18n/ui";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+
+// CAD, before tax. HST 13%.
+const bundles = [
+	{ id: "elite", price: 10080, monthly: 721, hours: 330, name: { fr: "Parcours complet A0 → B2 + TEF", en: "Full pathway A0 → B2 + TEF" } },
+	{ id: "immigration", price: 6132, monthly: 682, hours: 204, name: { fr: "Voie immigration B1 → TEF B2", en: "Immigration track B1 → TEF B2" } },
+	{ id: "diploma", price: 7224, monthly: 602, hours: 240, name: { fr: "Diplôme d’études → DELF B2", en: "Study diploma → DELF B2" } },
+	{ id: "express", price: 3612, monthly: 451, hours: 120, name: { fr: "Parcours express A0 → A2", en: "Beginner fast track A0 → A2" } },
+	{ id: "intensive", price: 9450, monthly: 0, hours: 300, name: { fr: "Intensif à temps plein, 12 semaines", en: "Full-time intensive, 12 weeks" } },
+	{ id: "teens", price: 4060, monthly: 0, hours: 136, name: { fr: "Adolescents, année complète", en: "Teens, full year" } },
+] as const;
+
+const text = {
+	fr: { bundle: "Un parcours combiné", hours: "Au nombre d’heures", pick: "Parcours", type: "Type de cours", std: "Petit groupe", biz: "Affaires / entrevue (groupe)", one: "Cours particulier", nh: "Nombre d’heures", books: "Niveaux (manuels à 84 $)", sub: "Sous-total", hst: "TVH (13 %)", total: "Total", monthly: "Environ par mois", note: "Prix en dollars canadiens, avant taxes. Le manuel est inclus dans les parcours combinés. Estimation à titre indicatif : le prix confirmé est celui de votre inscription.", incl: "Manuel inclus", h: "h" },
+	en: { bundle: "A bundle", hours: "By number of hours", pick: "Bundle", type: "Course type", std: "Small group", biz: "Business / interview (group)", one: "One-on-one", nh: "Number of hours", books: "Levels (textbooks at $84)", sub: "Subtotal", hst: "HST (13%)", total: "Total", monthly: "About per month", note: "Prices in Canadian dollars, before tax. The textbook is included in bundles. This is an estimate: the price confirmed at enrolment applies.", incl: "Textbook included", h: "h" },
+}[lang];
+const data = { bundles, rates: { std: 35, biz: 49, one: 98 }, textbook: 84, hst: 0.13, lang };
+---
+
+<section class="gfe-tool" data-tool="cost">
+	<div class="gfe-tool__tabs" role="tablist">
+		<button type="button" role="tab" data-mode="bundle" aria-selected="true">{text.bundle}</button>
+		<button type="button" role="tab" data-mode="hours" aria-selected="false">{text.hours}</button>
+	</div>
+	<form data-panel="bundle">
+		<label>{text.pick}
+			<select name="bundle">
+				{bundles.map((b) => <option value={b.id}>{b.name[lang]} ({b.hours} {text.h})</option>)}
+			</select>
+		</label>
+	</form>
+	<form data-panel="hours" hidden>
+		<div class="gfe-tool__grid">
+			<label>{text.type}
+				<select name="type">
+					<option value="std">{text.std} — $35/{text.h}</option>
+					<option value="biz">{text.biz} — $49/{text.h}</option>
+					<option value="one">{text.one} — $98/{text.h}</option>
+				</select>
+			</label>
+			<label>{text.nh} <input type="number" name="hours" min="1" max="1000" value="36" /></label>
+			<label>{text.books} <input type="number" name="levels" min="0" max="8" value="1" /></label>
+		</div>
+	</form>
+	<table class="gfe-tool__result">
+		<tbody>
+			<tr><th>{text.sub}</th><td data-out="sub"></td></tr>
+			<tr><th>{text.hst}</th><td data-out="hst"></td></tr>
+			<tr><th>{text.total}</th><td data-out="total"></td></tr>
+			<tr data-row="monthly" hidden><th>{text.monthly}</th><td data-out="monthly"></td></tr>
+			<tr data-row="incl" hidden><th></th><td>{text.incl}</td></tr>
+		</tbody>
+	</table>
+	<p class="gfe-tool__note">{text.note}</p>
+	<script type="application/json" id="cost-data" set:html={JSON.stringify(data)} />
+</section>
+
+<script>
+	const root = document.querySelector<HTMLElement>('[data-tool="cost"]');
+	if (root) {
+		const data = JSON.parse(document.getElementById("cost-data")!.textContent!);
+		const locale = { fr: "fr-CA", en: "en-CA" }[data.lang as "fr" | "en"];
+		const money = (n: number) => new Intl.NumberFormat(locale, { style: "currency", currency: "CAD", maximumFractionDigits: 2 }).format(n);
+		const panels = [...root.querySelectorAll<HTMLFormElement>("form")];
+		const tabs = [...root.querySelectorAll<HTMLButtonElement>("[data-mode]")];
+		const out = (name: string) => root.querySelector<HTMLElement>(`[data-out=${name}]`)!;
+		const row = (name: string) => root.querySelector<HTMLElement>(`[data-row=${name}]`)!;
+		let mode = "bundle";
+
+		function update() {
+			let subtotal = 0;
+			let monthly = 0;
+			if (mode === "bundle") {
+				const id = (panels[0].elements.namedItem("bundle") as HTMLSelectElement).value;
+				const bundle = data.bundles.find((b: { id: string }) => b.id === id);
+				subtotal = bundle.price;
+				monthly = bundle.monthly;
+			} else {
+				const f = panels[1].elements;
+				const rate = data.rates[(f.namedItem("type") as HTMLSelectElement).value];
+				const hours = Math.max(0, Number((f.namedItem("hours") as HTMLInputElement).value) || 0);
+				const levels = Math.max(0, Number((f.namedItem("levels") as HTMLInputElement).value) || 0);
+				subtotal = rate * hours + levels * data.textbook;
+			}
+			const hst = subtotal * data.hst;
+			out("sub").textContent = money(subtotal);
+			out("hst").textContent = money(hst);
+			out("total").textContent = money(subtotal + hst);
+			row("monthly").hidden = !(mode === "bundle" && monthly);
+			if (monthly) out("monthly").textContent = money(monthly * (1 + data.hst));
+			row("incl").hidden = mode !== "bundle";
+		}
+
+		tabs.forEach((tab) =>
+			tab.addEventListener("click", () => {
+				mode = tab.dataset.mode!;
+				tabs.forEach((t) => t.setAttribute("aria-selected", String(t === tab)));
+				panels.forEach((p) => (p.hidden = p.dataset.panel !== mode));
+				update();
+			}),
+		);
+		panels.forEach((p) => p.addEventListener("input", update));
+		update();
+	}
+</script>

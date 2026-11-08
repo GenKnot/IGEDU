@@ -1,0 +1,244 @@
+{
+  "teachers": [
+    {
+      "id": "camille-r",
+      "name": "Camille R.",
+      "photo": "/images/team/camille-r.webp",
+      "role": { "fr": "Préparation aux examens", "en": "Exam preparation" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (Lyon, France)",
+          "Formation : master en didactique du français langue étrangère (FLE), Université Lumière Lyon 2",
+          "Expérience : 9 ans, surtout B1–C1 et préparation intensive au TEF / TCF"
+        ],
+        "en": [
+          "Native language: French (Lyon, France)",
+          "Qualification: master's in teaching French as a foreign language (FLE), Université Lumière Lyon 2",
+          "Experience: 9 years, mainly B1–C1 and TEF / TCF sprint courses"
+        ]
+      },
+      "specialties": {
+        "fr": ["TEF compréhension et expression orales", "correction de la prononciation"],
+        "en": ["TEF listening and speaking", "pronunciation correction"]
+      },
+      "approach": {
+        "fr": "Les simulations d'oral sont enregistrées en entier, puis réécoutées phrase par phrase. Camille ne corrige que les trois points qui pèsent le plus sur la note, jamais plus à la fois.",
+        "en": "Mock oral exams are recorded in full and replayed sentence by sentence. Camille fixes only the three points that cost the most marks, never more at a time."
+      },
+      "teaches": {
+        "fr": ["préparation TEF", "préparation TCF", "B2.1", "B2.2"],
+        "en": ["TEF sprint", "TCF sprint", "B2.1", "B2.2"]
+      }
+    },
+    {
+      "id": "julien-m",
+      "name": "Julien M.",
+      "photo": "/images/team/julien-m.webp",
+      "role": { "fr": "Préparation aux examens", "en": "Exam preparation" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (Belgique)",
+          "Qualification : habilitation d'examinateur DELF / DALF",
+          "Expérience : 11 ans, DELF B2 et DALF C1"
+        ],
+        "en": [
+          "Native language: French (Belgium)",
+          "Qualification: DELF / DALF examiner certification",
+          "Experience: 11 years, DELF B2 and DALF C1"
+        ]
+      },
+      "specialties": {
+        "fr": ["correction de l'écrit", "structure de l'argumentation"],
+        "en": ["writing correction", "structuring an argument"]
+      },
+      "approach": {
+        "fr": "Chaque rédaction est annotée phrase par phrase, puis réécrite par l'étudiant. Une rédaction non réécrite ne compte pas dans la progression.",
+        "en": "Every essay is annotated sentence by sentence and then rewritten by the student. An essay that is not rewritten does not count toward progress."
+      },
+      "teaches": {
+        "fr": ["DELF B2", "DALF C1", "atelier de correction d'écrits"],
+        "en": ["DELF B2", "DALF C1", "writing correction workshop"]
+      }
+    },
+    {
+      "id": "sophie-l",
+      "name": "Sophie L.",
+      "photo": "/images/team/sophie-l.webp",
+      "role": { "fr": "Cours par niveau", "en": "Level courses" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (Québec)",
+          "Formation : baccalauréat en linguistique, Université Laval",
+          "Expérience : 6 ans, A1–B1"
+        ],
+        "en": [
+          "Native language: French (Quebec)",
+          "Qualification: bachelor's in linguistics, Université Laval",
+          "Experience: 6 years, A1–B1"
+        ]
+      },
+      "specialties": {
+        "fr": ["débutants complets", "adaptation à l'accent québécois"],
+        "en": ["complete beginners", "getting used to the Quebec accent"]
+      },
+      "approach": {
+        "fr": "Tout en français dès le premier cours, mais les questions en anglais sont acceptées ; la réponse est donnée en français ensuite.",
+        "en": "All in French from the first lesson, but questions in English are welcome; she then answers again in French."
+      },
+      "teaches": {
+        "fr": ["A1.1", "A1.2", "A2.1"],
+        "en": ["A1.1", "A1.2", "A2.1"]
+      }
+    },
+    {
+      "id": "etienne-b",
+      "name": "Étienne B.",
+      "photo": "/images/team/etienne-b.webp",
+      "role": { "fr": "Cours par niveau", "en": "Level courses" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (Nantes, France)",
+          "Qualification : certificat d'enseignement du FLE",
+          "Expérience : 7 ans, A2–B2"
+        ],
+        "en": [
+          "Native language: French (Nantes, France)",
+          "Qualification: FLE teaching certificate",
+          "Experience: 7 years, A2–B2"
+        ]
+      },
+      "specialties": {
+        "fr": ["vue d'ensemble de la grammaire", "public adulte"],
+        "en": ["building a clear picture of the grammar system", "adult learners"]
+      },
+      "approach": {
+        "fr": "Pas de règles à réciter. Un même jeu de phrases sert pendant trois cours, et ce sont les étudiants qui en dégagent la règle.",
+        "en": "No memorizing rules. One set of example sentences runs through three lessons, and students work out the rule themselves."
+      },
+      "teaches": {
+        "fr": ["A2.2", "B1.1", "B1.2"],
+        "en": ["A2.2", "B1.1", "B1.2"]
+      }
+    },
+    {
+      "id": "nadia-k",
+      "name": "Nadia K.",
+      "photo": "/images/team/nadia-k.webp",
+      "role": { "fr": "Cours spécialisés", "en": "Specialist courses" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (double origine algérienne et française)",
+          "Formation : master en phonétique",
+          "Expérience : 8 ans, cours de prononciation à tous les niveaux"
+        ],
+        "en": [
+          "Native language: French (Algerian and French background)",
+          "Qualification: master's in phonetics",
+          "Experience: 8 years, pronunciation classes at every level"
+        ]
+      },
+      "specialties": {
+        "fr": ["prononciation et phonétique", "aisance à l'oral"],
+        "en": ["pronunciation and phonetics", "speaking fluency"]
+      },
+      "approach": {
+        "fr": "À chaque cours, chacun enregistre 60 secondes d'audio. Après le cours, Nadia annote mot à mot ; quatre semaines plus tard, on compare avec le premier enregistrement.",
+        "en": "Each student records 60 seconds of audio every lesson. Nadia annotates it word by word after class, and four weeks later it is compared with the first recording."
+      },
+      "teaches": {
+        "fr": ["prononciation et phonétique", "oral et compréhension orale intensifs"],
+        "en": ["pronunciation and phonetics", "intensive speaking and listening"]
+      }
+    },
+    {
+      "id": "chloe-d",
+      "name": "Chloé D.",
+      "photo": "/images/team/chloe-d.webp",
+      "role": { "fr": "Jeunes", "en": "Youth" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (Bordeaux, France)",
+          "Formation : diplôme en éducation primaire + FLE",
+          "Expérience : 5 ans, enfants de 6 à 12 ans et préscolaire"
+        ],
+        "en": [
+          "Native language: French (Bordeaux, France)",
+          "Qualification: primary education degree + FLE",
+          "Experience: 5 years, ages 6–12 and preschool"
+        ]
+      },
+      "specialties": {
+        "fr": ["soutien aux élèves d'immersion", "apprentissage par le jeu"],
+        "en": ["support for immersion-school students", "teaching children through games"]
+      },
+      "approach": {
+        "fr": "Elle ne corrige pas la prononciation sur le moment ; l'enfant doit d'abord avoir envie de parler. Les erreurs sont notées, puis traitées en bloc une fois par mois.",
+        "en": "She does not correct pronunciation on the spot; first the child has to want to speak. Mistakes are noted and dealt with together once a month."
+      },
+      "teaches": {
+        "fr": ["français pour les jeunes", "français préscolaire"],
+        "en": ["French for youth", "preschool French"]
+      }
+    },
+    {
+      "id": "marc-t",
+      "name": "Marc T.",
+      "photo": "/images/team/marc-t.webp",
+      "role": { "fr": "Français des affaires et entrevue", "en": "Business and interview French" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (Paris, France)",
+          "Formation : école de commerce + qualification en enseignement du FLE",
+          "Expérience : 10 ans, formation en entreprise et préparation aux entrevues"
+        ],
+        "en": [
+          "Native language: French (Paris, France)",
+          "Qualification: business school background + FLE teaching qualification",
+          "Experience: 10 years, corporate training and interview coaching"
+        ]
+      },
+      "specialties": {
+        "fr": ["français des affaires", "entrevue du CSQ", "expression en réunion"],
+        "en": ["business French", "CSQ interview", "speaking in meetings"]
+      },
+      "approach": {
+        "fr": "Il travaille à partir des vrais documents de travail de l'étudiant, sans les réécrire et sans manuel générique.",
+        "en": "He uses the student's real work documents as course material, without rewriting them and without a generic textbook."
+      },
+      "teaches": {
+        "fr": ["français des affaires", "français d'entrevue", "français en entreprise"],
+        "en": ["business French", "interview French", "corporate French"]
+      }
+    },
+    {
+      "id": "amina-s",
+      "name": "Amina S.",
+      "photo": "/images/team/amina-s.webp",
+      "role": { "fr": "Examens et immigration", "en": "Exams and immigration" },
+      "facts": {
+        "fr": [
+          "Langue maternelle : français (double origine sénégalaise et française)",
+          "Formation : master en FLE + parcours en conseil en immigration",
+          "Expérience : 7 ans, TEF / TCF et dossiers d'immigration"
+        ],
+        "en": [
+          "Native language: French (Senegalese and French background)",
+          "Qualification: master's in FLE + immigration consulting background",
+          "Experience: 7 years, TEF / TCF and immigration paperwork"
+        ]
+      },
+      "specialties": {
+        "fr": ["conversion et lecture des NCLC", "planification d'examen"],
+        "en": ["reading and converting CLB / NCLC scores", "exam planning"]
+      },
+      "approach": {
+        "fr": "Dès le premier cours, elle convertit le score visé en travail à faire chaque semaine, l'écrit sur une feuille et la remet à l'étudiant.",
+        "en": "In the first lesson she turns the target score into weekly practice time, writes it on a sheet and hands it to the student."
+      },
+      "teaches": {
+        "fr": ["préparation TEF", "préparation TCF", "renforcement par compétence"],
+        "en": ["TEF sprint", "TCF sprint", "single-skill intensives"]
+      }
+    }
+  ]
+}

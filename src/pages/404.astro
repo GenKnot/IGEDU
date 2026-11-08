@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { routePath } from "../i18n/utils";
+---
+
+<Layout lang="fr" title="Page introuvable | Page not found | Global French Education" noindex>
+<Header lang="fr" />
+<main id="main">
+    <section class="rts-section-padding gfe-404">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 rt-center">
+                    <p class="gfe-404__code">404</p>
+                    <h1>Page introuvable</h1>
+                    <p>La page que vous cherchez n’existe pas ou a été déplacée.</p>
+                    <p><a class="rts-theme-btn" href={routePath("fr", "home")}>Retour à l’accueil</a></p>
+                    <hr />
+                    <h2>Page not found</h2>
+                    <p>The page you are looking for does not exist or has moved.</p>
+                    <p><a class="rts-theme-btn" href={routePath("en", "home")}>Back to the home page</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<Footer lang="fr" />
+</Layout>

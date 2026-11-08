@@ -1,0 +1,146 @@
+---
+import { getCollection } from "astro:content";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import { site } from "../i18n/site";
+import { nav, footerMore } from "./nav";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const phoneHref = `tel:${site.phone.replace(/[^\d+]/g, "")}`;
+const address = site.address[lang];
+const social = [
+	{ href: site.social.instagram, icon: "fa-brands fa-instagram", label: "Instagram" },
+	{ href: site.social.facebook, icon: "fa-brands fa-facebook-f", label: "Facebook" },
+	{ href: site.social.youtube, icon: "fa-brands fa-youtube", label: "YouTube" },
+	{ href: site.social.linkedin, icon: "fa-brands fa-linkedin-in", label: "LinkedIn" },
+].filter((x) => x.href);
+const latest = (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/news/`)))
+	.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
+	.slice(0, 3);
+---
+
+<!-- footer start -->
+<footer class="rts-footer gfe-footer">
+    <div class="container">
+        <div class="gfe-footer__grid">
+            <div class="gfe-footer__brand">
+                <a href={routePath(lang, 'home')} class="d-block rts-footer-logo mb--30">
+                    <img src="/assets/images/logo/gfe-logo-light.png" alt="Global French Education">
+                </a>
+                <p>{t('footer.about')}</p>
+                {social.length > 0 && (
+                    <div class="social__links mt--20">
+                        {social.map((x) => <a href={x.href} aria-label={x.label} rel="noopener" target="_blank"><i class={x.icon}></i></a>)}
+                    </div>
+                )}
+            </div>
+            <div class="gfe-footer__col">
+                <h2 class="gfe-footer-title">{t('footer.col1')}</h2>
+                <ul class="gfe-footer__links">
+                    <li><a href={routePath(lang, 'catalogue')}>{t('nav.c.catalogue')}</a></li>
+                    <li><a href={routePath(lang, 'bundles')}>{t('footer.col1.1')}</a></li>
+                    <li><a href={routePath(lang, 'exam-prep')}>{t('footer.col1.2')}</a></li>
+                    <li><a href={routePath(lang, 'levels')}>{t('footer.col1.3')}</a></li>
+                    <li><a href={routePath(lang, 'specialist')}>{t('footer.col1.4')}</a></li>
+                    <li><a href={routePath(lang, 'prices')}>{t('nav.i.prices')}</a></li>
+                </ul>
+            </div>
+            <div class="gfe-footer__col">
+                <h2 class="gfe-footer-title">{t('footer.col2')}</h2>
+                <ul class="gfe-footer__links">
+                    <li><a href={routePath(lang, 'school')}>{t('footer.col2.1')}</a></li>
+                    <li><a href={routePath(lang, 'team')}>{t('nav.team')}</a></li>
+                    <li><a href={routePath(lang, 'campus')}>{t('footer.col2.3')}</a></li>
+                    <li><a href={routePath(lang, 'faq')}>{t('footer.col2.2')}</a></li>
+                    {footerMore.map((x) => <li><a href={routePath(lang, x.href)}>{t(x.label)}</a></li>)}
+                </ul>
+            </div>
+            <div class="gfe-footer__col gfe-footer__news">
+                <h2 class="gfe-footer-title">{t('footer.latest')}</h2>
+                <ul class="gfe-footer__posts">
+                    {latest.map((a) => (
+                        <li><a href={routePath(lang, a.id.slice(lang.length + 1))}>{a.data.title}</a></li>
+                    ))}
+                    <li><a href={routePath(lang, 'news')} class="gfe-footer__all">{t('news.allArticles')} →</a></li>
+                </ul>
+            </div>
+            <div class="gfe-footer__col">
+                <h2 class="gfe-footer-title">{t('footer.contact')}</h2>
+                <div class="rts-contact-link gfe-footer__contact">
+                    <a href={`mailto:${site.email}`}><i class="fa-light fa-envelope"></i> {site.email}</a>
+                    {site.phone && <a href={phoneHref}><i class="fa-light fa-phone"></i> {site.phone}</a>}
+                    <a href={site.mapsUrl} target="_blank" rel="noopener"><i class="fa-sharp fa-light fa-location-dot"></i> {address}</a>
+                    <span class="gfe-hours"><i class="fa-light fa-clock"></i> {t('hours.text')}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="rts-footer-copy-right v_1">
+    <div class="container">
+        <div class="row">
+            <div class="rt-center">
+                <p class="--p-xs">&copy; {new Date().getFullYear()} <a href={routePath(lang, 'home')}>{site.legalName}</a> · {t('footer.rights')} · <a href={routePath(lang, 'privacy')}>{t('footer.privacy')}</a> · <a href={routePath(lang, 'terms')}>{t('footer.terms')}</a> · <a href={routePath(lang, 'accessibility')}>{t('footer.a11y')}</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- offcanvase menu -->
+<div id="side-bar" class="side-bar">
+    <button class="close-icon-menu" type="button" aria-label={t('a11y.close')}><i class="far fa-times"></i></button>
+    <div class="inner-main-wrapper-desk">
+        <div class="thumbnail">
+            <img src="/assets/images/logo/gfe-logo.png" alt="Global French Education">
+        </div>
+        <div class="inner-content">
+            <p class="disc">{t('nav.sideText')}</p>
+            <div class="offcanvase__banner mt--50">
+                <div class="offcanvase__banner--content">
+                    <img src="/images/photos/side.webp" alt="" width="274" height="388" loading="lazy">
+                    <a href={routePath(lang, 'contact')} class="rts-theme-btn">{t('nav.applyNow')}</a>
+                </div>
+            </div>
+            <div class="offcanvase__info">
+                <div class="offcanvase__info--content">
+                    {site.phone && <a href={phoneHref}><span><i class="fa-sharp fa-light fa-phone"></i></span>{site.phone}</a>}
+                    <a href={site.mapsUrl} target="_blank" rel="noopener"><span><i class="fa-sharp fa-light fa-location-dot"></i></span>{address}</a>
+                    {social.length > 0 && (
+                        <div class="offcanvase__info--content--social">
+                            <p class="title">{t('nav.followUs')}</p>
+                            <div class="social__links">
+                                {social.map((x) => <a href={x.href} aria-label={x.label} rel="noopener" target="_blank"><i class={x.icon}></i></a>)}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-main">
+        <nav class="nav-main mainmenu-nav mt--30">
+            <ul class="mainmenu metismenu" id="mobile-menu-active">
+                {nav.map((item) =>
+                    item.children ? (
+                        <li class="has-droupdown">
+                            <a href="#" class="main">{t(item.label)}</a>
+                            <ul class="submenu mm-collapse">
+                                {item.children.map((c) => (
+                                    <li><a class="mobile-menu-link" href={routePath(lang, c.href)}>{t(c.label)}</a></li>
+                                ))}
+                            </ul>
+                        </li>
+                    ) : (
+                        <li><a href={routePath(lang, item.href!)} class="main">{t(item.label)}</a></li>
+                    ),
+                )}
+            </ul>
+        </nav>
+    </div>
+</div>
+

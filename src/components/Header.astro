@@ -1,0 +1,85 @@
+---
+import type { Lang } from "../i18n/ui";
+import { languages } from "../i18n/ui";
+import { langList } from "../i18n/langs";
+import { useTranslations, routePath, switchLangPath } from "../i18n/utils";
+import { site } from "../i18n/site";
+import { nav } from "./nav";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<!-- header style one -->
+<header id="rt-header" class="header-one header--sticky">
+    <div class="header-top-one-wrapper rt-primary-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-top-one">
+                        <div class="left-information">
+                            <a href={`mailto:${site.email}`} class="email"><i class="fa-light fa-envelope"></i>{site.email}</a>
+                            {site.phone && <a href={`tel:${site.phone.replace(/[^\d+]/g, '')}`} class="email"><i class="fa-light fa-phone"></i>{site.phone}</a>}
+                        </div>
+                        <!-- right area -->
+                        <div class="right-information">
+                            <nav class="gfe-lang" aria-label="Language">
+                                {langList.map((l) => (
+                                    l === lang
+                                        ? <span class="gfe-lang__item is-active" aria-current="true" lang={l}>{l.toUpperCase()}</span>
+                                        : <a class="gfe-lang__item" href={switchLangPath(Astro.url, l)} hreflang={l} lang={l} title={languages[l]}>{l.toUpperCase()}</a>
+                                ))}
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="header-one-wrapper">
+                    <div class="left-side-header">
+                        <a href={routePath(lang, 'home')} class="logo-area">
+                            <img src="/assets/images/logo/gfe-logo.png" alt="Global French Education">
+                        </a>
+                    </div>
+
+                    <div class="main-nav-one">
+                        <nav>
+                            <ul>
+                                {nav.map((item) =>
+                                    item.children ? (
+                                        <li class="has-dropdown">
+                                            <a class="nav-link" href="#">{t(item.label)}</a>
+                                            <ul class="submenu">
+                                                {item.children.map((c) => (
+                                                    <li><a href={routePath(lang, c.href)}>{t(c.label)}</a></li>
+                                                ))}
+                                            </ul>
+                                        </li>
+                                    ) : (
+                                        <li><a class="nav-link" href={routePath(lang, item.href!)}>{t(item.label)}</a></li>
+                                    ),
+                                )}
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-right-area-one">
+                        <div class="header-right-content">
+                            <div class="menu-bar" id="menu-btn">
+                                <img src="/assets/images/icon/bar.svg" alt="menu-bar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header style end -->

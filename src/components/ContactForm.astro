@@ -1,0 +1,101 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+// Cloudflare Turnstile (anti-spam). Set PUBLIC_TURNSTILE_SITEKEY at build time to enable the widget.
+const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY as string | undefined;
+const topics = [
+	["placement", "form.topic.placement"],
+	["courses", "form.topic.courses"],
+	["exam", "form.topic.exam"],
+	["corporate", "form.topic.corporate"],
+	["other", "form.topic.other"],
+] as const;
+---
+
+<section class="gfe-form" id="form">
+	<h2>{t("form.title")}</h2>
+	<form
+		method="post"
+		action="/api/contact"
+		data-lang={lang}
+		data-sending={t("form.sending")}
+		data-success={t("form.success")}
+		data-error={t("form.error")}
+	>
+		<div class="gfe-form__row">
+			<label>{t("form.name")} <input type="text" name="name" required maxlength="120" autocomplete="name" /></label>
+			<label>{t("form.email")} <input type="email" name="email" required maxlength="160" autocomplete="email" /></label>
+		</div>
+		<div class="gfe-form__row">
+			<label>{t("form.phone")} <input type="tel" name="phone" maxlength="40" autocomplete="tel" /></label>
+			<label>{t("form.topic")}
+				<select name="topic" required>
+					{topics.map(([value, key]) => <option value={value}>{t(key)}</option>)}
+				</select>
+			</label>
+		</div>
+		<label>{t("form.message")} <textarea name="message" rows="5" maxlength="4000"></textarea></label>
+		<!-- honeypot: real visitors never see or fill this -->
+		<input type="text" name="company" tabindex="-1" autocomplete="off" class="gfe-form__trap" aria-hidden="true" />
+		<label class="gfe-form__consent">
+			<input type="checkbox" name="consent" required />
+			<span>{t("form.consent")} <a href={routePath(lang, "privacy")}>{t("form.privacy")}</a></span>
+		</label>
+		{sitekey && <div class="cf-turnstile" data-sitekey={sitekey}></div>}
+		<button type="submit" class="rts-theme-btn">{t("form.submit")}</button>
+		<p class="gfe-form__status" role="status" aria-live="polite"></p>
+	</form>
+</section>
+{sitekey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
+
+<script>
+	const form = document.querySelector<HTMLFormElement>(".gfe-form form");
+	if (form) {
+		const status = form.querySelector<HTMLElement>(".gfe-form__status")!;
+		const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+		// /contact?topic=placement preselects the topic
+		const wanted = new URLSearchParams(location.search).get("topic");
+		const select = form.querySelector<HTMLSelectElement>("select[name=topic]")!;
+		if (wanted && [...select.options].some((o) => o.value === wanted)) select.value = wanted;
+
+		form.addEventListener("submit", async (event) => {
+			event.preventDefault();
+			const data = new FormData(form);
+			button.disabled = true;
+			status.className = "gfe-form__status";
+			status.textContent = form.dataset.sending ?? "";
+			try {
+				const response = await fetch(form.action, {
+					method: "POST",
+					headers: { "content-type": "application/json" },
+					body: JSON.stringify({
+						name: data.get("name"),
+						email: data.get("email"),
+						phone: data.get("phone"),
+						topic: data.get("topic"),
+						message: data.get("message"),
+						consent: data.get("consent") === "on",
+						company: data.get("company"),
+						lang: form.dataset.lang,
+						token: data.get("cf-turnstile-response"),
+					}),
+				});
+				if (!response.ok) throw new Error(String(response.status));
+				form.reset();
+				status.classList.add("is-success");
+				status.textContent = form.dataset.success ?? "";
+			} catch {
+				status.classList.add("is-error");
+				status.textContent = form.dataset.error ?? "";
+			} finally {
+				button.disabled = false;
+			}
+		});
+	}
+</script>

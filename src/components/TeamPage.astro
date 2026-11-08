@@ -1,0 +1,50 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import teamData from "../data/team.json";
+
+interface Props {
+	lang: Lang;
+	title: string;
+	description?: string;
+	sample?: boolean;
+}
+const { lang, title, description, sample } = Astro.props;
+const t = useTranslations(lang);
+const teachers = teamData.teachers;
+---
+
+<PageShell lang={lang} title={title} description={description} pageKey="team" sample={sample}>
+    <section class="rts-section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    {sample && <span class="gfe-sample-badge">{t("sample.label")}</span>}
+                    <p class="gfe-lead">{t("team.intro")}</p>
+                </div>
+            </div>
+            <div class="gfe-team-grid">
+                {teachers.map((p) => (
+                    <article class="gfe-teacher">
+                        <div class="gfe-teacher__photo">
+                            <img src={p.photo} alt={p.name} width="400" height="480" loading="lazy" decoding="async" />
+                            <span class="gfe-teacher__role">{p.role[lang]}</span>
+                        </div>
+                        <div class="gfe-teacher__body">
+                            <h3 class="gfe-teacher__name">{p.name}</h3>
+                            <ul class="gfe-teacher__facts">
+                                {p.facts[lang].map((f) => <li>{f}</li>)}
+                            </ul>
+                            <div class="gfe-teacher__tags">
+                                {p.specialties[lang].map((s) => <span>{s}</span>)}
+                            </div>
+                            <p class="gfe-teacher__approach"><strong>{t("team.approach")}</strong> {p.approach[lang]}</p>
+                            <p class="gfe-teacher__teaches"><i class="fa-light fa-graduation-cap"></i> {p.teaches[lang].join(" · ")}</p>
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </div>
+    </section>
+</PageShell>

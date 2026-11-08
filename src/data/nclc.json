@@ -1,0 +1,318 @@
+{
+ "asOf": "2026-11-04",
+ "note": "TEF: 'Equivalence ancien score' column only (not 'Score / 699'). clb 10 row = 'NCLC 10' (TEF) / '10 and above' (TCF). TCF speaking/writing are marks out of 20; listening/reading are scores out of 699.",
+ "sources": [
+  {
+   "name": "IRCC - Express Entry: Language test results (page modified 2026-10-16)",
+   "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+   "retrieved": "2026-11-04"
+  },
+  {
+   "name": "IRCC - Language test equivalency charts (operational update Dec 14, 2023; page details 2026-06-23)",
+   "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/updates/2023-language-test-equivalency-chart.html",
+   "retrieved": "2026-11-04"
+  }
+ ],
+ "tests": {
+  "TEF": {
+   "speaking": [
+    {
+     "clb": 10,
+     "min": 393,
+     "max": 450
+    },
+    {
+     "clb": 9,
+     "min": 371,
+     "max": 392
+    },
+    {
+     "clb": 8,
+     "min": 349,
+     "max": 370
+    },
+    {
+     "clb": 7,
+     "min": 310,
+     "max": 348
+    },
+    {
+     "clb": 6,
+     "min": 271,
+     "max": 309
+    },
+    {
+     "clb": 5,
+     "min": 226,
+     "max": 270
+    },
+    {
+     "clb": 4,
+     "min": 181,
+     "max": 225
+    }
+   ],
+   "listening": [
+    {
+     "clb": 10,
+     "min": 316,
+     "max": 360
+    },
+    {
+     "clb": 9,
+     "min": 298,
+     "max": 315
+    },
+    {
+     "clb": 8,
+     "min": 280,
+     "max": 297
+    },
+    {
+     "clb": 7,
+     "min": 249,
+     "max": 279
+    },
+    {
+     "clb": 6,
+     "min": 217,
+     "max": 248
+    },
+    {
+     "clb": 5,
+     "min": 181,
+     "max": 216
+    },
+    {
+     "clb": 4,
+     "min": 145,
+     "max": 180
+    }
+   ],
+   "reading": [
+    {
+     "clb": 10,
+     "min": 263,
+     "max": 300
+    },
+    {
+     "clb": 9,
+     "min": 248,
+     "max": 262
+    },
+    {
+     "clb": 8,
+     "min": 233,
+     "max": 247
+    },
+    {
+     "clb": 7,
+     "min": 207,
+     "max": 232
+    },
+    {
+     "clb": 6,
+     "min": 181,
+     "max": 206
+    },
+    {
+     "clb": 5,
+     "min": 151,
+     "max": 180
+    },
+    {
+     "clb": 4,
+     "min": 121,
+     "max": 150
+    }
+   ],
+   "writing": [
+    {
+     "clb": 10,
+     "min": 393,
+     "max": 450
+    },
+    {
+     "clb": 9,
+     "min": 371,
+     "max": 392
+    },
+    {
+     "clb": 8,
+     "min": 349,
+     "max": 370
+    },
+    {
+     "clb": 7,
+     "min": 310,
+     "max": 348
+    },
+    {
+     "clb": 6,
+     "min": 271,
+     "max": 309
+    },
+    {
+     "clb": 5,
+     "min": 226,
+     "max": 270
+    },
+    {
+     "clb": 4,
+     "min": 181,
+     "max": 225
+    }
+   ]
+  },
+  "TCF": {
+   "speaking": [
+    {
+     "clb": 10,
+     "min": 16,
+     "max": 20
+    },
+    {
+     "clb": 9,
+     "min": 14,
+     "max": 15
+    },
+    {
+     "clb": 8,
+     "min": 12,
+     "max": 13
+    },
+    {
+     "clb": 7,
+     "min": 10,
+     "max": 11
+    },
+    {
+     "clb": 6,
+     "min": 7,
+     "max": 9
+    },
+    {
+     "clb": 5,
+     "min": 6,
+     "max": 6
+    },
+    {
+     "clb": 4,
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "listening": [
+    {
+     "clb": 10,
+     "min": 549,
+     "max": 699
+    },
+    {
+     "clb": 9,
+     "min": 523,
+     "max": 548
+    },
+    {
+     "clb": 8,
+     "min": 503,
+     "max": 522
+    },
+    {
+     "clb": 7,
+     "min": 458,
+     "max": 502
+    },
+    {
+     "clb": 6,
+     "min": 398,
+     "max": 457
+    },
+    {
+     "clb": 5,
+     "min": 369,
+     "max": 397
+    },
+    {
+     "clb": 4,
+     "min": 331,
+     "max": 368
+    }
+   ],
+   "reading": [
+    {
+     "clb": 10,
+     "min": 549,
+     "max": 699
+    },
+    {
+     "clb": 9,
+     "min": 524,
+     "max": 548
+    },
+    {
+     "clb": 8,
+     "min": 499,
+     "max": 523
+    },
+    {
+     "clb": 7,
+     "min": 453,
+     "max": 498
+    },
+    {
+     "clb": 6,
+     "min": 406,
+     "max": 452
+    },
+    {
+     "clb": 5,
+     "min": 375,
+     "max": 405
+    },
+    {
+     "clb": 4,
+     "min": 342,
+     "max": 374
+    }
+   ],
+   "writing": [
+    {
+     "clb": 10,
+     "min": 16,
+     "max": 20
+    },
+    {
+     "clb": 9,
+     "min": 14,
+     "max": 15
+    },
+    {
+     "clb": 8,
+     "min": 12,
+     "max": 13
+    },
+    {
+     "clb": 7,
+     "min": 10,
+     "max": 11
+    },
+    {
+     "clb": 6,
+     "min": 7,
+     "max": 9
+    },
+    {
+     "clb": 5,
+     "min": 6,
+     "max": 6
+    },
+    {
+     "clb": 4,
+     "min": 4,
+     "max": 5
+    }
+   ]
+  }
+ }
+}

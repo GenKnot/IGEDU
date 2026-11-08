@@ -1,0 +1,123 @@
+---
+import type { Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import ContactForm from "./ContactForm.astro";
+
+interface Heading {
+	depth: number;
+	slug: string;
+	text: string;
+}
+interface Props {
+	lang: Lang;
+	pageKey?: string;
+	title: string;
+	description?: string;
+	sample?: boolean;
+	form?: "contact";
+	headings?: Heading[];
+}
+const { lang, pageKey, title, description, sample, form, headings = [] } = Astro.props;
+const t = useTranslations(lang);
+const covers: Record<string, string> = { "news/2026-french-draws": "og-news-1", "news/2026-crs-reform": "og-news-2", "news/zero-to-nclc7": "og-news-3" };
+const ogImage = pageKey && covers[pageKey] ? `/images/photos/${covers[pageKey]}.jpg` : undefined;
+
+// Long reads get a sticky table of contents built from the h2 headings.
+const toc = headings.filter((h) => h.depth === 2);
+const isContact = form === "contact";
+const longRead = toc.length >= 4 && !isContact;
+const isFaq = pageKey === "faq";
+---
+
+<PageShell lang={lang} title={title} description={description} pageKey={pageKey} sample={sample} ogImage={ogImage} noCta={isContact}>
+    <section class="rts-section-padding">
+        <div class="container">
+            {isContact ? (
+                <div class="gfe-contact">
+                    <article class="gfe-prose gfe-contact__info">
+                        <slot />
+                    </article>
+                    <aside class="gfe-contact__form">
+                        <ContactForm lang={lang} />
+                    </aside>
+                </div>
+            ) : longRead ? (
+                <div class="gfe-longread">
+                    <aside class="gfe-toc">
+                        <p class="gfe-toc__title">{t("toc.title")}</p>
+                        <ol class="gfe-toc__list">
+                            {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+                        </ol>
+                        {isFaq && (
+                            <div class="gfe-toc__tools">
+                                <button type="button" data-faq="open">{t("faq.expandAll")}</button>
+                                <button type="button" data-faq="close">{t("faq.collapseAll")}</button>
+                            </div>
+                        )}
+                    </aside>
+                    <article class:list={["gfe-prose", "gfe-longread__body", { "gfe-faq": isFaq }]}>
+                        {sample && <span class="gfe-sample-badge">{t("sample.label")}</span>}
+                        <slot />
+                        {form === "contact" && <ContactForm lang={lang} />}
+                    </article>
+                </div>
+            ) : (
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-9">
+                        <article class="gfe-prose">
+                            <slot />
+                        </article>
+                        {form === "contact" && <ContactForm lang={lang} />}
+                    </div>
+                </div>
+            )}
+        </div>
+    </section>
+
+    {longRead && (
+        <script is:inline>
+        (() => {
+            // Highlight the current section in the TOC.
+            const links = Array.from(document.querySelectorAll(".gfe-toc__list a"));
+            const targets = links.map((a) => document.getElementById(a.getAttribute("href").slice(1))).filter(Boolean);
+            const update = () => {
+                let current = targets[0];
+                for (const el of targets) if (el.getBoundingClientRect().top <= 140) current = el;
+                links.forEach((a) => a.classList.toggle("is-active", current && a.getAttribute("href") === `#${current.id}`));
+            };
+            window.addEventListener("scroll", update, { passive: true });
+            update();
+
+            // FAQ: every h3 question becomes a collapsible <details>.
+            const faq = document.querySelector(".gfe-faq");
+            if (!faq) return;
+            faq.querySelectorAll("h3").forEach((h3) => {
+                const details = document.createElement("details");
+                details.className = "gfe-faq__item";
+                if (h3.id) details.id = h3.id;
+                const summary = document.createElement("summary");
+                summary.innerHTML = h3.innerHTML;
+                details.appendChild(summary);
+                const body = document.createElement("div");
+                body.className = "gfe-faq__answer";
+                let next = h3.nextElementSibling;
+                while (next && !/^H[23]$/.test(next.tagName)) {
+                    const n = next.nextElementSibling;
+                    body.appendChild(next);
+                    next = n;
+                }
+                details.appendChild(body);
+                h3.replaceWith(details);
+            });
+            document.querySelectorAll("[data-faq]").forEach((btn) =>
+                btn.addEventListener("click", () => {
+                    const open = btn.dataset.faq === "open";
+                    faq.querySelectorAll("details").forEach((d) => (d.open = open));
+                }),
+            );
+            if (location.hash) document.querySelector(location.hash)?.closest("details")?.setAttribute("open", "");
+        })();
+        </script>
+    )}
+</PageShell>

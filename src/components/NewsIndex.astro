@@ -1,0 +1,95 @@
+---
+import { getCollection } from "astro:content";
+import type { Lang } from "../i18n/ui";
+import { useTranslations, routePath } from "../i18n/utils";
+import PageShell from "./PageShell.astro";
+import NewsCard from "./NewsCard.astro";
+
+interface Props {
+	lang: Lang;
+	title: string;
+	description?: string;
+}
+const { lang, title, description } = Astro.props;
+const t = useTranslations(lang);
+
+// News list is generated from the collection: drop a Markdown file with
+// date/tag/cover/excerpt frontmatter into src/content/pages/<lang>/news/ and it appears here.
+const articles = (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/news/`)))
+	.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""));
+const tags = [...new Set(articles.map((a) => a.data.tag).filter((x): x is string => Boolean(x)))];
+const PAGE_SIZE = 18;
+const fmt = (d?: string) =>
+	d ? new Date(`${d}T00:00:00`).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", { year: "numeric", month: "long", day: "numeric" }) : undefined;
+---
+
+<PageShell lang={lang} title={title} description={description} pageKey="news">
+    <section class="rts-section-padding">
+        <div class="container">
+            {tags.length > 0 && (
+                <div class="gfe-news-tabs" id="news-tabs">
+                    <button type="button" class="is-active" data-filter="all">{t("news.all")}</button>
+                    {tags.map((tag) => <button type="button" data-filter={tag}>{tag}</button>)}
+                </div>
+            )}
+
+            <div class="gfe-card-grid gfe-news-grid" id="news-grid">
+                {articles.map((a, i) => (
+                    <div class:list={["gfe-news-item", { "is-hidden": i >= PAGE_SIZE }]} data-tag={a.data.tag ?? ""}>
+                        <NewsCard
+                            href={routePath(lang, a.id.slice(lang.length + 1))}
+                            cover={a.data.cover}
+                            tag={a.data.tag}
+                            title={a.data.title}
+                            excerpt={a.data.excerpt}
+                            date={fmt(a.data.date)}
+                        />
+                    </div>
+                ))}
+            </div>
+
+            {articles.length > PAGE_SIZE && (
+                <div class="rt-center mt--50">
+                    <button type="button" id="news-more" class="rts-theme-btn">{t("news.more")}</button>
+                </div>
+            )}
+        </div>
+    </section>
+
+    <script is:inline define:vars={{ pageSize: PAGE_SIZE }}>
+    (() => {
+        const items = Array.from(document.querySelectorAll(".gfe-news-item"));
+        const tabs = document.querySelectorAll("#news-tabs button");
+        const more = document.getElementById("news-more");
+        let filter = "all";
+        let shown = pageSize;
+        const apply = () => {
+            let count = 0;
+            for (const el of items) {
+                const match = filter === "all" || el.dataset.tag === filter;
+                const visible = match && count < shown;
+                el.classList.toggle("is-hidden", !visible);
+                // Filtering and pagination can reveal cards without a scroll event.
+                if (visible) el.querySelector(".gfe-news-card")?.classList.add("is-in");
+                if (match) count++;
+            }
+            if (more) more.style.display = count > shown ? "" : "none";
+        };
+        tabs.forEach((btn) =>
+            btn.addEventListener("click", () => {
+                tabs.forEach((b) => b.classList.remove("is-active"));
+                btn.classList.add("is-active");
+                filter = btn.dataset.filter;
+                shown = pageSize;
+                apply();
+            }),
+        );
+        if (more)
+            more.addEventListener("click", () => {
+                shown += pageSize;
+                apply();
+            });
+        apply();
+    })();
+    </script>
+</PageShell>

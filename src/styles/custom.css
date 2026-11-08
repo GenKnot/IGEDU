@@ -1,0 +1,469 @@
+/* Global French Education overrides on top of the StudyHub theme */
+.header-one-wrapper .left-side-header .logo-area img {
+  height: 56px;
+  width: auto;
+}
+.rts-footer-logo img {
+  width: 260px;
+  height: auto;
+}
+.side-bar .inner-main-wrapper-desk .thumbnail img {
+  max-width: 240px;
+  height: auto;
+}
+.main-nav-one nav > ul > li > a {
+  white-space: nowrap;
+}
+
+/* Hero: poster image + optional looping video (public/video/hero.mp4) */
+.gfe-hero {
+	position: relative;
+	overflow: hidden;
+	background: #0b1a3a;
+}
+.gfe-hero__media {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+.gfe-hero__content {
+	position: relative;
+	z-index: 2;
+}
+.gfe-hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.gfe-btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gfe-hero__video {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rts-hero-slider-active .swiper-slide .rts-slider-content .rts-slider-title {
+    font-size: 40px;
+  }
+}
+
+/* Home: why-us claims, program meta */
+.gfe-claim {
+  margin-bottom: 24px;
+}
+.gfe-claim h5 {
+  margin-bottom: 6px;
+}
+.gfe-program-meta {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Content pages rendered from Markdown */
+.gfe-prose {
+  font-size: 17px;
+  line-height: 1.75;
+}
+.gfe-prose h2 {
+  margin: 48px 0 16px;
+  font-size: 30px;
+}
+.gfe-prose h3 {
+  margin: 32px 0 12px;
+  font-size: 22px;
+}
+.gfe-prose h4 {
+  margin: 24px 0 8px;
+}
+.gfe-prose p,
+.gfe-prose ul,
+.gfe-prose ol {
+  margin-bottom: 18px;
+}
+.gfe-prose ul,
+.gfe-prose ol {
+  padding-left: 24px;
+}
+.gfe-prose ul {
+  list-style: disc;
+}
+.gfe-prose ol {
+  list-style: decimal;
+}
+.gfe-prose a {
+  color: var(--rt-theme);
+  text-decoration: underline;
+}
+.gfe-prose blockquote {
+  margin: 24px 0;
+  padding: 16px 24px;
+  border-left: 4px solid var(--rt-theme);
+  background: #f5f7fb;
+}
+.gfe-prose table {
+	width: 100%;
+	margin: 0;
+	font-size: 15px;
+	border-collapse: collapse;
+}
+.gfe-table {
+	overflow-x: auto;
+	margin: 24px 0;
+	border-radius: 10px;
+	border: 1px solid #dfe3ec;
+}
+.gfe-table table {
+	min-width: 480px;
+}
+.gfe-table th:first-child, .gfe-table td:first-child { border-left: 0; }
+.gfe-table th:last-child, .gfe-table td:last-child { border-right: 0; }
+.gfe-table tr:last-child td { border-bottom: 0; }
+.gfe-table thead th { border-top: 0; }
+.gfe-prose th,
+.gfe-prose td {
+  padding: 10px 14px;
+  border: 1px solid #dfe3ec;
+  text-align: left;
+  vertical-align: top;
+}
+.gfe-prose th {
+  background: #f1f4fa;
+}
+.gfe-prose hr {
+  margin: 40px 0;
+}
+
+/* The search box is not wired up yet and crowds the longer menu */
+@media screen and (max-width: 1399px) {
+  .header-right-content .search-form {
+    display: none;
+  }
+}
+
+.gfe-sample-badge {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 4px 12px;
+  border: 1px dashed #d93a2f;
+  border-radius: 4px;
+  color: #b3261e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Contact dock: call + write bar on phones */
+.gfe-dock {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .gfe-dock {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    background: #0055a4;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .gfe-dock a {
+    flex: 1;
+    padding: 12px 8px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+  }
+  .gfe-dock a + a {
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  body {
+    padding-bottom: 48px;
+  }
+  .progress-wrap {
+    bottom: 64px;
+  }
+}
+
+.gfe-hours {
+  display: block;
+  margin-top: 8px;
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+/* Contact form */
+.gfe-form {
+  margin-top: 56px;
+  padding: 32px;
+  border: 1px solid #dfe3ec;
+  border-radius: 8px;
+  background: #f5f9ff;
+}
+.gfe-form h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+.gfe-form label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.gfe-form input[type="text"],
+.gfe-form input[type="email"],
+.gfe-form input[type="tel"],
+.gfe-form select,
+.gfe-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: 1px solid #c9d3e3;
+  border-radius: 4px;
+  background: #fff;
+  font-weight: 400;
+}
+.gfe-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+@media screen and (max-width: 640px) {
+  .gfe-form__row {
+    grid-template-columns: 1fr;
+  }
+}
+.gfe-form__consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: 400 !important;
+}
+.gfe-form__consent input {
+  margin-top: 5px;
+}
+.gfe-form__trap {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  opacity: 0;
+}
+.gfe-form__status {
+  margin-top: 16px;
+  font-weight: 600;
+}
+.gfe-form__status.is-success {
+  color: #1a7f37;
+}
+.gfe-form__status.is-error {
+  color: #b3261e;
+}
+
+/* Home: figures strip and tax note */
+.gfe-stats {
+  background: #0b2a55;
+  color: #fff;
+}
+.gfe-stats ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 64px;
+  margin: 0;
+  padding: 28px 0;
+  list-style: none;
+}
+.gfe-stats li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.gfe-stats strong {
+  font-size: 44px;
+  line-height: 1;
+  color: #fff;
+}
+.gfe-stats span {
+  font-size: 16px;
+  color: #d6e2f2;
+}
+.gfe-tax-note {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Tools: NCLC converter and cost calculator */
+.gfe-tool {
+  padding: 32px;
+  border: 1px solid #dfe3ec;
+  border-radius: 8px;
+  background: #f5f9ff;
+}
+.gfe-tool label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.gfe-tool input,
+.gfe-tool select {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: 1px solid #c9d3e3;
+  border-radius: 4px;
+  background: #fff;
+  font-weight: 400;
+}
+.gfe-tool__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0 20px;
+}
+.gfe-tool__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.gfe-tool__tabs button {
+  padding: 10px 18px;
+  border: 1px solid #0055a4;
+  border-radius: 4px;
+  background: #fff;
+  color: #0055a4;
+  font-weight: 600;
+}
+.gfe-tool__tabs button[aria-selected="true"] {
+  background: #0055a4;
+  color: #fff;
+}
+.gfe-tool__hint,
+.gfe-tool__note {
+  font-size: 14px;
+  color: #6b7280;
+}
+.gfe-tool__result {
+  width: 100%;
+  margin: 24px 0 8px;
+  border-collapse: collapse;
+}
+.gfe-tool__result th,
+.gfe-tool__result td {
+  padding: 10px 14px;
+  border: 1px solid #dfe3ec;
+  background: #fff;
+  text-align: left;
+}
+.gfe-tool__result tr:last-child td,
+.gfe-tool__result [data-out="total"] {
+  font-weight: 700;
+}
+.gfe-form__consent input[type="checkbox"] {
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+  position: static !important;
+  opacity: 1 !important;
+  display: inline-block !important;
+  flex: 0 0 auto;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 3px 0 0 !important;
+  padding: 0 !important;
+}
+
+.gfe-404 h1,
+.gfe-404 h2 {
+  margin: 8px 0 16px;
+}
+.gfe-404__code {
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 700;
+  color: #0055a4;
+}
+.gfe-404 hr {
+  margin: 40px 0;
+}
+
+/* Accessibility */
+.gfe-skip {
+  position: fixed;
+  left: 8px;
+  top: -80px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: #0055a4;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.gfe-skip:focus {
+  top: 8px;
+}
+.gfe-footer-title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.rts-footer,
+.rts-footer p,
+.rts-footer a,
+.rts-footer li,
+.rts-footer-copy-right,
+.rts-footer-copy-right p,
+.gfe-hours {
+  color: #b5b6ba;
+}
+.rts-footer a:hover,
+.rts-footer-copy-right a:hover {
+  color: #fff;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #1f6fc5;
+  outline-offset: 2px;
+}
+.gfe-tool__note a {
+  color: #b3170c;
+  text-decoration: underline;
+}
+
+.gfe-hero .rts-university-estd span,
+.gfe-hero .rts-slider-desc,
+.gfe-hero .rts-slider-title {
+  color: #fff !important;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+}
+.gfe-hero .rts-slider-title span {
+  color: #fff !important;
+  font-weight: 700;
+}
+.gfe-hero .rts-university-estd::before,
+.gfe-hero .rts-university-estd::after {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Page title banner over a photo */
+.rts-breadcrumb .breadcrumb-content .breadcrumb-item,
+.rts-breadcrumb .breadcrumb-content .breadcrumb-item a,
+.rts-breadcrumb .breadcrumb-content .breadcrumb-item.active,
+.rts-breadcrumb .breadcrumb-content .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+
+/* Hero is a single static slide now (Swiper removed). */
+.rts-hero-slider-active { overflow: hidden; }
+
+.gfe-prose img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.25rem 0; display: block; }
