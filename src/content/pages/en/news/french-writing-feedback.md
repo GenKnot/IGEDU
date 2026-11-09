@@ -1,7 +1,7 @@
 ---
 title: "What does a French teacher correct first in a draft?"
 description: "Follow three rounds of feedback on a short French email, from missing information to grammar."
-date: "2026-11-07"
+date: "2026-09-30"
 tag: "Teaching"
 cover: "/images/news/teaching/french-writing-feedback.webp"
 excerpt: "Read the first draft, try the edits yourself and compare your version with the revised French email."

@@ -17,6 +17,7 @@ export const nav: NavItem[] = [
 			{ label: 'nav.c.levels', href: 'levels' },
 			{ label: 'nav.c.examprep', href: 'exam-prep' },
 			{ label: 'nav.c.specialist', href: 'specialist' },
+			{ label: 'nav.c.online', href: 'online' },
 			{ label: 'nav.c.trial', href: 'trial' },
 		],
 	},

@@ -14,7 +14,7 @@ If you are short on time, steps 2 and 3 can be done on the same day.
 | 1 | Enquiry | Tell us your goal and availability | Give initial advice, schedule a placement test | Same day |
 | 2 | Placement test | On site or online, 40 minutes | Give your level on the spot, plus written advice within 24 hours | 1 day |
 | 3 | Choosing a course | Choose a path, class and time slot | Offer available sessions and a quote | 1 day |
-| 4 | Registration | Fill in the registration form, accept the [terms](/terms) | Send confirmation and a payment link | Same day |
+| 4 | Registration | Fill in the registration form, accept the [terms](/terms) | Send confirmation and payment instructions | Same day |
 | 5 | Payment | Pay in full or in instalments | Issue a receipt within 5 business days | 1 day |
 | 6 | Before classes start | Receive your account and pre-course instructions | Open the resource library, set up the class group, tell you when your first class is | 2 days before start |
 
@@ -44,8 +44,8 @@ Your information is handled as described in our [privacy policy](/privacy).
 
 | Method | Details |
 |---|---|
-| Credit card | Through a third-party payment platform; **we do not store card numbers** |
-| Interac e-Transfer | Your place is confirmed once the payment arrives |
+| Credit or debit card | At the school, when you enrol; **we do not store card numbers** |
+| Interac e-Transfer | To the details given in your confirmation; your place is confirmed once the payment arrives |
 
 We do not accept cash.
 

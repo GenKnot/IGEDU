@@ -1,7 +1,7 @@
 ---
 title: "Que corrige d’abord un enseignant dans un premier jet ?"
 description: "Suivez trois étapes de correction sur un court courriel en français, de l’information manquante à la grammaire."
-date: "2026-11-07"
+date: "2026-09-30"
 tag: "Pédagogie"
 cover: "/images/news/teaching/french-writing-feedback.webp"
 excerpt: "Lisez le premier jet, essayez vos propres corrections, puis comparez votre texte à la version révisée."

@@ -7,7 +7,7 @@ description: "Tous les tarifs de Global French Education : cours à l'unité, fo
 
 Les cours en petit groupe coûtent **35 $ l'heure**. Une heure de cours dure 60 minutes, en classe comme en ligne, au même prix. Le cours particulier est à 98 $ l'heure; les cours de français des affaires et de préparation aux entrevues, en groupe, sont à 49 $ l'heure.
 
-**Tous les prix sont en dollars canadiens (CAD) et avant taxes : la TVH de 13 % s'ajoute au paiement.** Nous acceptons la carte de crédit et le virement Interac, pas l'argent comptant. Le test de niveau est gratuit et il n'y a pas de frais d'inscription.
+**Tous les prix sont en dollars canadiens (CAD) et avant taxes : la TVH de 13 % s'ajoute au paiement.** Nous acceptons la carte de crédit et le virement Interac, pas l'argent comptant. Le test de niveau est gratuit et il n'y a pas de frais d'inscription. Les prix affichés sont ceux en vigueur et peuvent être modifiés sans préavis ; le prix confirmé à votre inscription ne change pas pendant votre parcours.
 
 Les forfaits coûtent moins cher que la somme des cours qui les composent. Pour estimer votre total, essayez le [calculateur de coûts](/cost-calculator).
 

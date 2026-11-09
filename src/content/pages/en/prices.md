@@ -7,7 +7,7 @@ description: "All Global French Education prices: single courses, bundles, extra
 
 Small-group classes are **$35 per hour**. One hour of class is 60 minutes, on site or online, at the same price. One-on-one lessons are $98 per hour; business French and interview French in a group are $49 per hour.
 
-**All prices are in Canadian dollars (CAD) and before tax: 13% HST is added at checkout.** We accept credit card and Interac e-Transfer, not cash. The placement test is free and there is no registration fee.
+**All prices are in Canadian dollars (CAD) and before tax: 13% HST is added at checkout.** We accept credit card and Interac e-Transfer, not cash. The placement test is free and there is no registration fee. Prices shown are current and may change without notice; the price confirmed at enrolment stays fixed for your programme.
 
 Bundles cost less than the courses they contain when bought separately. To estimate your own total, try the [cost calculator](/cost-calculator).
 

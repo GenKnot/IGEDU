@@ -1,7 +1,7 @@
 ---
 title: "Your first French conversation circle in Toronto"
 description: "Find a Toronto Public Library conversation circle and prepare a few French phrases to join the discussion."
-date: "2026-11-07"
+date: "2026-10-28"
 tag: "Method"
 cover: "/images/news/teaching/french-conversation-toronto-library.webp"
 excerpt: "A practical guide to finding a French conversation circle and taking your first turn, with phrases you can use when you arrive."

@@ -1,7 +1,7 @@
 ---
 title: "One French speaking question, two attempts"
 description: "Compare two answers to the same French speaking prompt, then try the teacher’s feedback on your own response."
-date: "2026-11-07"
+date: "2026-09-16"
 tag: "Teaching"
 cover: "/images/news/teaching/speaking-answer-revision.webp"
 excerpt: "See the difference a concrete example and a relevant follow-up can make in a French speaking exercise."

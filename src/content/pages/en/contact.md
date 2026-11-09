@@ -18,14 +18,14 @@ If you are not sure which level to start at, or you would like to see the campus
 | Email | [info@igedu.ca](mailto:info@igedu.ca) |
 | Opening hours | Monday to Friday, 10:00 to 21:00; Saturday, 10:00 to 18:00; Sunday, closed |
 
-You can also find us on Instagram and YouTube.
-
 **Reply time:** within 1 business day on weekdays; on weekends and holidays, the reply is pushed to the next business day.
 
 ## Visiting us
 
 
 **Please book a time first:** classrooms are in use during classes, and if you arrive unannounced you may have to wait in the lobby. Let us know, and someone will show you around. See also the [Campus](/campus) page.
+
+<div class="gfe-map"><iframe src="https://www.google.com/maps?q=1+Bartley+Bull+Pkwy,+Brampton,+ON+L6W+3T7&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: 1 Bartley Bull Pkwy, Brampton"></iframe></div>
 
 ## Other requests
 

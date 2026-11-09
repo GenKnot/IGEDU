@@ -33,3 +33,6 @@ themeforest-*/
 .wrangler/
 # local generation output (hundreds of MB), never published
 output/
+
+# internal planning notes (copies live on the Desktop)
+docs/

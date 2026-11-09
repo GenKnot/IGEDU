@@ -3,7 +3,7 @@ title: "Catalogue des cours"
 description: "30 cours à l'unité (20 à 60 heures) et 7 forfaits (120 à 330 heures) : durées, prix et objectifs, en petits groupes."
 ---
 
-Notre offre comporte deux niveaux : **30 cours à l'unité** (20 à 60 heures) et **7 forfaits** (120 à 330 heures). Les tarifs sont détaillés sur la page [Tarifs](/prices) ; le contenu des cours par niveau se trouve sur la page [Niveaux](/levels) et celui de la préparation aux examens sur la page [Préparation aux examens](/exam-prep). Tous les prix sont en dollars canadiens, avant taxes : 13 % de TVH s'ajoutent au paiement. Une heure de cours = 60 minutes, en ligne comme sur place.
+Notre offre comporte deux niveaux : **30 cours à l'unité** (20 à 60 heures) et **7 forfaits** (120 à 330 heures). Tous les cours fonctionnent en entrée continue : vous pouvez commencer à tout moment après le test de niveau. Les tarifs sont détaillés sur la page [Tarifs](/prices) ; le contenu des cours par niveau se trouve sur la page [Niveaux](/levels) et celui de la préparation aux examens sur la page [Préparation aux examens](/exam-prep). Tous les prix sont en dollars canadiens, avant taxes : 13 % de TVH s'ajoutent au paiement. Une heure de cours = 60 minutes, en ligne comme sur place.
 
 ## Premier niveau : les cours à l'unité
 

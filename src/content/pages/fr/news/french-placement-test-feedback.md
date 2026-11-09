@@ -1,7 +1,7 @@
 ---
 title: "Que reçoit-on après un test de classement de 40 minutes ?"
 description: "Découvrez un exemple de bilan de classement et le rôle de la lecture, de l’écoute et de l’oral dans le choix d’un cours."
-date: "2026-11-07"
+date: "2026-10-07"
 tag: "Pédagogie"
 cover: "/images/news/teaching/french-placement-test-feedback.webp"
 excerpt: "Voici comment un enseignant peut partir de compétences inégales pour proposer un groupe et des exercices précis."

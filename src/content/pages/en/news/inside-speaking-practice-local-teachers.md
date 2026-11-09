@@ -1,7 +1,7 @@
 ---
 title: "Inside a speaking lesson: practise, get feedback, try again"
 description: "How our locally based French teachers use exam-style questions, focused feedback and another attempt to help you build clearer, more effective answers."
-date: "2026-11-06"
+date: "2026-10-23"
 tag: "Teaching"
 cover: "/images/news/teaching/speaking-practice-local-teachers.webp"
 excerpt: "A closer look at speaking practice with our local French teachers: what works in your answer, what needs attention, and how to approach different tasks."

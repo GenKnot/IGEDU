@@ -1,7 +1,7 @@
 ---
 title: "Une question à l’oral, deux essais"
 description: "Comparez deux réponses à la même question en français et appliquez le retour de l’enseignant à votre propre réponse."
-date: "2026-11-07"
+date: "2026-09-16"
 tag: "Pédagogie"
 cover: "/images/news/teaching/speaking-answer-revision.webp"
 excerpt: "Un exemple concret et une réponse à la relance peuvent transformer un échange. Essayez avec cette question d’entraînement."

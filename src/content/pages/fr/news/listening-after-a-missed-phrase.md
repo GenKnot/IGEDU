@@ -1,7 +1,7 @@
 ---
 title: "Vous avez manqué une phrase ? Continuez à écouter"
 description: "Entraînez-vous à reprendre le fil grâce à un court message vocal en français, deux écoutes et une transcription."
-date: "2026-11-07"
+date: "2026-10-14"
 tag: "Méthode"
 cover: "/images/news/teaching/listening-after-a-missed-phrase.webp"
 excerpt: "Écoutez un message qui annonce un changement d’horaire. Repérez la nouvelle heure, même si une partie du message vous échappe."

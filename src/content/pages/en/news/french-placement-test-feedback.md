@@ -1,7 +1,7 @@
 ---
 title: "What happens after a 40-minute French placement test?"
 description: "Read a sample placement report and see how differences between reading, listening and speaking guide a course recommendation."
-date: "2026-11-07"
+date: "2026-10-07"
 tag: "Teaching"
 cover: "/images/news/teaching/french-placement-test-feedback.webp"
 excerpt: "See how a teacher can turn an uneven set of French skills into a starting point and a practical plan."

@@ -1,7 +1,7 @@
 ---
 title: "Votre premier cercle de conversation en français à Toronto"
 description: "Trouvez un cercle de conversation à la Bibliothèque publique de Toronto et préparez quelques phrases pour participer."
-date: "2026-11-07"
+date: "2026-10-28"
 tag: "Méthode"
 cover: "/images/news/teaching/french-conversation-toronto-library.webp"
 excerpt: "Où chercher un cercle de conversation et quoi dire en arrivant ? Préparez votre première participation avec des phrases simples."

@@ -3,7 +3,7 @@ title: "Course catalogue"
 description: "30 single courses (20 to 60 hours) and 7 bundles (120 to 330 hours): durations, prices and goals, in small groups."
 ---
 
-Our offer has two layers: **30 single courses** (20 to 60 hours) and **7 bundles** (120 to 330 hours). Prices are explained on the [Prices](/prices) page. Course content by level is on the [Levels](/levels) page, and exam preparation is on the [Exam preparation](/exam-prep) page. All prices are in Canadian dollars, before tax: 13% HST is added at checkout. One class hour = 60 minutes, online or on site.
+Our offer has two layers: **30 single courses** (20 to 60 hours) and **7 bundles** (120 to 330 hours). All courses run on a rolling basis: you can start any time after the placement test. Prices are explained on the [Prices](/prices) page. Course content by level is on the [Levels](/levels) page, and exam preparation is on the [Exam preparation](/exam-prep) page. All prices are in Canadian dollars, before tax: 13% HST is added at checkout. One class hour = 60 minutes, online or on site.
 
 ## Layer 1: single courses
 

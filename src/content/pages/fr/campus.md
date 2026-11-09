@@ -12,6 +12,8 @@ Voici ce que nous avons réellement.
 
 **Adresse** : 1 Bartley Bull Pkwy, Brampton, ON L6W 3T7
 
+<div class="gfe-map"><iframe src="https://www.google.com/maps?q=1+Bartley+Bull+Pkwy,+Brampton,+ON+L6W+3T7&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte : 1 Bartley Bull Pkwy, Brampton"></iframe></div>
+
 ## Salles de classe
 
 | Élément | Description |

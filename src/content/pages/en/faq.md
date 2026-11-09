@@ -8,6 +8,9 @@ description: "Clear answers on getting started, classes, exams, fees, online cla
 ### I don't speak any French. Can I enrol directly?
 Yes. A1.1 is designed for complete beginners. From the first class, teaching is in French, but you may ask questions in English.
 
+### When can I start?
+Any time. Our groups run on a rolling basis: after the placement test you join the group at your level the following week, in class or online. There is no term start date to wait for.
+
 ### Do I need to take a test first?
 Yes, unless you are a complete beginner. The test is free and lasts 40 minutes: a 30-minute written test (listening, reading, grammar) and a 10-minute speaking part. You can take it on site or online, without enrolling first. You get verbal feedback on the spot and written recommendations within 24 hours.
 

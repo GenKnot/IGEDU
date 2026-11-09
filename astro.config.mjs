@@ -20,7 +20,7 @@ export default defineConfig({
 		sitemap({
 			i18n: { defaultLocale: 'fr', locales: { fr: 'fr-CA', en: 'en-CA' } },
 			// Sample content stays out of the sitemap until it is replaced by real material.
-			filter: (page) => !/\/(temoignages|stories|404)\/$/.test(page),
+			filter: (page) => !/\/404\/$/.test(page),
 		}),
 	],
 });

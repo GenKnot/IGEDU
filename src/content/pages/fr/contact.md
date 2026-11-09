@@ -18,13 +18,13 @@ Si vous ne savez pas à quel niveau commencer, ou si vous voulez d’abord voir 
 | Courriel | [info@igedu.ca](mailto:info@igedu.ca) |
 | Heures d’ouverture | Lundi au vendredi, 10 h à 21 h; samedi, 10 h à 18 h; dimanche, fermé |
 
-Vous nous trouverez aussi sur Instagram et YouTube.
-
 **Délai de réponse** : dans 1 jour ouvrable en semaine; la fin de semaine et les jours fériés, la réponse est reportée au jour ouvrable suivant.
 
 ## Nous rendre visite
 
 **Prenez d’abord rendez-vous** : les salles sont occupées pendant les cours, et si vous arrivez sans prévenir, vous risquez de devoir attendre dans le hall. Prévenez-nous, et quelqu’un vous fera faire le tour des lieux. Voir aussi la page [Nos locaux](/campus).
+
+<div class="gfe-map"><iframe src="https://www.google.com/maps?q=1+Bartley+Bull+Pkwy,+Brampton,+ON+L6W+3T7&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte : 1 Bartley Bull Pkwy, Brampton"></iframe></div>
 
 ## Autres demandes
 

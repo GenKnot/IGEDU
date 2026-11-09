@@ -1,7 +1,7 @@
 ---
 title: "Missed a phrase in French? Keep listening"
 description: "Practise recovering after a missed phrase with a short French voicemail, two listening passes and a transcript."
-date: "2026-11-07"
+date: "2026-10-14"
 tag: "Method"
 cover: "/images/news/teaching/listening-after-a-missed-phrase.webp"
 excerpt: "Listen to a short message about a changed appointment. Catch the new time even if part of the message goes by too fast."

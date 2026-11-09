@@ -84,7 +84,7 @@ const latest = (await getCollection("pages", ({ id }) => id.startsWith(`${lang}/
     <div class="container">
         <div class="row">
             <div class="rt-center">
-                <p class="--p-xs">&copy; {new Date().getFullYear()} <a href={routePath(lang, 'home')}>{site.legalName}</a> · {t('footer.rights')} · <a href={routePath(lang, 'privacy')}>{t('footer.privacy')}</a> · <a href={routePath(lang, 'terms')}>{t('footer.terms')}</a> · <a href={routePath(lang, 'accessibility')}>{t('footer.a11y')}</a></p>
+                <p class="--p-xs">&copy; <a href={routePath(lang, 'home')}>{site.legalName}</a> · {t('footer.rights')} · <a href={routePath(lang, 'privacy')}>{t('footer.privacy')}</a> · <a href={routePath(lang, 'terms')}>{t('footer.terms')}</a> · <a href={routePath(lang, 'accessibility')}>{t('footer.a11y')}</a></p>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 ---
 title: "Dans un cours d’oral : pratiquer, comprendre les retours, recommencer"
 description: "Comment nos enseignants de français établis dans la région associent mises en situation d’examen, retours précis et nouvelle tentative pour améliorer vos réponses."
-date: "2026-11-06"
+date: "2026-10-23"
 tag: "Pédagogie"
 cover: "/images/news/teaching/speaking-practice-local-teachers.webp"
 excerpt: "Un regard sur l’entraînement oral avec nos enseignants locaux : les points forts de votre réponse, les difficultés à travailler et les stratégies adaptées aux différentes tâches."

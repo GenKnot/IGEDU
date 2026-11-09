@@ -35,6 +35,7 @@ const fr = {
 	'nav.c.oneonone': 'Cours particuliers',
 	'nav.c.catalogue': 'Catalogue complet',
 	'nav.c.trial': 'Cours d’essai',
+	'nav.c.online': 'Cours en ligne',
 	'nav.e.exams': 'Les examens',
 	'nav.e.mock': 'Examens blancs',
 	'nav.e.tefvstcf': 'TEF ou TCF ?',
@@ -127,6 +128,7 @@ const fr = {
 	'form.topic': 'Je souhaite',
 	'form.topic.placement': 'Passer un test de niveau',
 	'form.topic.courses': 'Me renseigner sur les cours',
+	'form.topic.enroll': 'M’inscrire à un cours',
 	'form.topic.exam': 'M’inscrire à un examen',
 	'form.topic.corporate': 'Une formation pour mon entreprise',
 	'form.topic.other': 'Autre',
@@ -192,6 +194,7 @@ const fr = {
 	'course.related': 'Cours similaires',
 	'course.all': 'Tout le catalogue',
 	'course.onRequest': 'Sur demande',
+	'course.rolling': 'Entrée continue : après le test de niveau, vous rejoignez le groupe de votre niveau dès la semaine suivante, en salle ou en ligne.',
 
 	// news index and articles
 	'news.all': 'Toutes',
@@ -268,6 +271,7 @@ const en: Record<UiKey, string> = {
 	'nav.c.oneonone': 'One-on-one',
 	'nav.c.catalogue': 'Full catalogue',
 	'nav.c.trial': 'Trial lesson',
+	'nav.c.online': 'Online classes',
 	'nav.e.exams': 'About the exams',
 	'nav.e.mock': 'Mock exams',
 	'nav.e.tefvstcf': 'TEF or TCF?',
@@ -351,6 +355,7 @@ const en: Record<UiKey, string> = {
 	'form.topic': 'I would like to',
 	'form.topic.placement': 'Book a placement test',
 	'form.topic.courses': 'Ask about courses',
+	'form.topic.enroll': 'Enrol in a course',
 	'form.topic.exam': 'Register for an exam',
 	'form.topic.corporate': 'Training for my company',
 	'form.topic.other': 'Something else',
@@ -412,6 +417,7 @@ const en: Record<UiKey, string> = {
 	'course.related': 'Related courses',
 	'course.all': 'Full catalogue',
 	'course.onRequest': 'On request',
+	'course.rolling': 'Rolling start: after the placement test you join the group at your level the following week, in class or online.',
 
 	// news index and articles
 	'news.all': 'All',

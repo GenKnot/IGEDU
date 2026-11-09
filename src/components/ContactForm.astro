@@ -7,11 +7,13 @@ interface Props {
 }
 const { lang } = Astro.props;
 const t = useTranslations(lang);
-// Cloudflare Turnstile (anti-spam). Set PUBLIC_TURNSTILE_SITEKEY at build time to enable the widget.
-const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY as string | undefined;
+// Submissions go straight to Web3Forms (https://web3forms.com), which e-mails the address the access key was created with.
+// The access key is public by design (it only identifies the inbox); spam is filtered by the hidden botcheck field and Web3Forms.
+const WEB3FORMS_KEY = "904417f7-075c-4f37-9ee9-5a0e19548790";
 const topics = [
 	["placement", "form.topic.placement"],
 	["courses", "form.topic.courses"],
+	["enroll", "form.topic.enroll"],
 	["exam", "form.topic.exam"],
 	["corporate", "form.topic.corporate"],
 	["other", "form.topic.other"],
@@ -22,12 +24,16 @@ const topics = [
 	<h2>{t("form.title")}</h2>
 	<form
 		method="post"
-		action="/api/contact"
+		action="https://api.web3forms.com/submit"
 		data-lang={lang}
 		data-sending={t("form.sending")}
 		data-success={t("form.success")}
 		data-error={t("form.error")}
 	>
+		<input type="hidden" name="access_key" value={WEB3FORMS_KEY} />
+		<input type="hidden" name="from_name" value="Site igedu.ca" />
+		<input type="hidden" name="subject" value="[igedu.ca] Nouveau message" />
+		<input type="hidden" name="language" value={lang} />
 		<div class="gfe-form__row">
 			<label>{t("form.name")} <input type="text" name="name" required maxlength="120" autocomplete="name" /></label>
 			<label>{t("form.email")} <input type="email" name="email" required maxlength="160" autocomplete="email" /></label>
@@ -41,18 +47,16 @@ const topics = [
 			</label>
 		</div>
 		<label>{t("form.message")} <textarea name="message" rows="5" maxlength="4000"></textarea></label>
-		<!-- honeypot: real visitors never see or fill this -->
-		<input type="text" name="company" tabindex="-1" autocomplete="off" class="gfe-form__trap" aria-hidden="true" />
+		<!-- honeypot (Web3Forms "botcheck"): real visitors never see or tick this -->
+		<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="gfe-form__trap" aria-hidden="true" />
 		<label class="gfe-form__consent">
 			<input type="checkbox" name="consent" required />
 			<span>{t("form.consent")} <a href={routePath(lang, "privacy")}>{t("form.privacy")}</a></span>
 		</label>
-		{sitekey && <div class="cf-turnstile" data-sitekey={sitekey}></div>}
 		<button type="submit" class="rts-theme-btn">{t("form.submit")}</button>
 		<p class="gfe-form__status" role="status" aria-live="polite"></p>
 	</form>
 </section>
-{sitekey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
 
 <script>
 	const form = document.querySelector<HTMLFormElement>(".gfe-form form");
@@ -67,26 +71,18 @@ const topics = [
 		form.addEventListener("submit", async (event) => {
 			event.preventDefault();
 			const data = new FormData(form);
+			// Send the readable topic label, and put it in the e-mail subject
+			const topicLabel = select.selectedOptions[0]?.text ?? String(data.get("topic"));
+			data.set("topic", topicLabel);
+			data.set("subject", `[igedu.ca] ${topicLabel} – ${data.get("name")}`);
+			data.set("consent", data.get("consent") === "on" ? "oui" : "non");
 			button.disabled = true;
 			status.className = "gfe-form__status";
 			status.textContent = form.dataset.sending ?? "";
 			try {
-				const response = await fetch(form.action, {
-					method: "POST",
-					headers: { "content-type": "application/json" },
-					body: JSON.stringify({
-						name: data.get("name"),
-						email: data.get("email"),
-						phone: data.get("phone"),
-						topic: data.get("topic"),
-						message: data.get("message"),
-						consent: data.get("consent") === "on",
-						company: data.get("company"),
-						lang: form.dataset.lang,
-						token: data.get("cf-turnstile-response"),
-					}),
-				});
-				if (!response.ok) throw new Error(String(response.status));
+				const response = await fetch(form.action, { method: "POST", body: data, headers: { accept: "application/json" } });
+				const result = await response.json().catch(() => ({}));
+				if (!response.ok || !result.success) throw new Error(String(response.status));
 				form.reset();
 				status.classList.add("is-success");
 				status.textContent = form.dataset.success ?? "";

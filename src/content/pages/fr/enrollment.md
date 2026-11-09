@@ -14,7 +14,7 @@ Si vous êtes pressé, les étapes 2 et 3 peuvent se faire le même jour.
 | 1 | Renseignements | Indiquer votre objectif et votre disponibilité | Premier conseil, rendez-vous pour le test de niveau | Le jour même |
 | 2 | Test de niveau | Sur place ou en ligne, 40 minutes | Niveau donné sur-le-champ, avis écrit dans les 24 heures | 1 jour |
 | 3 | Choix du cours | Choisir le parcours, le groupe et l’horaire | Proposer les sessions disponibles et un prix | 1 jour |
-| 4 | Inscription | Remplir le formulaire, accepter les [conditions](/terms) | Envoyer la confirmation et le lien de paiement | Le jour même |
+| 4 | Inscription | Remplir le formulaire, accepter les [conditions](/terms) | Envoyer la confirmation et les instructions de paiement | Le jour même |
 | 5 | Paiement | Payer en totalité ou en versements | Émettre le reçu dans les 5 jours ouvrables | 1 jour |
 | 6 | Avant la rentrée | Recevoir votre accès et les consignes | Ouvrir la bibliothèque de ressources, créer le groupe de classe, vous communiquer l’heure du premier cours | 2 jours avant le début |
 
@@ -44,8 +44,8 @@ Vos renseignements sont traités selon notre [politique de confidentialité](/pr
 
 | Mode | Précisions |
 |---|---|
-| Carte de crédit | Par une plateforme de paiement tierce ; **nous ne conservons pas les numéros de carte** |
-| Virement Interac | La place est confirmée à réception du paiement |
+| Carte de crédit ou de débit | Sur place, à l’école, au moment de l’inscription ; **nous ne conservons pas les numéros de carte** |
+| Virement Interac | Aux coordonnées indiquées dans votre confirmation ; la place est confirmée à réception du paiement |
 
 Nous n’acceptons pas l’argent comptant.
 

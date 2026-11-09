@@ -20,6 +20,7 @@ export const routes = {
 	specialist: { fr: 'cours-specialises', en: 'specialist' },
 	'one-on-one': { fr: 'cours-particuliers', en: 'one-on-one' },
 	trial: { fr: 'cours-essai', en: 'trial' },
+	online: { fr: 'cours-en-ligne', en: 'online-courses' },
 	exams: { fr: 'examens', en: 'exams' },
 	'mock-exams': { fr: 'examens-blancs', en: 'mock-exams' },
 	'tef-vs-tcf': { fr: 'tef-ou-tcf', en: 'tef-vs-tcf' },

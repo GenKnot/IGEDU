@@ -8,6 +8,9 @@ description: "Réponses claires sur les débuts, les cours, les examens, les fra
 ### Je ne parle pas du tout français. Puis-je m'inscrire directement?
 Oui. Le cours A1.1 est conçu pour les débutants complets. Dès le premier cours, l'enseignement se fait en français, mais vous pouvez poser vos questions en anglais.
 
+### Quand puis-je commencer?
+À tout moment. Nos groupes fonctionnent en entrée continue : après le test de niveau, vous rejoignez le groupe de votre niveau dès la semaine suivante, en salle ou en ligne. Il n'y a pas de date de rentrée à attendre.
+
 ### Dois-je d'abord passer un test?
 Oui, sauf si vous êtes débutant complet. Le test est gratuit et dure 40 minutes : 30 minutes d'épreuve écrite (compréhension orale, compréhension écrite, grammaire) et 10 minutes d'oral. Il se passe sur place ou en ligne, sans inscription préalable. Vous recevez un retour oral sur-le-champ et des recommandations écrites dans les 24 heures.
 
