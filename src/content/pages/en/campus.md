@@ -1,6 +1,6 @@
 ---
 title: "Our campus"
-description: "Our Brampton campus: 12 classrooms of up to 8 students, a mock-exam room, study area, free Wi-Fi."
+description: "Our Brampton campus, easy to reach from Mississauga, Toronto and Peel Region: 12 classrooms of up to 8 students, a mock-exam room, study area, free Wi-Fi."
 ---
 Our campus is in Brampton, at 1 Bartley Bull Pkwy. We have twelve classrooms, each with a maximum of 8 students. It is not that the rooms cannot hold more: beyond that, someone would stop getting a turn to speak in every class.
 

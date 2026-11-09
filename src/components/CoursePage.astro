@@ -4,6 +4,7 @@ import { useTranslations, routePath } from "../i18n/utils";
 import PageShell from "./PageShell.astro";
 import CourseCard from "./CourseCard.astro";
 import { categories, courseById, priceLabel } from "../data/courses";
+import { courseSchema } from "../seo/schema";
 
 interface Props {
 	lang: Lang;
@@ -16,9 +17,10 @@ if (!c) throw new Error(`Unknown course: ${courseId}`);
 
 const testHref = `${routePath(lang, "contact")}?topic=placement#form`;
 const related = [...courseById.values()].filter((x) => x.cat === c.cat && x.id !== c.id).slice(0, 3);
+const schema = [courseSchema(c, lang, routePath(lang, `courses/${c.id}` as any))];
 ---
 
-<PageShell lang={lang} title={c.title[lang]} description={c.summary[lang]} pageKey={`courses/${c.id}`}>
+<PageShell lang={lang} title={c.title[lang]} description={c.summary[lang]} pageKey={`courses/${c.id}`} schema={schema}>
     <section class="rts-section-padding">
         <div class="container">
             <div class="row g-5">

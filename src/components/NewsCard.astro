@@ -8,12 +8,14 @@ interface Props {
 	date?: string;
 }
 const { href, cover, tag, title, excerpt, date } = Astro.props;
+import { srcsetFor } from "../seo/images";
+const srcset = cover ? srcsetFor(cover) : undefined;
 ---
 
 <article class="gfe-news-card">
     <a href={href} class="gfe-news-card__media" tabindex="-1" aria-hidden="true">
         {cover
-            ? <img class={cover.endsWith("-brand.webp") ? "gfe-news-card__image--campaign" : undefined} src={cover} alt="" width="640" height="400" loading="lazy" decoding="async" />
+            ? <img class={cover.endsWith("-brand.webp") ? "gfe-news-card__image--campaign" : undefined} src={cover} srcset={srcset} sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 991px) 50vw, 420px" alt="" width="640" height="400" loading="lazy" decoding="async" />
             : <span class="gfe-news-card__placeholder"><i class="fa-light fa-newspaper"></i></span>}
     </a>
     <div class="gfe-news-card__body">

@@ -6,6 +6,8 @@ import PageShell from "./PageShell.astro";
 import NewsCard from "./NewsCard.astro";
 import type { CollectionEntry } from "astro:content";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import { articleSchema } from "../seo/schema";
+import { srcsetFor } from "../seo/images";
 
 interface Props {
 	lang: Lang;
@@ -26,9 +28,10 @@ const related = [
 	...others.filter((a) => a.data.tag && a.data.tag === d.tag),
 	...others.filter((a) => a.data.tag !== d.tag),
 ].slice(0, 3);
+const schema = [articleSchema(d, lang, Astro.url.pathname)];
 ---
 
-<PageShell lang={lang} title={d.title} description={d.description} pageKey="news" ogImage={d.cover} bare>
+<PageShell lang={lang} title={d.title} description={d.description} pageKey="news" parentKey="news" ogImage={d.cover} schema={schema} ogType="article" bare>
     <article class="gfe-article">
         <header class="gfe-article__header">
             <div class="container">
@@ -49,7 +52,7 @@ const related = [
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-9 col-xl-8">
-                            <img class="gfe-article__cover" src={d.cover} alt="" width="1200" height="675" loading="eager" decoding="async" />
+                            <img class="gfe-article__cover" src={d.cover} srcset={srcsetFor(d.cover)} sizes="(max-width: 991px) calc(100vw - 32px), 760px" alt="" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" />
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,8 @@ import Footer from "./Footer.astro";
 import { bannerFor } from "./banners";
 import CtaBand from "./CtaBand.astro";
 import { courseArtworkFor } from "../data/course-artwork";
+import { breadcrumbSchema, homeLabel } from "../seo/schema";
+import type { RouteKey } from "../i18n/routes";
 
 interface Props {
 	lang: Lang;
@@ -18,15 +20,31 @@ interface Props {
 	ogImage?: string;
 	bare?: boolean;
 	noCta?: boolean;
+	/** Route key of the section this page belongs to (adds a middle breadcrumb). */
+	parentKey?: string;
+	/** Extra JSON-LD objects (Course, Article, FAQPage...). */
+	schema?: unknown[];
+	ogType?: "website" | "article";
 }
-const { lang, title, description, metaDescription, pageKey, sample, ogImage, bare, noCta } = Astro.props;
+const { lang, title, description, metaDescription, pageKey, sample, ogImage, bare, noCta, parentKey: parentProp, schema = [], ogType } = Astro.props;
 const t = useTranslations(lang);
 const banner = bannerFor(pageKey);
 const courseArt = courseArtworkFor(pageKey);
 const bannerImage = courseArt?.src ?? `/images/photos/banner-${banner}.webp`;
+
+// Breadcrumb: Home > (section) > page. Sections are inferred from the key prefix unless given.
+const inferredParent = pageKey?.startsWith("courses/") ? "catalogue" : pageKey?.startsWith("bundles/") ? "bundles" : pageKey?.startsWith("exams/") ? "exams" : undefined;
+const parentKey = parentProp ?? inferredParent;
+const parentLabel = parentKey ? t(({ catalogue: "nav.c.catalogue", bundles: "nav.c.bundles", exams: "nav.e.exams", news: "nav.news" } as Record<string, string>)[parentKey] as any) : undefined;
+const crumbs = [
+	{ name: homeLabel(lang), url: routePath(lang, "home") },
+	...(parentKey && parentLabel ? [{ name: parentLabel, url: routePath(lang, parentKey as RouteKey) }] : []),
+	{ name: title, url: Astro.url.pathname },
+];
+const jsonLd = [breadcrumbSchema(crumbs), ...schema];
 ---
 
-<Layout lang={lang} title={`${title} | Global French Education`} description={metaDescription ?? description} noindex={sample} image={ogImage ?? courseArt?.src}>
+<Layout lang={lang} title={`${title} | Global French Education`} description={metaDescription ?? description} noindex={sample} image={ogImage ?? courseArt?.src} schema={jsonLd} ogType={ogType}>
 <Header lang={lang} />
 <main id="main">
 
@@ -37,6 +55,7 @@ const bannerImage = courseArt?.src ?? `/images/photos/banner-${banner}.webp`;
                 <nav class="gfe-banner__crumb" aria-label="Breadcrumb">
                     <a href={routePath(lang, "home")}>{t("nav.home")}</a>
                     <span aria-hidden="true">/</span>
+                    {parentKey && parentLabel && (<><a href={routePath(lang, parentKey as RouteKey)}>{parentLabel}</a><span aria-hidden="true">/</span></>)}
                     <span aria-current="page">{title}</span>
                 </nav>
                 <h1 class="gfe-banner__title">{title}</h1>

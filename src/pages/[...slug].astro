@@ -15,6 +15,7 @@ import { hubKeys } from "../components/hubs";
 import { isRouteKey, routePath } from "../i18n/routes";
 import { courses } from "../data/courses";
 import type { Lang } from "../i18n/langs";
+import { faqFromMarkdown, faqSchema } from "../seo/schema";
 
 // One route for every content page in every language: /tarifs, /en/prices ...
 export async function getStaticPaths() {
@@ -62,6 +63,8 @@ const { page, lang, pageKey, tool, toolTitle, toolDescription, courseId } = Astr
 const rendered = page ? await render(page) : undefined;
 const Content = rendered?.Content;
 const headings = rendered?.headings ?? [];
+// The FAQ page also ships its questions as FAQPage structured data.
+const extraSchema = page && pageKey === "faq" && page.body ? [faqSchema(faqFromMarkdown(page.body))] : undefined;
 ---
 
 {tool ? (
@@ -85,7 +88,7 @@ const headings = rendered?.headings ?? [];
 ) : (pageKey.startsWith("bundles/") || pageKey.startsWith("exams/")) && Content ? (
 	<DetailPage lang={lang} pageKey={pageKey} page={page} Content={Content} />
 ) : (
-	<ContentPage lang={lang} pageKey={pageKey} title={page.data.title} description={page.data.description} sample={page.data.sample} form={page.data.form} headings={headings}>
+	<ContentPage lang={lang} pageKey={pageKey} title={page.data.title} description={page.data.description} sample={page.data.sample} form={page.data.form} headings={headings} schema={extraSchema}>
 		{Content && <Content />}
 	</ContentPage>
 )}

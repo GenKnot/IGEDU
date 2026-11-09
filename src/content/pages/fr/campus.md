@@ -1,6 +1,6 @@
 ---
 title: "Nos locaux"
-description: "Nos locaux de Brampton : 12 salles de 8 personnes au maximum, salle d’examens blancs, espace d’étude, Wi-Fi gratuit."
+description: "Nos locaux de Brampton, faciles d’accès depuis Mississauga, Toronto et la région de Peel : 12 salles de 8 personnes au maximum, salle d’examens blancs, espace d’étude, Wi-Fi gratuit."
 ---
 Nos locaux sont à Brampton, au 1 Bartley Bull Pkwy. Nous avons douze salles de classe de 8 personnes au maximum. Ce n’est pas que les salles ne puissent pas en accueillir plus : au-delà, quelqu’un ne parlerait plus à chaque cours.
 

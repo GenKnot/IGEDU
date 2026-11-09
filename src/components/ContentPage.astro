@@ -17,8 +17,9 @@ interface Props {
 	sample?: boolean;
 	form?: "contact";
 	headings?: Heading[];
+	schema?: unknown[];
 }
-const { lang, pageKey, title, description, sample, form, headings = [] } = Astro.props;
+const { lang, pageKey, title, description, sample, form, headings = [], schema } = Astro.props;
 const t = useTranslations(lang);
 const covers: Record<string, string> = { "news/2026-french-draws": "og-news-1", "news/2026-crs-reform": "og-news-2", "news/zero-to-nclc7": "og-news-3" };
 const ogImage = pageKey && covers[pageKey] ? `/images/photos/${covers[pageKey]}.jpg` : undefined;
@@ -30,7 +31,7 @@ const longRead = toc.length >= 4 && !isContact;
 const isFaq = pageKey === "faq";
 ---
 
-<PageShell lang={lang} title={title} description={description} pageKey={pageKey} sample={sample} ogImage={ogImage} noCta={isContact}>
+<PageShell lang={lang} title={title} description={description} pageKey={pageKey} sample={sample} ogImage={ogImage} noCta={isContact} schema={schema}>
     <section class="rts-section-padding">
         <div class="container">
             {isContact ? (

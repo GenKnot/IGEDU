@@ -9,7 +9,7 @@ export type { Lang };
 const fr = {
 	'meta.title': 'Global French Education | Cours de français et préparation TEF / TCF à Brampton (région de Toronto)',
 	'meta.description':
-		'Cours de français en petits groupes (8 personnes maximum) à Brampton, Ontario. Préparation au TEF Canada, au TCF Canada et au DELF.',
+		'École de français à Brampton, Ontario : cours en petits groupes (8 personnes maximum), en salle ou en ligne, et préparation au TEF Canada, au TCF Canada et au DELF. Pour Brampton, Mississauga et la région de Toronto.',
 
 	// navigation
 	'nav.home': 'Accueil',
@@ -247,7 +247,7 @@ export type UiKey = keyof typeof fr;
 const en: Record<UiKey, string> = {
 	'meta.title': 'Global French Education | French courses and TEF / TCF preparation in Brampton (Toronto area)',
 	'meta.description':
-		'Small-group French courses (8 students maximum) in Brampton, Ontario. Preparation for TEF Canada, TCF Canada and DELF.',
+		'French school in Brampton, Ontario: small-group classes (8 students maximum), in person or online, and TEF Canada, TCF Canada and DELF preparation. Serving Brampton, Mississauga and the Greater Toronto Area.',
 
 	'nav.home': 'Home',
 	'nav.courses': 'Courses',
