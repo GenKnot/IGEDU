@@ -1274,6 +1274,7 @@ html, body {
 }
 .gfe-tool__result th {
 	background: var(--gfe-cream);
+	color: var(--gfe-navy);
 }
 
 /* ---------- Footer ---------- */

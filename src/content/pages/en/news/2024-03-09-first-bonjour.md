@@ -3,7 +3,7 @@ title: "A first Bonjour: getting started in French"
 description: "A look back at our March 9, 2024 open class: an introduction to french, with 28 participants."
 date: "2024-03-09"
 tag: "School activities"
-cover: "/images/news/generated/2024-03-09-first-bonjour-casual.webp"
+cover: "/images/news/generated/2024-03-09-first-bonjour-still-life.webp"
 excerpt: "A look back at our March 9, 2024 open class: an introduction to french, with 28 participants."
 ---
 

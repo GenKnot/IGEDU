@@ -3,7 +3,7 @@ title: "From the menu to the bill: a first restaurant conversation"
 description: "A look back at our May 11, 2024 open class: ordering with a clear, polite request, with 16 participants."
 date: "2024-05-11"
 tag: "School activities"
-cover: "/images/news/generated/2024-05-11-ordering-food-casual.webp"
+cover: "/images/news/generated/2024-05-11-ordering-food-roleplay.webp"
 excerpt: "A look back at our May 11, 2024 open class: ordering with a clear, polite request, with 16 participants."
 ---
 

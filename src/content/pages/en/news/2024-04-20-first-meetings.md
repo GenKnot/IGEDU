@@ -3,7 +3,7 @@ title: "Making a first introduction in French"
 description: "A look back at our April 20, 2024 open class: the language of a first meeting, with 22 participants."
 date: "2024-04-20"
 tag: "School activities"
-cover: "/images/news/generated/2024-04-20-first-meetings-casual.webp"
+cover: "/images/news/generated/2024-04-20-first-meetings-class-moment.webp"
 excerpt: "A look back at our April 20, 2024 open class: the language of a first meeting, with 22 participants."
 ---
 

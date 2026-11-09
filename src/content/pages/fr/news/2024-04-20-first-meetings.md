@@ -3,7 +3,7 @@ title: "Faire connaissance en français, simplement"
 description: "Retour sur la séance du 20 avril 2024 : les mots d’une première rencontre, avec 22 participants."
 date: "2024-04-20"
 tag: "Vie de l’école"
-cover: "/images/news/generated/2024-04-20-first-meetings-casual.webp"
+cover: "/images/news/generated/2024-04-20-first-meetings-class-moment.webp"
 excerpt: "Retour sur la séance du 20 avril 2024 : les mots d’une première rencontre, avec 22 participants."
 ---
 

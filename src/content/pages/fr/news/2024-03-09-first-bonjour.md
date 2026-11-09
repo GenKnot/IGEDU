@@ -3,7 +3,7 @@ title: "Un premier bonjour pour découvrir le français"
 description: "Retour sur la séance du 9 mars 2024 : une première rencontre avec le français, avec 28 participants."
 date: "2024-03-09"
 tag: "Vie de l’école"
-cover: "/images/news/generated/2024-03-09-first-bonjour-casual.webp"
+cover: "/images/news/generated/2024-03-09-first-bonjour-still-life.webp"
 excerpt: "Retour sur la séance du 9 mars 2024 : une première rencontre avec le français, avec 28 participants."
 ---
 

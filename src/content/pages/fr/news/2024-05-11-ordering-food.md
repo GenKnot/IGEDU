@@ -3,7 +3,7 @@ title: "Du menu à l’addition : premiers échanges au restaurant"
 description: "Retour sur la séance du 11 mai 2024 : commander avec une demande claire et polie, avec 16 participants."
 date: "2024-05-11"
 tag: "Vie de l’école"
-cover: "/images/news/generated/2024-05-11-ordering-food-casual.webp"
+cover: "/images/news/generated/2024-05-11-ordering-food-roleplay.webp"
 excerpt: "Retour sur la séance du 11 mai 2024 : commander avec une demande claire et polie, avec 16 participants."
 ---
 
